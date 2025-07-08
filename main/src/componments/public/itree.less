@@ -1,0 +1,101 @@
+.tree {
+  background: #ffffff;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 7px;
+  height: 100%;
+  .search {
+    width: 205px;
+    margin-bottom: 14px;
+  }
+}
+
+.main {
+  padding: 8px 8px 8px 0;
+  width: 100%;
+  height: calc(100% - 8px);
+  display: flex;
+  flex-direction: column;
+  .main_header {
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  .main_body {
+    display: flex;
+    flex: 1 1 auto;
+    overflow: auto;
+    flex-direction: column;
+  }
+}
+
+:global {
+  .ant-tree-title {
+    white-space: nowrap;
+  }
+  .ant-tree-checkbox{//这个是为了icon和复选框对其
+    top: 0.2em;
+  }
+  .ant-tree .ant-tree-node-content-wrapper{//这个是为了icon和内容对其
+    top: 0.1em;
+  }
+  .ant-tree-checkbox-inner {
+    width: 14px;
+    height: 14px;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+  }
+  .ant-tree-checkbox-inner::after {
+    position: absolute;
+    top: 47%;
+    left: 18.5%;
+  }
+
+  .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+    background-color: #fff;
+    border-color: #505766;
+  }
+  .ant-tree-checkbox-checked .ant-tree-checkbox-inner::after {
+    position: absolute;
+    display: table;
+    border: 2px solid var(--ant-primary-color);
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(45deg) scale(1) translate(-50%, -50%);
+    opacity: 1;
+    transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    content: ' ';
+  }
+  .ant-tree-checkbox-wrapper:hover .ant-tree-checkbox-inner,
+  .ant-tree-checkbox:hover .ant-tree-checkbox-inner,
+  .ant-tree-checkbox-input:focus + .ant-tree-checkbox-inner,
+  .ant-tree-checkbox .ant-tree-checkbox-checked,
+  .ant-tree-checkbox-checked::after {
+    border: solid 1px #505766;
+  }
+  .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner::after {
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 2px;
+    background-color: var(--ant-primary-color);
+    border: 0;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    content: ' ';
+  }
+  .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: #f0f7ff;
+    border-radius: 4px;
+  }
+  .ant-tree .ant-tree-node-content-wrapper:hover {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+  }
+  .ant-tabs-ink-bar .ant-tabs-ink-bar-animated {
+    width: 22px;
+    height: 3px;
+    background: #03a4ff;
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,138 @@
+.user_warp {
+  height: 100%;
+  position: relative;
+  :global {
+    .v_resize___3wsl9 {
+      height: calc(100% - 22px);
+      margin-top: 22px;
+    }
+  }
+  .split_line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: #464d5b;
+    top: 30px;
+    z-index: 1;
+    height: 1px;
+  }
+  .left_org_tree {
+    height: 100%;
+    .title {
+      display: block;
+      color: var(--ant-primary-color);
+      margin-bottom: 9px; //这个应该是距离下面是8px，加上1px的线
+      margin-left: 8px;
+    }
+    .content {
+      padding-top: 8px;
+      overflow-y: auto;
+      overflow-x: hidden; //出现两个滚动条授权那
+      //height: 100%;
+      height: calc(100% - 31px);
+      & > span {
+        position: absolute;
+        z-index: 99;
+      }
+    }
+  }
+  .await_select_list {
+    height: 100%;
+    .title {
+      display: block;
+      color: var(--ant-primary-color);
+      margin-bottom: 9px; //这个应该是距离下面是8px，加上1px的线
+      margin-left: 8px;
+    }
+    .content {
+      overflow: hidden;
+      height: calc(100% - 31px);
+      //height: 100%;
+      padding: 8px 0px 0px 8px;
+      & > span {
+        position: absolute;
+        z-index: 99;
+        //margin-bottom: 12px;
+      }
+      .middle_list {
+        margin-top: 8px;
+        // overflow: auto;
+        height: calc(100% - 40px);
+      }
+      .check_box_middle {
+        :global {
+          .ant-checkbox + span {
+            white-space: nowrap; /*强制span不换行*/
+            width: 100%; /*限制宽度*/
+          }
+        }
+      }
+      .check_box_user {
+        :global {
+          .ant-checkbox-wrapper {
+            position: relative;
+          }
+          .ant-checkbox + span {
+            white-space: nowrap; /*强制span不换行*/
+            width: 100%; /*限制宽度*/
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+  .select_list {
+    height: 100%;
+    overflow: hidden;
+    .title {
+      display: block;
+      color: var(--ant-primary-color);
+      margin-bottom: 9px; //这个应该是距离下面是8px，加上1px的线
+      margin-left: 8px;
+    }
+    .list {
+      height: calc(100% - 30px);
+      overflow: auto;
+      min-width: 300px;
+      // padding-left: 20px;
+      .opration {
+        float: right;
+        height: 32px;
+        margin-top: 8px;
+        margin-right: 8px;
+        & > span {
+          margin-right: 8px;
+        }
+      }
+      .content {
+        clear: both;
+        padding-top: 8px;
+        overflow: auto;
+        height: calc(100% - 40px);
+        overflow: auto;
+        .table_placeholder {
+          height: calc(100% - 40px);
+        }
+        :global {
+          .ant-table-tbody > tr > td {
+            border-bottom: 0px;
+          }
+        }
+        .tag_info {
+          display: inline-block;
+          padding: 0 8px 0 8px;
+          height: 24px;
+          line-height: 24px;
+          background: #f8f8f8;
+          border-radius: 4px;
+          margin-right: 16px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  //主题色
+  a {
+    color: var(--ant-primary-color) !important;
+  }
+}

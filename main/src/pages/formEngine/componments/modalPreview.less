@@ -1,0 +1,43 @@
+@grid_width: calc((100%)/12); //grid大小
+.modal_warp{
+  margin-top: -80px;
+  .content{
+    height: 450px;
+    overflow:scroll;
+  }
+  .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    padding: 0px 16px 0px 16px;
+    width: 100%;
+  }
+  .boxLabel {
+    min-width: calc(@grid_width*2);
+    max-width: calc(@grid_width*2);
+    text-align: center;
+  }
+  .boxInput {
+    width: 100%;
+  }
+  //表格
+  .form_warp{
+    margin:40px;
+    box-shadow: 0px 0px 10px 2px #666;
+    padding-bottom: 20px;
+    background: #fff;
+    :global{
+      .ant-form-item{
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .form_detail_warp{
+    .button_list{
+      &>button{
+        margin-right: 10px;
+      }
+    }
+  }
+}

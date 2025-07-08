@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  font-size: 14px;
+  :global {
+    // .ant-form-inline .ant-form-item {
+    //   margin-right: 8px;
+    // }
+  }
+  .higher {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+  .higher_content {
+    margin-top: 5px;
+    cursor: pointer;
+    span {
+      color: var(--ant-primary-color);
+    }
+  }
+  .higher_content svg {
+    width: 10px;
+    height: 10px;
+    transform: rotate(90deg);
+    fill: #000;
+  }
+  .publish {
+    .btn {
+      margin-right: 10px;
+    }
+  }
+}
+
+.titleName {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.grantList {
+  position: relative;
+  height: 100%;
+}

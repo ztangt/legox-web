@@ -1,0 +1,117 @@
+.app_list {
+  width: 100%;
+  height: 100%;
+  padding: 12px 4px 0px 12px;
+  :global{
+    .ant-tooltip-placement-bottom, .ant-tooltip-placement-bottomLeft, .ant-tooltip-placement-bottomRight{
+      padding-top: 2px!important;
+    }
+  }
+  .app {
+    width: 84px;
+    text-align: center;
+    // float: left;
+    // margin-top: 8px;//5月28日更改样式
+    // margin-bottom: 8px;
+    cursor: pointer;
+
+    // &:nth-child(3n) {
+    //   margin-right: 0px;
+    // }
+    &:hover {
+
+      span,
+      i {
+        color: var(--ant-primary-color) !important;
+      }
+    }
+
+    img {
+      width: 26px;
+      height: 26px;
+      margin-bottom: 8px;
+    }
+
+    i {
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 400;
+      color: #666666;
+      line-height: 20px;
+      display: inline-block;
+      width: inherit;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .app_infos{
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow: auto;
+    margin-top: 16px;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 84px);
+      gap: 16px;
+      justify-content: center;
+      margin:0px;
+      li {
+        span {
+          font-size: 40px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  b {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 22px;
+  }
+
+  span {
+    font-size: 12px;
+    float: right;
+    color: #999999;
+    background: #F5F5F5;
+    border-radius: 12px;
+    padding: 6px;
+  }
+}
+
+.color_0 {
+  color: rgba(255,185,0,0.8) !important;
+}
+.color_1 {
+  color: rgba(0,186,238,0.8) !important;
+}
+.color_2 {
+  color: rgba(181,123,254,0.8) !important;
+}
+.color_3 {
+  color: rgba(0,150,255,0.8) !important;
+}
+.color_4 {
+  color: rgba(255,134,143,0.8) !important;
+}
+//更改提示信息样式
+.name_tip{
+  :global{
+    .ant-tooltip-arrow{
+      height: 18px;
+      width: 18px;
+    }
+    .ant-tooltip-inner{
+      color: rgb(51, 51, 51);
+      background: rgb(255, 255, 255);
+      padding: 4px;
+      min-height: 22px;
+      border-radius: 4px;
+    }
+  }
+}

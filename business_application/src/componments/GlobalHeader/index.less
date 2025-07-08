@@ -1,0 +1,224 @@
+@import '~antd/es/style/themes/default.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.menu {
+  :global(.anticon) {
+    margin-right: 8px;
+    color:#666666;
+  }
+  :global(.ant-dropdown-menu-item) {
+    min-width: 160px;
+  }
+  :global{
+    .ant-switch-checked{
+      background-color: var(--ant-primary-color);
+    }
+  }
+  background: #FFFFFF;
+  box-shadow: 0px 2px 6px 1px rgb(189 189 189 / 39%);
+  border: 1px solid #D9D9D9;
+}
+
+.right {
+  display: flex;
+  float: right;
+  height: 60px!important;
+  margin-left: auto;
+  overflow: hidden;
+  line-height: 60px!important;
+  // img{
+  //   width: 18px;
+  //   height:18px;
+  // }
+  .searchInput{
+    margin-top:15px;
+    padding-right:24px;
+    :global{
+      .ant-badge-count{
+        box-shadow: none;
+      }
+            .ant-input {
+              border-color:#fff !important;
+              color:#fff !important;
+              background-color: var(--ant-primary-color) !important;
+            }
+            .ant-input{
+              border-top-right-radius: 0 !important;
+              border-bottom-right-radius: 0 !important;
+              padding-right: 0 !important;
+            }
+            .ant-input:hover,.ant-input:focus{
+              border-color: #fff !important;
+              border-right: none;
+            }
+            .ant-input-search .ant-input:hover + .ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary), .ant-input-search .ant-input:focus + .ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary){
+              border-color:none;
+            }
+            input::-webkit-input-placeholder{
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            }
+            .ant-input-group-addon{
+              background-color: var(--ant-primary-color) !important;
+            }
+            .ant-btn{
+              border-color:#fff !important;
+              background-color: var(--ant-primary-color) !important;
+            }
+          }
+        }
+  .shortcut_color{
+    color:black;
+  }
+  .shortCut_icon{
+    height: 60px;
+    line-height: 62px;
+    padding:0;
+    
+  }
+  .action {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    > span {
+      vertical-align: middle;
+    }
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+  .search {
+    padding: 0 12px;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .account {
+    .avatar {
+      margin: ~'calc((@{layout-header-height} - 24px) / 2)' 0;
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+
+.dark {
+  .action {
+    color: rgba(255, 255, 255, 0.85);
+    > span {
+      color: rgba(255, 255, 255, 0.85);
+    }
+    &:hover,
+    &:global(.opened) {
+      background: @primary-color;
+    }
+  }
+}
+
+:global(.ant-pro-global-header) {
+  .dark {
+    .action {
+      color: @text-color;
+      line-height: 60px;
+      > span {
+        color: @text-color;
+      }
+      &:hover {
+        color: rgba(255, 255, 255, 0.85);
+        > span {
+          color: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+  }
+}
+.to_front{
+  height: 60px;
+  line-height: 60px !important;
+  cursor: pointer;
+  margin-right: 24px;
+}
+
+.bt_group{
+  width: 145px;
+  margin: 10px auto;
+}
+.about{
+  position: relative;
+  color: #333333;
+  h1{
+    font-size: 31px;
+    color: red;
+    margin-bottom: 15px;
+  }
+  li{
+    margin-top: 10px;
+    b{
+      margin-right: 5px;
+    }
+  }
+  .attention{
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    img{
+      width: 140px;
+      height: 140px;
+      display: block;
+    }
+  }
+  
+}
+.portal {
+  padding: 0 20px;
+  ul{
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    li {
+      margin: 0 20px 0 0;
+      text-align: center;
+      cursor: pointer;
+      img {
+        width: 157px;
+        height: 118px;
+      }
+    }
+  }
+
+}
+.post_stu{
+  background: #ADB4BC;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 12px;
+  border-radius: 4px;
+  display: inline-block;
+  color: #FFFFFF;
+  text-align: center;
+}
+:global{
+  .ant-badge-count-sm{
+    font-size: 10px;
+  }
+  .ant-badge-count{
+    box-shadow: none;
+  }
+}
+.longString{
+  color:#ffffff;
+  padding-right:12px;
+}
+

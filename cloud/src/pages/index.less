@@ -1,0 +1,53 @@
+.common_style(@width: 315px, @height: 467px, @background-image: url('../../public/assets/tenement_bg.svg')) {
+  width: @width;
+  height: @height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: @background-image;
+  background-repeat: no-repeat;
+  background-size: @width @height;
+}
+
+.common_icon_style(@width, @height) {
+  width: @width;
+  height: @height;
+  margin-bottom: 20px;
+}
+.container{
+  transform-origin: 0 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: 0.1s;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-size: 24px;
+    color: #fff;
+  }
+  li:nth-child(1) {
+   .common_style(315px, 467px,url("../../public/assets/tenement_bg.svg"));
+   margin-right: 40px;
+    img{
+      .common_icon_style(101px, 82px);
+    }
+  }
+  li:nth-child(2) {
+    .common_style(315px, 467px,url("../../public/assets/organization_bg.svg"));
+    margin-right: 40px;
+     img{
+       .common_icon_style(91px, 91px);
+     }
+   }
+   li:nth-child(3) {
+    .common_style(315px, 467px,url("../../public/assets/user_bg.svg"));
+     img{
+       .common_icon_style(91px, 92px);
+     }
+   }
+}

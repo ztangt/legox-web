@@ -1,0 +1,178 @@
+.workList {
+  height: 100%;
+  padding: 8px 0;
+  // font-family: PingFangSC-Semibold, PingFang SC;
+  :global{
+    .ant-table-thead {
+      .ant-checkbox-checked .ant-checkbox-inner{
+        // background-color: var(--ant-primary-color-active) !important;
+      }
+    }
+
+    .ant-table-tbody > tr.ant-table-row-selected > td{
+      background: var(--ant-primary-color-deprecated-f-12);
+    }
+    
+    .ant-tabs-tab{
+      padding: 12px 0 4px 0 !important;
+    }
+    .ant-table-header, .ant-table-thead {
+      border: none !important;
+    }
+    .ant-table-thead > tr > th {
+      background-color: var(--ant-primary-color);
+      color: #FFFFFF !important;
+      border: none;
+    }
+    .ant-table-cell-scrollbar {
+      // display: none;
+      box-shadow: none !important;
+    }
+    .ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      width: 0;
+    }
+    .ant-table-cell {
+      height: 40px; //行高统一40px
+      padding: 0 16px !important;
+    }
+    .ant-tabs-ink-bar{ 
+      background-color: transparent !important; 
+    }
+    .ant-tabs-top>.ant-tabs-nav .ant-tabs-ink-bar{
+      height:3px !important;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: var(--ant-primary-color);
+    }
+    .ant-tabs-top .ant-tabs-ink-bar-animated:before{
+      content: " "; 
+      background-color: var(--ant-primary-color);
+      width: 30px;
+      height: 3px !important;
+      position: absolute;
+      margin: auto; 
+      // margin-left: 20%; 
+      border-radius: 2px !important;
+    }
+    .ant-tabs-tab:first-child {
+      border-left: none !important;
+    }
+    .ant-tabs-nav-list {
+      .ant-tabs-tab {
+        min-width: 30px;
+      }
+    }
+    .oddRow {
+      &>td {
+        background-color: #fff;
+      }
+    }
+
+    .evenRow {
+      &>td {
+        background-color: var(--ant-primary-color-deprecated-f-12);
+
+      }
+    }
+
+    .oddRow:hover,
+    .evenRow:hover {
+      &>td {
+        background: var(--ant-primary-color-deprecated-f-12) !important;
+      }
+    }
+    // .ant-tabs-nav-wrap::before {
+    //   border-bottom: none !important;
+    // }
+  }
+  .header {
+    display: flex;
+    // flex-direction: row-reverse;
+    // justify-content: space-between;
+    // height: 132px;
+    // margin-bottom: 16px;
+    padding: 0 8px;
+    .matter {
+      padding: 0 16px;
+      margin-right: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // padding: 10px 16px 13px 16px;
+      width: 154px;
+      // width: 30%;
+      height: 78px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s;
+      h1 {
+        font-size: 16px;
+        color: #FFFFFF;
+        font-weight: 400;
+      }
+      p {
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: 500;
+      }
+    }
+    .matter:hover {
+      transform: translateY(-4px);
+    }
+    .matter:nth-child(1):hover {
+      box-shadow: 0px 6px 15px 0px #D9DDED;
+    }
+    .matter:nth-child(2):hover {
+      box-shadow: 0px 6px 15px 0px #E6DDD2;
+    }
+    .matter:nth-child(3):hover {
+      box-shadow: 0px 6px 15px 0px #C8E7DE;
+    }
+  
+    :global {
+      .ant-table-tbody > tr > td {
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        // border-bottom: 1px dashed #f0f0f0;
+      }
+      .ant-radio-group-small .ant-radio-button-wrapper {
+        margin-right: 15px;
+      }
+      .ant-tabs-extra-content{
+        div>span{
+          width: 24px;
+          height:24px;
+          border-radius: 50%;
+          background-color: #f5f5f5;
+          color:#999999;
+          font-size: 12px;
+          padding-top:6px;
+        }
+      }
+      .ant-tabs-tab:first-child{
+        border-left: none !important;
+      }
+    }
+  }
+  .tabs {
+    padding: 0 16px;
+  }
+}
+
+.right_icon {
+  display: inline-block;
+  margin-left: 8px;
+  height: 24px;
+  width: 24px;
+  // color: #999999 !important;
+  background: var(--ant-primary-color-deprecated-f-12);
+  border-radius: 12px;
+  text-align: center;
+  padding-top: 2px;
+  cursor: pointer;
+  svg {
+    fill: var(--ant-primary-color);
+  }
+}

@@ -1,0 +1,27 @@
+.body{
+  background-color: #fff;
+  height: 100%;
+  padding:0 16px;
+  :global{
+    .ant-tabs .ant-tabs-top,.ant-tabs-content-holder,.ant-tabs-content{
+      height:100% !important;
+      overflow: auto;
+    }
+    .ant-tabs > .ant-tabs-nav, .ant-tabs > div > .ant-tabs-nav {
+      position: relative;
+      display: flex;
+      flex: none;
+      align-items: center;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      height:auto;
+  }
+    .ant-tabs-top>.ant-tabs-nav{
+      margin: 0 !important;
+    }
+    .ant-tabs-tabpane{
+      height:100%;
+  }
+  }
+}

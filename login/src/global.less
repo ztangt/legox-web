@@ -1,0 +1,132 @@
+@import url('../public/font.less');
+@import '~antd/dist/antd.variable.min.css';
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+body,
+input,
+legend,
+fieldset,
+i,
+nav,
+header,
+div,
+footer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body{
+  font-size: 14px;
+}
+#root-master {
+  height: 100%;
+  &>div{
+    height: 100%;
+  }
+  // .qiankun-micro-app-container{
+  //   height: 100%;
+  // }
+}
+body {
+  font-family: 'PingFangSC-Regular', 'Microsoft YaHei' !important;
+}
+
+.ant-modal-body {
+  ::-webkit-scrollbar {
+    height: 6px ;
+    width: 6px ;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px ;
+    background-color: #c3c3c3;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+  }
+}
+.ant-modal-header {
+  padding: 10px 24px 10px 16px !important;
+  background-color: rgb(24, 144, 255) !important;
+}
+.ant-modal-title {
+  font-size: 14px !important;
+  color: #fff !important;
+  line-height: 20px;
+}
+
+.ant-modal-close-x {
+  width: 14px !important;
+  height: 14px !important;
+  // margin-right: 24px;
+  margin-right: 16px;
+  line-height: 40px !important;
+  color: #fff !important;
+}
+// .ant-modal-footer {
+//   .ant-btn {
+//     // width: 60px;
+//     padding:0 6px;
+//     height: 28px;
+//     background: #e5e9ec;
+//     font-weight: 400;
+//     color: #505766;
+//     line-height: 18px;
+//     font-size: 12px;
+//     font-family: PingFangSC-Regular, PingFang SC;
+//     border-radius: 4px;
+//   }
+//   .ant-btn-primary {
+//     // width: 60px;
+//     padding:0 6px;
+//     height: 28px;
+//     background: #5b95f4;
+//     font-size: 12px;
+//     font-family: PingFangSC-Regular, PingFang SC;
+//     font-weight: 400;
+//     color: #ffffff;
+//     line-height: 18px;
+//     border-radius: 4px;
+//   }
+// }
+.ant-table-body {
+  //数据位超出时不出现滚动条
+  // overflow: auto !important;
+}
+#__qiankun_microapp_wrapper_for_business_application__ {
+  height: 100%;
+}
+#__qiankun_microapp_wrapper_for_legox_mobile__{
+  height: 100%;
+  #root-master{
+    padding-right: 0px;
+  }
+}
+
+/*整个滚动条加上以后会影响整体tabel样式*/
+::-webkit-scrollbar {
+  //width: 6px;
+  //height: 6px;
+  //background-color: #fff;
+}
+
+/*定义滚动条轨道*/
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/*定义滑块*/
+
+::-webkit-scrollbar-thumb {
+  background-color: #cdd9e6;
+  border-radius: 4px;
+}

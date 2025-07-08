@@ -1,0 +1,108 @@
+.common_style(@width: 225px, @height: 220px, @background-image: url('../../public/assets/backgroundImage/userInfoManagementBg.svg')) {
+  width: @width;
+  height: @height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-image: @background-image;
+  background-repeat: no-repeat;
+  background-size: @width @height;
+}
+
+.common_icon_style(@width, @height) {
+  width: @width;
+  height: @height;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform-origin: 0 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: 0.1s;
+
+  span {
+    height: 28px;
+    font-size: 20px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 28px;
+    z-index: 99;
+  }
+
+  .main1 {
+    p:nth-child(1) {
+      .common_style(@background-image: url("../../public/assets/backgroundImage/userInfoManagementBg.svg"));
+      margin-bottom: 25px;
+      margin-right: 24px;
+
+      img {
+        .common_icon_style(82px, 82px);
+      }
+    }
+
+    p:nth-child(2) {
+      .common_style(@background-image: url("../../public/assets/backgroundImage/workflowEngineBg.svg"));
+
+      img {
+        .common_icon_style(66px, 71px);
+      }
+    }
+  }
+
+  .main2 {
+    .common_style(279px, 467px, url("../../public/assets/backgroundImage/unitRoleBg.svg"));
+    margin-right: 23px;
+
+    img {
+      .common_icon_style(91px, 91px);
+    }
+  }
+
+  .main3 {
+    div:nth-child(1) {
+      .common_style(474px, 220px, url("../../public/assets/backgroundImage/formEngineBg.svg"));
+      margin-bottom: 25px;
+
+      img {
+        .common_icon_style(63px, 63px);
+      }
+    }
+
+    div:nth-child(2) {
+      display: flex;
+
+      p:nth-child(1) {
+        .common_style(@background-image: url("../../public/assets/backgroundImage/applyModelBg.svg"));
+
+        img {
+          .common_icon_style(56px, 69px);
+        }
+
+        margin-right: 24px;
+      }
+
+      p:nth-child(2) {
+        .common_style(@background-image: url("../../public/assets/backgroundImage/onlineUserMonitoringBg.svg"));
+
+        img {
+          .common_icon_style(65px, 66px);
+        }
+      }
+    }
+  }
+}
+.home_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}

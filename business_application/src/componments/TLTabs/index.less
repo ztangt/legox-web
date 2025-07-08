@@ -1,0 +1,40 @@
+.tabs{
+  height: 100%;
+  :global{
+    .ant-tabs-nav{
+      height:40px;
+      background-color: #F5F5F5;
+      margin-top: 8px;
+      padding-left: 39px;
+    }
+    .ant-tabs-bottom>.ant-tabs-nav:before, .ant-tabs-bottom>div>.ant-tabs-nav:before, .ant-tabs-top>.ant-tabs-nav:before, .ant-tabs-top>div>.ant-tabs-nav:before {
+      position: absolute;
+      right: 0;
+      left: 0;
+      border-bottom: 0px solid rgba(0,0,0,.06);
+      content: "";
+    }
+    .ant-tabs-bottom>.ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-bottom>div>.ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-top>.ant-tabs-nav .ant-tabs-ink-bar, .ant-tabs-top>div>.ant-tabs-nav .ant-tabs-ink-bar {
+      width: 32px !important;
+      height: 3px;
+      border-radius: 2px;
+      position: absolute;
+      left: 50%;
+    }
+    .ant-tabs>.ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs>div>.ant-tabs-nav .ant-tabs-nav-wrap {
+      width:auto;
+      height: 40px;
+    }
+    .ant-tabs-tab+.ant-tabs-tab {
+      margin: 0 0 0 24px;
+      color: #505766;
+      padding: 10px 0;
+    }
+    .ant-tabs-tab:hover {
+      background-color: #F5F5F5 !important;
+    }
+    .ant-tabs > .ant-tabs-nav{
+      height: unset;
+    }
+  }
+}

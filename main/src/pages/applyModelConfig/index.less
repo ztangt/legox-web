@@ -1,0 +1,626 @@
+@import '~antd/dist/antd.variable.min.css';
+.config_warp{
+  padding:0px 8px;
+  background: #FFFFFF;
+  height: 100%;
+  // overflow: auto;
+  :global{
+    .ant-tabs-content-holder{
+      height: calc(100vh - 48px - 36px - 16px - 46px - 16px - 45px);
+      overflow: auto;
+    }
+    .ant-tabs-content {
+      height: 100%;
+      position: static;
+    }
+    .ant-tabs-tabpane-active{
+      height: 100%;
+    }
+   }
+  .form_auth{
+    :global{
+      .ant-tabs-content-holder{
+        height:100% !important;
+        overflow: hidden;
+      }
+    }
+  }
+  .basicAttribute_form{
+    
+    :global{
+      .ant-input-number{
+        height:32px;
+      }
+      .ant-input-number:hover,.ant-input-number:focus{
+        border-color: #505766;
+      }
+      .ant-input-number-input{
+        height:30px;
+      }
+      .ant-form-item-label{
+        width: unset;
+      }
+    }
+  }
+  // .head{
+  //   font-size: 16px;
+  //   .tab{
+  //     color: #1890ff;
+  //     border-bottom: 1px solid #1890ff;
+  //     cursor: pointer;
+  //   }
+  //   .current_tab{
+  //     border-bottom: 0px;
+  //     color: rgba(0, 0, 0, 0.85);
+  //   }
+  // }
+  // .content{
+  //   border:1px solid rgba(0, 0, 0, 0.85);
+  //   height: 100vh;
+  //   margin-top: 10px;
+  //   margin-bottom: 10px;
+  // }
+}
+.other{
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.fontSize7{
+  font-size: 12px;
+  svg{
+      font-size: 12px;
+  }
+}
+.flowWarp{
+  overflow: auto;
+  // ul{
+  //   padding: 10px 20px;
+  //   li{
+  //     height: 40px;
+  //     line-height: 40px;
+  //     display: flex;
+  //     >p{
+  //       width: 20%;
+  //     }
+  //     >div{
+  //       width: 40%;
+  //     }
+  //   }
+  // }
+  .modalStyle,.ulStyle{
+    width: 100px;
+    // height: 90px;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    li{
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 1px solid #ccc;
+      font-size: 13px;
+      text-align: center;
+      p{
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    li:last-child{
+      border:0
+    }
+  }
+  .imgStr{
+    height: calc(100% - 60px);
+    .canvasNode{
+      height: 100% !important;
+      .bjs-container{
+        height: 100% !important;
+      }
+    }
+  }
+}
+.eventHandler{
+  padding: 10px;
+  .eventWarp{
+    height: 380px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      height: 6px;
+      width: 0px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #c3c3c3;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 0;
+    }
+    >div{
+      display: flex;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      >ul{
+        width: 76%;
+        li{
+          height: 30px;
+          line-height: 30px;
+          padding: 0 10px;
+          display: flex;
+          border-bottom: 1px solid #ccc;
+          >p{
+            width: 50%;
+            text-align: center;
+          }
+          >p:first-child{
+            border-right: 1px solid #ccc;
+          }
+        }
+        li:last-child{
+          border:0
+        }
+        li:nth-child(1){
+          border-bottom: 1px solid #ccc;
+        }
+      }
+      >div{
+        width: 24%;
+        min-height: 60px;
+        border-right: 1px solid #ccc;
+        >p{
+          text-align: center;
+        }
+      }
+    }
+  }
+
+
+}
+.node_button{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  background: #fff;
+  border-radius: 0 0 2px 2px;
+  border-top: 1px solid #f0f0f0;
+  padding: 10px 16px;
+  text-align: right;
+  &>button{
+    margin-right: 8px;
+    width: auto !important;
+    background: #e5e9ec;
+    font-weight: 400;
+    color: #505766;
+    border-color: #e5e9ec;
+    line-height: 18px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    border-radius: 4px;
+    &:first-child{
+      height: 26px;
+      line-height: 26px;
+      border: none;
+      background-color: #e5e9ec !important;
+      color: #505766 !important;
+    }
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+  :global{
+    .ant-btn-primary{
+      height: 28px;
+      background: var(--ant-primary-color)!important;
+      border-color: var(--ant-primary-color) !important;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      line-height: 18px;
+      color: #fff!important;
+    }
+  }
+}
+.marginBottom8{
+  margin-bottom: 8px;
+}
+.gateway{
+  height: calc(100% - 49px);
+  .ulClass{
+    height: 130px;
+    overflow: auto;
+    padding: 0;
+    &::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #c3c3c3;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 0;
+    }
+    >li{
+      min-height: 30px;
+      line-height: 30px;
+      display: flex;
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      .divLeft{
+        width: 15%;
+        text-align: center;
+        border-right: 1px solid #ccc;
+      }
+      .divContent{
+        width: 75%;
+        text-align: center;
+        border-right: 1px solid #ccc;
+      }
+      .divRight{
+        width: 10%;
+        text-align: center;
+      }
+    }
+    // >li:last-child{
+    //   border:0
+    // }
+    >li:nth-child(1){
+      border-top: 1px solid #ccc;
+    }
+  }
+}
+.versionsCutStyle{
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  &::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: #c3c3c3;
+  }
+  &::-webkit-scrollbar-track {
+      border-radius: 0;
+  }
+  .mainVersion{
+    color: var(--ant-primary-color);
+    font-size: 12px;
+  }
+}
+.orgTreeStyle{
+  height: calc(100% - 52px);
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  >div{
+    >p{
+      color: #03A4FF;
+      line-height: 33px;
+      border-bottom: 1px solid #464D5B;
+    }
+    >div{
+      height:calc(100% - 33px);
+      padding: 10px;
+      border-right: 1px solid #ccc;
+    }
+  }
+  .opration{
+    width: 100%;
+    height: 32px;
+    text-align: right;
+    &>span{
+      margin-right: 16px;
+    }
+  }
+}
+.scrollbarStyle{
+  overflow:auto;
+  &::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: #c3c3c3;
+  }
+  &::-webkit-scrollbar-track {
+      border-radius: 0;
+  }
+}
+
+.user_warp{
+  height: 448px;
+  padding-right: 10px;
+  position: relative;
+  margin-top: 16px;
+  // overflow:auto;
+  border-bottom: 1px solid #ccc;
+  .split_line{
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: #464D5B;
+    top: 22px;
+    z-index: 1;
+    height: 1px;
+  }
+  .left_org_tree{
+    white-space:nowrap;
+    .title{
+      display: block;
+      color: #03A4FF;
+    }
+    .content{
+      margin-top: 12px;
+      overflow-y: scroll;
+      height: 410px;
+    }
+  }
+  .await_select_list{
+    .title{
+      display: block;
+      color: #03A4FF;
+    }
+    .content{
+      overflow:auto;
+      height: 410px;
+      margin-top: 12px;
+      white-space:nowrap;
+      &>span{
+        margin-bottom: 12px;
+      }
+      .check_box_middle{
+        :global{
+          .ant-checkbox + span{
+            white-space: nowrap;  /*强制span不换行*/
+            width: 100%;  /*限制宽度*/
+          }
+        }
+      }
+      .check_box_user{
+        :global{
+          .ant-checkbox-wrapper{
+            position: relative;
+          }
+          .ant-checkbox + span{
+            white-space: nowrap;  /*强制span不换行*/
+            width: 100%;  /*限制宽度*/
+            position:absolute;
+          }
+        }
+      }
+    }
+  }
+  .select_list{
+    .title{
+      display: block;
+      color: #03A4FF;
+    }
+    .list{
+      padding-left: 20px;
+      height: 410px;
+      .opration{
+        width: 100%;
+        height: 32px;
+        text-align: right;
+        &>span{
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+.event_bt{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+
+}
+.bt{
+  width: 80px;
+  border-radius: 4px;
+  height: 28px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+.bt_act{
+  width: 80px;
+  border-radius: 4px;
+  height: 28px;
+  font-size: 12px;
+  margin-right: 8px;
+  width: auto;
+  max-width: 350px;
+  span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.div_act{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.org_table{
+  height: 100%;
+  &>div{
+    height: 100%;
+  }
+  :global{
+    .ant-table-wrapper{
+      height: calc(100% - 48px);
+    }
+
+    .ant-table-cell-ellipsis{
+      overflow: unset;
+    }
+  }
+  .popover_style{
+    position: absolute;
+    :global{
+      .ant-popover-inner-content{
+        padding:4px;
+        font-size: 12px;
+        color: red;
+        height: 32px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+//基本信息
+.input_number_row{
+  :global{
+    .ant-input-number-handler-wrap{
+      display: none;
+    }
+  }
+}
+.canvasHeight{
+  height: 100%;
+  flex:1;
+}
+.canvasBg {
+  height: 100% !important;
+  position: relative !important;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImEiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgMTBoNDBNMTAgMHY0ME0wIDIwaDQwTTIwIDB2NDBNMCAzMGg0ME0zMCAwdjQwIiBmaWxsPSJub25lIiBzdHJva2U9IiNlMGUwZTAiIG9wYWNpdHk9Ii4yIi8+PHBhdGggZD0iTTQwIDBIMHY0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZTBlMGUwIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2EpIi8+PC9zdmc+")
+  repeat !important;
+}
+.canvasView{
+  .djs-outline{
+    stroke: white !important;
+  }
+}
+.canvasNode{
+  .djs-outline{
+    stroke: white !important;
+  }
+}
+.bjs-breadcrumbs{
+  display: none !important;
+}
+.bjs-powered-by{
+  display: none;
+}
+.reuse{
+  width: 100%;
+  height: 100%;
+  // height: calc(100% - 88px);
+  // overflow: hidden;
+  // scrollbar-width: none; /* Firefox */
+  // -ms-overflow-style:none; /* IE10+ */
+  // &::-webkit-scrollbar{
+  //   display:none; /* ChromeSafari */
+  // }
+}
+.table_warp{
+  overflow: hidden;
+  height:100%;
+  margin-left: 6px;
+}
+
+
+.highlight .djs-visual > :nth-child(1) {
+  stroke: rgb(103, 241, 103) !important;
+  fill: rgba(4, 209, 4, 0.4) !important;
+}
+
+
+.highlight-0 .djs-visual > :nth-child(1) {
+  stroke: black !important;
+}
+.highlight-1 .djs-visual > :nth-child(1) {
+  stroke: black !important;
+  fill: #f8f8f8 !important;
+}
+.highlight-2 .djs-visual > :nth-child(1) {
+  stroke: black !important;
+  fill: #cff5fa !important;
+}
+.highlight-3 .djs-visual > :nth-child(1) {
+  stroke: black !important;
+  fill: #d7f6ce !important;
+}
+
+/* 连线 */
+/* .highlight-20 .djs-visual > :nth-child(1) {
+  stroke: black !important;
+}
+.highlight-23 .djs-visual > :nth-child(1) {
+  stroke: green !important;
+}
+.highlight-24 .djs-visual > :nth-child(1) {
+  stroke: red !important;
+} */
+.select_edit_row{
+  background: var(--ant-primary-1);
+}
+//节点设置中的弹框样式
+.flowWarp{
+  .classNodeAttribute{
+    height: 100%;
+    .form_auth___dPTQl{
+      height: 100%;
+      &>div:nth-child(2){
+        &>div{
+          height: 100%;
+          overflow: hidden;
+          &>div{
+            height: 100%;
+            //办理人样式
+            .classNodeAttribute{
+              &>div{
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//操作权限的样式
+.opration_auth{
+  height: 100%;
+  &>div{
+    height: 100%;
+  }
+}
+//节点按钮权限的样式
+// .node_button_auth{
+//   :global{
+//     .ant-table-wrapper{
+//       height: calc(100% - 49px);
+//     }
+//   }
+// }
+//办理人的保存
+.host_warp{
+  .bt_group{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0 0 2px 2px;
+    border-top: 1px solid #f0f0f0;
+    padding: 10px 16px;
+    text-align: right;
+  }
+}
+//基本设置的节点
+.operations{
+  width: 200px;
+  //不换行
+  :global{
+    .ant-select-tree-title{
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+// 一些页面中公共样式可以些这里 最好antd样式不要写这里
+.common_container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: relative;
+    padding: 16px 0;
+}
+.header {
+    display: flex;
+    font-size: 14px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+//解决form里面的select多余内容显示省略号的问题
+.no_ellipsis_select {
+    :global {
+        //根据ui修改样式
+        .ant-form-item-label {
+            width: auto !important;
+        }
+        .ant-form-item-label > label {
+            max-width: 100px;
+            margin: 0 8px;
+            &:after {
+                display: none;
+            }
+        }
+        .ant-form-item-no-colon {
+            min-width: auto !important;
+        }
+
+        .ant-form-item {
+            width: 360px;
+            margin-right: 8px !important;
+        }
+        .ant-select-selection-placeholder {
+            height: 30px;
+        }
+        .ant-select-selector {
+            height: fit-content !important;
+        }
+        .ant-select-selection-item {
+            white-space: normal !important;
+            height: fit-content !important;
+            overflow: auto;
+            line-height: initial !important;
+            padding-bottom: 4px !important;
+            padding-top: 4px !important;
+            min-height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .ant-select-item-option-content {
+            white-space: normal !important;
+            height: fit-content !important;
+        }
+    }
+}
+//根据ui修改form的样式
+.ui_form_box {
+    :global {
+        //根据ui修改样式
+        .ant-form-item-label {
+            width: auto !important;
+        }
+        .ant-form-item-label > label {
+            max-width: 100px;
+            margin: 0 8px;
+            &:after {
+                display: none;
+            }
+        }
+        .ant-form-item-no-colon {
+            min-width: auto !important;
+        }
+        .ant-form-item {
+            width: 360px;
+            margin-right: 8px !important;
+        }
+    }
+}

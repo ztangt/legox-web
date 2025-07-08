@@ -1,0 +1,78 @@
+.follow {
+  // width: 100%;
+  height: calc(100% - 16px);
+  margin: -6px 16px 16px 16px;
+  padding-top: 8px;
+  background: #ffffff;
+  border-radius: 6px;
+  // font-family: PingFangSC-Regular, PingFang SC;
+
+  .header {
+    // padding: 10px;
+
+    :global {
+      .ant-tabs-nav-wrap {
+        padding: 0 16px;
+        background: #F5F5F5;
+      }
+      .ant-tabs-tab:first-child {
+        border-left: none !important;
+      }
+    }
+
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 96px;
+      height: 32px;
+      background: #eff3fe;
+      border-radius: 8px;
+      cursor: pointer;
+
+      p {
+        // margin-top: 12px;
+        margin-right: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+      }
+    }
+  }
+}
+
+.title {
+  cursor: pointer;
+
+  a {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 17px;
+    border-radius: 50%;
+  }
+
+  .color0 {
+    color: #ffffff;
+    background: var(--ant-primary-color);
+  }
+
+  .color1 {
+    color: #ffffff;
+    background: var(--ant-primary-5);
+  }
+
+  .color2 {
+    color: #ffffff;
+    background: var(--ant-primary-3);
+  }
+}
+
+.table_wrapper {
+  // padding: 0 20px;
+}

@@ -1,0 +1,91 @@
+.box_container {
+    .content {
+        .left_cont {
+            .header {
+                display: flex;
+                align-items: center;
+                width: 220px;
+                padding: 8px 0;
+                .tree_over {
+                    overflow: auto;
+                }
+            }
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .content_center {
+            height: 100%;
+            overflow: hidden;
+            .content_box {
+                height: 55%;
+                overflow: hidden;
+                .cont_tree {
+                    border-right: 1px solid rgb(189, 186, 186);
+                    height: 100%;
+                    // overflow-y: auto;
+                    .cont_tree_org {
+                        height: 100%;
+                        .tree_it {
+                            // width: 260px;
+                            height: 96%;
+                            overflow: auto;
+                        }
+                    }
+                }
+                .dept_unit {
+                    padding-left: 8px;
+                    height: 95%;
+                    .check_all {
+                        margin-top: 16px;
+                        overflow: auto;
+                        // width: 238px;
+                        height: 86%;
+                        :global {
+                            .ant-checkbox-group {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer {
+                height: 40%;
+                .footer_box {
+                    height: 100%;
+                    .footer_header {
+                        display: flex;
+                        justify-content: space-between;
+                        border-top: 1px solid rgb(213, 212, 212);
+                        border-bottom: 1px solid rgb(213, 212, 212);
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        span {
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+                    }
+                    .table_column {
+                        // height: 90%;
+                        max-height: 230px;
+                        overflow: auto;
+                    }
+                }
+            }
+        }
+        .right_cont {
+            margin-left: 8px;
+            height: 80%;
+            .tree_it {
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+            }
+            .save {
+                margin-top: 16px;
+                margin-left: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.title {
+  background: rgb(121, 242, 157);
+}
+.design_setting_wrap {
+  :global {
+    .ant-input-affix-wrapper {
+      padding: 1px 8px;
+      border-radius: 4px;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      border-radius: 4px;
+    }
+    .ant-input-number {
+      border-radius: 4px;
+    }
+    .ant-btn {
+      height: 32px;
+    }
+    .dn-collapse-item-content {
+      padding-top: 0px;
+    }
+    .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+      border-color: #505766;
+    }
+    .ant-switch-checked {
+      background-color: var(--ant-primary-color);
+    }
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      border-color: var(--ant-primary-color);
+      color: var(--ant-primary-color);
+    }
+    .ant-radio-button-wrapper-checked:not([class*=' ant-radio-button-wrapper-disabled']).ant-radio-button-wrapper:first-child {
+      border-right-color: var(--ant-primary-color);
+    }
+    .ant-radio-button-wrapper:focus-within {
+      box-shadow: 0 0 0 3px var(--ant-primary-color-deprecated-f-12);
+    }
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+      background-color: var(--ant-primary-color);
+    }
+    .ant-radio-button-wrapper:hover {
+      color: var(--ant-primary-color);
+    }
+    .ant-slider-handle {
+      border-color: var(--ant-primary-3);
+    }
+    .ant-slider-track {
+      background-color: var(--ant-primary-3);
+    }
+    .ant-slider:hover .ant-slider-track {
+      background-color: var(--ant-primary-4);
+    }
+    .ant-slider:hover .ant-slider-handle:not(.ant-tooltip-open) {
+      border-color: var(--ant-primary-4);
+    }
+    .ant-slider-handle .ant-tooltip-open {
+      border-color: var(--ant-primary-color);
+    }
+    .ant-slider-handle:focus {
+      border-color: var(--ant-primary-color-deprecated-t-20);
+      outline: none;
+      box-shadow: 0 0 0 5px var(--ant-primary-color-deprecated-f-12);
+    }
+    .ant-input-number-handler:hover .ant-input-number-handler-up-inner,
+    .ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+      color: var(--ant-primary-5);
+    }
+    .ant-switch:focus {
+      box-shadow: 0 0 0 2px var(--ant-primary-1);
+    }
+    --antd-wave-shadow-color: var(--ant-primary-color);
+  }
+}

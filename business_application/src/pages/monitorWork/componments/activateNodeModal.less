@@ -1,0 +1,58 @@
+.nodes_check{
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+.manage{
+  display: flex;
+  flex-wrap: wrap;
+  >div{
+    width: 33.33%;
+    display: flex;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    >p{
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+    :first-child{
+      width: 40%;
+    }
+    :last-child{
+      width: 60%;
+    }
+  }
+  >div :first-child{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+}
+.table{
+  border-top: 1px solid #505766;
+  .title{
+    color: #588CE9;
+    cursor: pointer;
+  }
+}
+.handle_detail{
+  :global{
+    .ant-form-item-control-input-content{
+      color:#333333;
+    }
+    .ant-row {
+      height: 22px;
+      margin-bottom: 8px;
+  }
+  }
+}
+.title_detail{
+  text-align: center;
+  font-weight: bolder;
+  margin:8px 0 8px 0;
+}
+.ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

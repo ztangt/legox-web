@@ -1,0 +1,71 @@
+.wage_decom {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        flex: 1;
+        .left {
+            width: 40%;
+            float: left;
+            padding-right: 8px;
+            .table_title {
+                border: 1px solid rgba(0, 0, 0, 0.06);
+                & > span:nth-child(1) {
+                    border-right: 1px solid rgba(0, 0, 0, 0.06);
+                    display: inline-block;
+                }
+                & > span:nth-child(2) {
+                    width: 40%;
+                    display: inline-block;
+                }
+            }
+        }
+        .right {
+            width: 60%;
+            float: right;
+        }
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: left;
+            border-color: rgba(0, 0, 0, 0.06);
+            tr {
+                // width: 100%;
+                height: 40px;
+                text-align: center;
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+                word-break: break-all;
+            }
+            tbody {
+                display: block;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            // thead{
+            //   display: block;
+            //   width: calc(100% - 6px);
+            // }
+            // thead,tbody tr {
+            //           display: table;
+            //           width: 100%;
+            //           table-layout: fixed;
+            //           word-break: break-all;
+            //       }
+            .background {
+                background-color: #fafafa;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+.opration_td {
+    a {
+        cursor: pointer;
+        padding-right: 6px;
+    }
+}

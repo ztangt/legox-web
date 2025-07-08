@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="71px" viewBox="0 0 66 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>路径</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#CFF4FE" offset="0%"></stop>
+            <stop stop-color="#00D4FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-368.000000, -519.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="编组" transform="translate(352.000000, 463.000000)">
+                <g id="流程设计器-填充" transform="translate(16.000000, 56.000000)">
+                    <polygon id="路径" points="66 21.8461538 66 0 22 0 22 5.46153846 5.5 5.46153846 5.5 38.2307692 35.0625 38.2307692 44 47.1057692 52.9375 38.2307692 60.5 38.2307692 60.5 60.0769231 44 60.0769231 44 49.1538462 0 49.1538462 0 71 44 71 44 65.5384615 66 65.5384615 66 32.7692308 52.9375 32.7692308 44 23.8942308 35.0625 32.7692308 11 32.7692308 11 10.9230769 22 10.9230769 22 21.8461538"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

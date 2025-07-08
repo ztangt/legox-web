@@ -1,0 +1,130 @@
+@8px: 0.57rem; // 8px
+@12px: 0.85rem; //12px;
+@14px: 1rem; //14px;
+@24px: 1.71rem; // 左右24px
+@20px: 1.42rem; // 20px
+@72px: 5.14rem; // 72px 
+@26px: 1.85rem; 
+@30px: 2.14rem;
+@10px: 0.71rem;
+@36px: 2.57rem;
+@15px: 1.07rem;
+@13px: 0.93rem;
+@54px: 3.86rem;
+@16px: 1.142rem;
+@4px: 0.286rem;
+@154px: 11rem;
+@32px: 2.284rem;
+@6px: 0.429rem;
+@56px: 4rem;
+@28px: 2rem;
+@45px: 3.21rem;
+
+.calendar_detail{
+    background: #F5F5F5;
+    border-top: 1px solid transparent;
+    padding: @12px;
+    .detail{
+        // width: 100%;
+        // height: 100%;
+        background: #fff;
+        border-radius: 8px;
+        .theme,.relation_user,.address,.importance,.starTime,.endTime,.message_type,.message_time{
+            display: flex;
+            justify-content: space-between;
+            padding: @12px;
+            font-size: @16px;
+            color: #333333;
+            border-bottom: 1px solid #E6E6E6;
+            .validate{
+                color:#FF0000;
+            }
+            .time_select{
+                display: flex;
+                align-items: center;
+                .select{
+                    margin-left: @12px;
+                    img{
+                        width: @14px;
+                        height: @8px;
+                        transform: rotate(-90deg);
+                        margin-bottom: 2px;
+                    }
+                }    
+            }
+            .select{
+                margin-left: @12px;
+                img{
+                    width: @14px;
+                    height: @8px;
+                    transform: rotate(-90deg);
+                    margin-bottom: 2px;
+                }
+            } 
+        }
+        .theme_name,.address_name{
+            width: 15%;
+        }
+        .theme_input,.address_select{
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 85%;
+            .name{
+                width: 90%;
+                display: inline-block;
+                text-align: right;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        .scheduler_detail{
+            padding: @12px;
+            font-size: @16px;
+            color: #333333;
+            .text_input{
+                margin-top: @8px;
+                :global{
+                    .adm-text-area{
+                        background: #F2F2F2;
+                        border-radius: 8px;
+                        padding: @8px @8px @8px @12px;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+        
+    }
+    .save{
+        width: 100%;
+        height: @45px;
+        background: #198FFF;
+        border-radius: @8px;
+        color: #fff;
+        font-size: @16px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: @12px;
+    }
+    :global{
+        .adm-popup-body{
+            border-top-left-radius: 0;
+            border-top-right-radius:0;
+        }
+        .adm-action-sheet-button-item{
+            padding: @12px;
+        }
+        .adm-action-sheet-cancel{
+            .adm-action-sheet-button-item{
+                padding-bottom: @36px;
+            }
+        }
+    }   
+} 
+

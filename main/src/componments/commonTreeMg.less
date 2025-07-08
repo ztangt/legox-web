@@ -1,0 +1,75 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 4px;
+    // &>div{
+    //     height: 100%;
+        // &>div{
+        //     height: 100%;
+        // }
+    // }
+    // :global{
+    //     .left___ou89_{
+    //         overflow-y:visible !important ;
+    //     }
+    // }
+}
+.tree{
+    padding-top: 8px;
+    height:100%;
+    overflow: hidden;
+    // .tree_list{
+    //     margin-top: 40px;
+    //     height: calc(100% - 40px);
+    //     overflow: auto;
+    // }
+    .tree_search{
+        margin-right: 40px;
+        height: 32px;
+        background: #FFFFFF;
+        width: 205px;
+        position:absolute;
+        z-index: 99;
+    }
+    .tree_list_user{
+        overflow: auto;
+        margin-top: 14px;
+        height: calc(100% - 60px);
+        position: absolute;
+    }
+    
+}
+.table{
+    padding-top: 8px;
+    padding-right: 8px;
+    height: 100%;
+    :global{
+        .ant-table-body{
+          height:100%
+        }
+      }
+}
+.edit{
+    display: none !important;
+}
+.tree_node:hover .edit{
+    display: inherit !important;
+    margin-left: 8px;
+}
+
+
+
+.siteTreeSearchValue{
+    background: rgba(255,235,117);
+}
+.content_tree{
+    height: calc(100% - 48px);
+    overflow: auto;
+    margin-top: 40px;
+}
+
+
+
+
+

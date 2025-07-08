@@ -1,0 +1,619 @@
+// @import '~antd/dist/antd.variable.min.css';
+// @import url('./table.less');//会继承父项目的global.less
+// @import url('./btn.less');//会继承父项目的global.less
+@import url('./input.less');
+@import url('./calendar.less');
+@media screen and (min-width: 210px) and (max-width: 560px) {
+  .ant-image-preview-operations-progress {
+    position: absolute;
+    left: 10% !important;
+    transform: translate(-10%) !important;
+  }
+}
+// p,
+// h1,
+// h2,
+// h3,
+// ul,
+// li,
+// dl,
+// dt,
+// dd,
+// ol,
+// body,
+// input,
+// legend,
+// fieldset,
+// i,
+// nav,
+// header,
+// div,
+// footer {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+// #__qiankun_microapp_wrapper_for_designable__ {
+//   height: 100%;
+//   overflow: hidden;
+// }
+[id^='__qiankun_microapp_wrapper_for_designable'] {
+  height: 100%;
+  overflow: hidden;
+  //单位，人员，部门的组建样式
+  .user_select {
+    .ant-input {
+      height: 100%;
+    }
+    .ant-input-suffix {
+      & > span {
+        margin-left: 8px;
+        margin-right: 0px;
+      }
+    }
+    .ant-input-clear-icon-has-suffix {
+      font-size: 14px;
+    }
+  }
+  //标签可以设置padding，里面的mating 就不用了
+  .ant-formily-item-label-content {
+    margin: 0px;
+  }
+}
+#root-master {
+  height: 100%;
+  overflow: auto;
+  // padding-right: 10px; //为了滚动条不遮挡
+}
+//全局布局样式
+//弹框底部按钮样式
+.ant-modal-wrap
+  .ant-modal-confirm
+  .ant-modal-confirm-btns
+  .ant-btn:nth-child(1) {
+  margin-left: 0px;
+}
+// .ant-btn {
+//   padding: 0px;
+// }
+//end
+// .ant-formily-item {//TODO 先注释掉
+//   height: 100%;
+// }
+.rule_red_warp {
+  //规则定义错误标红
+  background-color: #fff4f2 !important;
+  .ant-input-affix-wrapper {
+    background-color: initial;
+  }
+  .ant-select-selector {
+    background-color: initial !important;
+  }
+}
+.ant-layout {
+  .ant-modal-wrap {
+    position: absolute !important;
+    // top: 0px !important;//TODO 先注释掉
+    background-color: rgba(0, 0, 0, 0.45);
+    // overflow: unset;
+  }
+}
+.ant-formily-item-control-content {
+  height: 100%;
+}
+//右侧组件的图标样式
+.custom-icon {
+  svg {
+    color: #d9d9d9;
+    margin: 12px 0px;
+    // width: 150px;
+    // height: 40px;
+    pointer-events: none;
+    font-size: 40px;
+  }
+}
+.ant-table-header,
+.ant-table-thead,
+.ant-table-content {
+  border-top: none;
+}
+
+// .ant-table-cell.ant-table-cell-fix-left.ant-table-cell-fix-left-last {
+//   text-align: center !important;
+//   padding-left: 0px !important;
+// }
+.ant-table-thead > tr > th[colspan]:not([colspan='1']) {
+  text-align: unset;
+}
+//modal弹框按钮
+.ant-modal-footer .ant-btn:nth-child(2) {
+  // color: var(--ant-primary-color) !important;
+  // border-radius: 4px !important;
+  // // font-size: 12px !important;
+  // padding: 0px 12px !important;
+}
+.dn-component-tree {
+  .ant-select-selector,
+  .ant-input,
+  .user_select,
+  .ant-input-affix-wrapper-textarea-with-clear-btn,
+  .ant-input-number-input {
+    background: inherit !important;
+    background-color: inherit !important;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: inherit;
+  }
+}
+//用于规则定义中input继承背景颜色
+.preview_warp {
+  //此处尽量不加特殊的样式，这里的修改的控件样式在弹窗中也需要
+  // margin-left: 10px; //表单居中
+  .ant-tabs-bottom > .ant-tabs-nav,
+  .ant-tabs-bottom > div > .ant-tabs-nav,
+  .ant-tabs-top > .ant-tabs-nav,
+  .ant-tabs-top > div > .ant-tabs-nav {
+    margin: 0px 0px 10px 0px;
+  }
+  .decorator_hidden {
+    display: none !important;
+  }
+  // .ant-formily-item-label {
+  //   display: none;
+  // }
+  // .ant-input {
+  //   background-color: inherit !important;
+  //   color: inherit;
+  //   font-size: inherit;
+  //   font-family: inherit;
+  //   text-decoration: inherit;
+  //   font-weight: inherit;
+  //   font-style: inherit;
+  //   text-align: inherit;
+  // }
+  //用于规则定义中select继承背景颜色
+
+  .ant-select-selector,
+  .ant-input,
+  .user_select,
+  .ant-input-affix-wrapper-textarea-with-clear-btn,
+  .ant-input-number-input {
+    background: inherit; //暂时去掉跟规则定义中有冲突
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: inherit;
+  }
+  .ant-select-selector {
+    .ant-select-selection-placeholder {
+      font-size: 14px;
+      color: #cccccc;
+    }
+  }
+
+  // .ant-cascader .ant-select-selector {//直接放到控件中定义
+  //   border-radius: 4px !important;
+  //   border: none !important;
+  //   height: 30px !important;
+  // }
+  .ant-input-suffix > :not(:last-child) {
+    margin-right: 0px;
+  }
+  .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+    font-size: 14px;
+  }
+
+  .popover-help {
+    // top: -36px !important;
+    // top: 10px !important;
+    z-index: 999;
+    // left: unset !important;
+    // right: 1px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 12px;
+    // max-width: 65%;
+    .ant-popover-inner-content {
+      padding: 2px;
+      font-size: 12px;
+      background-color: rgba(255, 77, 79, 0.15);
+    }
+    .ant-popover-arrow-content {
+      // display: none;
+    }
+    .ant-formily-item-help {
+      line-height: 16px;
+      min-height: 16px;
+    }
+    .ant-popover-arrow-content:before {
+      background-color: rgba(255, 77, 79, 0.15);
+    }
+  }
+
+  // .ant-formily-item-help {
+  //   bottom: -18px;
+  //   background: inherit !important;
+  //   box-shadow: none !important;
+  //   position: absolute;
+  //   z-index: 2;
+  //   font-size: 12px;
+  // }
+  // .ant-formily-item-help{
+  //   top: 40% !important;
+  //   background: inherit !important;
+  //   box-shadow: none !important;
+  // }
+  p {
+    margin: 0;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--ant-primary-color);
+  }
+  .ant-tabs-tab:hover {
+    color: var(--ant-primary-color);
+  }
+  .ant-tabs-ink-bar {
+    background-color: var(--ant-primary-color);
+  }
+  .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon {
+    background-color: var(--ant-primary-color);
+  }
+  .ant-steps
+    .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process)
+    > .ant-steps-item-container[role='button']:hover
+    .ant-steps-item-icon {
+    border-color: var(--ant-primary-color);
+  }
+  .ant-steps
+    .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process)
+    > .ant-steps-item-container[role='button']:hover
+    .ant-steps-item-icon
+    .ant-steps-icon {
+    color: var(--ant-primary-color);
+  }
+  .ant-steps
+    .ant-steps-item:not(.ant-steps-item-active)
+    > .ant-steps-item-container[role='button']:hover
+    .ant-steps-item-title,
+  .ant-steps
+    .ant-steps-item:not(.ant-steps-item-active)
+    > .ant-steps-item-container[role='button']:hover
+    .ant-steps-item-subtitle,
+  .ant-steps
+    .ant-steps-item:not(.ant-steps-item-active)
+    > .ant-steps-item-container[role='button']:hover
+    .ant-steps-item-description {
+    color: var(--ant-primary-color);
+  }
+  .ant-steps-item-process .ant-steps-item-icon {
+    border-color: var(--ant-primary-color);
+  }
+}
+.portal_wrap {
+  .ant-formily-item-label {
+    display: none;
+  }
+}
+//树不换行
+.ant-select-tree-node-content-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ant-formily-item-control-content-component {
+  line-height: 0px !important;
+  // height: 32px !important;
+}
+// .dn-aux-selector button {
+//   background-color: unset;
+// }
+// .dn-aux-helpers button {
+//   background-color: unset;
+// }
+.ant-formily-item {
+  width: 100%;
+  //overflow: hidden;//这个会影响设计态的组建样式的展开和收起
+  // align-self: center;
+  // justify-self: center;
+}
+.ant-formily-item-label-content {
+  width: 100%;
+  // padding: 0 8px;
+  margin: 0 8px;
+}
+.ant-formily-item-colon {
+  display: none;
+}
+
+.dn-droppable-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 60px;
+  min-width: 60px;
+}
+
+.ant-steps-item-title {
+  font-size: 14px;
+}
+//搜索框的样式
+.ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+//搜索框的样式
+.ant-input-search {
+  .ant-input-affix-wrapper {
+    height: 32px;
+    padding: 0px;
+
+    .ant-input {
+      height: 30px !important;
+      padding: 0px 0px 0px 8px;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #cccccc;
+      font-size: 14px;
+    }
+
+    &:hover {
+      border-right: none;
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-affix-wrapper:hover + .ant-input-group-addon {
+    .ant-input-search-button {
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-group-addon {
+    background-color: #fff !important;
+  }
+
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused {
+    border-color: #505766 !important;
+    box-shadow: none;
+    border-right: none;
+  }
+
+  .ant-input-affix-wrapper:focus + .ant-input-group-addon {
+    .ant-input-search-button {
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-affix-wrapper-focused + .ant-input-group-addon {
+    .ant-input-search-button {
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-search-button {
+    padding: 0px !important;
+    background-color: #ffffff !important;
+    border-color: #d9d9d9 !important;
+    border-left: none;
+    color: #505766 !important;
+    height: 32px !important;
+  }
+}
+.ant-input-search
+  > .ant-input-group
+  > .ant-input-group-addon:last-child
+  .ant-input-search-button {
+  border-radius: 0 4px 4px 0 !important;
+}
+.ant-formily-item-bordered-none {
+  .pull_wrap___3Xqfn,
+  .box___M_fvU,
+  .invoice_container___fdoyW,
+  .textArea_warp___25Vhy,
+  .tree_tabel_warp___2T_aT,
+  .basic_container____kXDm,
+  .ant-cascader,
+  .ant-radio-group,
+  .ant-radio-group {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+.ant-formily-item-control-content-component {
+  .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+    font-size: 14px;
+  }
+}
+//按钮文字去掉阴影
+// .ant-btn-primary {
+//   box-shadow: none;
+//   text-shadow: none;
+// }
+
+.ant-formily-array-table {
+  .ant-picker,
+  .ant-select,
+  .tree_tabel_warp___2T_aT,
+  .user_select,
+  .ant-input-affix-wrapper-textarea-with-clear-btn,
+  .ant-select-selector,
+  .ant-input,
+  .ant-input-number-input,
+  .ant-input-affix-wrapper-textarea-with-clear-btn,
+  .ant-input-affix-wrapper {
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: inherit;
+  }
+}
+.basic_data_popup {
+  .ant-select-tree-indent {
+    display: none;
+  }
+}
+
+.dn-collapse-item-content {
+  margin-bottom: 8px;
+}
+//icon禁止
+.anticon[disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #b0b4ba;
+}
+.dn-settings-form-content {
+  //TODO:右侧表单配置的错误提示  不知道怎么展示，先这么写奥！
+  .ant-formily-item-help {
+    position: absolute;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    width: auto;
+    /* max-width: 500px; */
+    line-height: unset;
+    z-index: 4;
+    left: 0px;
+    width: 260px;
+    text-align: right;
+    font-size: 12px;
+  }
+  .ant-select-clear {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+//用于表单中的折叠布局的头部
+.ant-collapse {
+  .ant-collapse-item {
+    .ant-collapse-header {
+      padding: 5px 16px;
+    }
+  }
+}
+/*
+*卡片布局
+*/
+//卡片标题
+.ant-card-head {
+  height: 32px;
+  line-height: 32px;
+  min-height: 32px;
+  .ant-card-head-title {
+    height: 32px;
+    line-height: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+//在子表里面的文本
+.ant-table-cell {
+  .textArea_warp___25Vhy {
+    & > span {
+      height: calc(100% - 2px);
+    }
+  }
+}
+.textArea_warp___25Vhy {
+  & > span {
+    height: 100%;
+  }
+}
+// .mobile_modal {
+//   top: 0;
+//   bottom: 0;
+//   height: 100%;
+//   width: 100% !important;
+//   padding: 0px;
+//   max-width: 100%;
+//   margin: 0px;
+//   .ant-modal-close-x {
+//     display: inline-block;
+//   }
+//   .ant-modal-content {
+//     height: 100%;
+//   }
+// }
+//应为暂时没有找到.ant-select-clear这个在哪设置了背景颜色暂时这样写
+.ant-select-clear {
+  background: none !important;
+}
+.dn-workspace-panel-item {
+  .ant-formily-item-label-content {
+    & > span {
+      width: 100%;
+      display: inline-block;
+      & > label {
+        width: 100%;
+        display: inline-block;
+        & > span {
+          width: 100%;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+//input输入框清空对不齐
+// .anticon.ant-input-clear-icon-has-suffix,
+// .ant-input-clear-icon-has-suffix {
+//   margin: 0 0px 0 4px;
+// }
+//这个是用于图片预览，由于菜单的z-index变了导致遮挡，也把图片预览的z-index变大
+.ant-image-preview-operations-wrapper {
+  z-index: 99999 !important;
+}
+.ant-image-preview-wrap {
+  z-index: 99998 !important;
+}
+.ant-image-preview-mask {
+  z-index: 99998 !important;
+  background-color: rgba(0, 0, 0, 0.45) !important;
+}
+//end
+/* 设置textarea框提示内容的样式 */
+textarea::placeholder {
+  -webkit-text-fill-color: #cccccc;
+}
+
+.dn-app {
+  --dn-brand-color: var(--ant-primary-color);
+  .dn-node-actions-content a:hover {
+    color: var(--ant-primary-color-hover);
+  }
+}
+//图片预览
+.ant-image-preview-operations {
+  background: rgba(0, 0, 0, 0.2);
+}
+.ant-image-preview-img {
+  padding-top: 46px;
+  padding-bottom: 28px; //需要上下留空隙
+}
+.dn-mobile-simulator,
+.dn-mobile-simulator-body {
+  //手机设计一行一列
+  .ant-formily-grid-layout {
+    display: block;
+  }
+}
+//网格下的附件溢出问题
+.ant-formily-grid-layout {
+  .ant-formily-item-control {
+    width: 0px;
+  }
+}

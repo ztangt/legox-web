@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="77px" viewBox="0 0 77 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>位图</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="77" height="77" rx="8"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="通讯录" transform="translate(-24.000000, -1131.000000)">
+            <g id="数据列表-/-01列表-/-01单行备份" transform="translate(0.000000, 301.000000)">
+                <g id="位图" transform="translate(24.000000, 830.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="蒙版" fill="#EDEDED" xlink:href="#path-1"></use>
+                    <path d="M38.5265103,40.2849268 C45.6010221,40.2849268 51.3575386,34.6147703 51.3571516,27.6424876 C51.3571516,20.6705919 45.6010704,15 38.5265586,15 C31.4520952,15 25.6960141,20.6725755 25.6960141,27.6424876 C25.6960141,34.6127383 31.4520469,40.2849268 38.5265103,40.2849268 Z M43.8139731,41.5023379 L34.2002328,41.5023379 C25.2664392,41.5023379 18,48.6571138 18,57.4542311 L18,58.4010957 C18,63 25.1501313,63 34.2002328,63 L43.813973,63 C52.5079904,63 60.0156573,63 60.0156573,58.4010957 L60.0156573,57.4542311 C60.0156573,48.6590974 52.7479602,41.5023379 43.8139731,41.5023379 Z" id="形状" fill="#666666" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+.menuItem {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.menuicon {
+  padding-right: 10px;
+  padding-top: -10px;
+}

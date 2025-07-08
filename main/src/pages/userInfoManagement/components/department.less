@@ -1,0 +1,40 @@
+
+.bt_group{
+    width: 150px;
+    margin: 0 auto;
+}
+.wrap{
+    max-height: 404px;
+    overflow: auto;
+    border-radius: 2px;
+    border: 1px solid #d9d9d9;
+    margin: 16px 0;
+    
+    // [class^='ant-tree-list-holder']{
+    //     [class^='ant-tree-treenode']{
+    //         width: 100%;
+    //         span{
+    //             width: 100%;
+    //         }
+    //     }
+    // }
+
+    &>div{
+        &>div{
+            &>div{
+                &>div{
+                    &>div{
+                        &>div{
+                            width: 100%;
+                            [class^='ant-tree-node-content-wrapper']{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

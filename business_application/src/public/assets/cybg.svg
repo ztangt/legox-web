@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="153px" height="80px" viewBox="0 0 153 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形 + 矩形 蒙版</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#8C6FF2" offset="0%"></stop>
+            <stop stop-color="#625FF5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="153" height="80" rx="8"></rect>
+        <linearGradient x1="100%" y1="50%" x2="-3.55271368e-13%" y2="48.9582285%" id="linearGradient-4">
+            <stop stop-color="#6460F5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="173.361937%" y1="53.2692402%" x2="-3.55271368e-13%" y2="49.1005616%" id="linearGradient-5">
+            <stop stop-color="#6360F5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="列表、左侧菜单规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人桌面-通知公告" transform="translate(-449.000000, -460.000000)">
+            <g id="编组-6" transform="translate(288.000000, 460.000000)">
+                <g id="矩形-+-矩形-蒙版" transform="translate(161.000000, 0.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <path d="M-17.3887262,70.6803906 C10.9997873,39.8594102 45.6035751,26.1690399 86.4226371,29.6092796 C126.173773,32.9595142 161.315201,48.1073688 191.846923,75.0528432 C197.470604,80.0159424 198.191064,88.5264142 193.48176,94.3642737 C188.366216,100.705727 180.494811,104.175024 172.362763,103.672405 L-0.377074779,92.9958428 C-6.70862694,92.6045075 -12.673782,89.8931103 -17.1318824,85.3801249 C-21.1282241,81.334583 -21.2412973,74.8630754 -17.3887262,70.6803906 Z" id="矩形" fill="url(#linearGradient-4)" opacity="0.176906041" mask="url(#mask-3)" transform="translate(88.791079, 66.782393) rotate(-14.000000) translate(-88.791079, -66.782393) "></path>
+                    <path d="M11.1525766,67.8209937 C55.7404979,65.8412822 83.8879596,65.8217738 95.5949615,67.7624684 C109.813727,70.1195434 132.632557,77.2259463 164.051454,89.081677 L164.051454,89.081677 L165.897787,94.6161066 C166.968649,97.8260446 170.155441,99.8347027 173.513319,99.4162495 C198.585803,96.2916153 187.749158,98.6912404 141.003384,106.615125 C100.997408,113.396545 60.6339163,119.826427 19.9129072,125.904773 C3.01654674,128.426871 -12.7261965,116.777006 -15.2531557,99.8813722 C-17.5367206,84.6131097 -7.01054348,70.3845424 8.25771895,68.1009775 C9.21715944,67.9574808 10.1834195,67.8640274 11.1525766,67.8209937 Z" id="矩形" fill="url(#linearGradient-5)" opacity="0.176906041" mask="url(#mask-3)" transform="translate(83.412889, 98.359115) rotate(-13.000000) translate(-83.412889, -98.359115) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,173 @@
+.table_modal {
+  :global {
+    .ant-modal-body {
+      padding: 0px;
+      padding-top: 4px;
+    }
+  }
+  .search {
+    //padding-bottom: 8px;
+    .convention {
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      .left {
+        margin-left: 6px;
+        :global {
+          .ant-form-item {
+            margin-bottom: 4px;
+          }
+        }
+        .high_level {
+          display: inline-block;
+          // margin-top: 16px;
+          height: 32px;
+          line-height: 32px;
+          margin-left: 8px;
+          color: var(--ant-primary-color);
+          cursor: pointer;
+          margin-right: 8px;
+          font-size: 14px;
+        }
+        // .search_button{
+        //   margin-left: -16px;
+        //   border: 1px solid #d9d9d9;
+        //   width: 32px;
+        // }
+      }
+
+      .middle {
+        width: 66px;
+      }
+
+      .right {
+        // margin-right: 4px;
+        padding-right: 8px;
+        button {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+  // .high_search {
+  //   margin-top: 8px;
+  // }
+  .high_form {
+    padding: 4px 8px 0 !important;
+    background: #f7f7f7;
+    :global {
+      .ant-form-item {
+        margin-bottom: 4px;
+      }
+    }
+  }
+  .f_opration {
+    text-align: center;
+    padding-bottom: 8px;
+    background: #f7f7f7;
+
+    button {
+      margin: 0 4px;
+    }
+  }
+}
+.tree_tabel_warp {
+  position: relative;
+  .tree_select_warp {
+    & > div:first-child {
+      width: calc(
+        100% - 30px
+      ); //在使用 Flexbox 布局时，当没有可用空间时，如果不允许项目换行，那么就可能会发生溢出。这个时候需要给他一个宽度
+    }
+  }
+  :global {
+    .ant-select-selector,
+    .ant-select,
+    .ant-tree-select,
+    .ant-select-single {
+      border-radius: 4px !important;
+      border: none !important;
+      height: 28px;
+    }
+    .ant-select-multiple .ant-select-selection-item-remove {
+      display: none;
+    }
+    .ant-select-multiple .ant-select-selection-item {
+      background: unset;
+      border: unset;
+    }
+    // .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    //   padding: 0px 4px;
+    // }
+    .ant-select {
+      display: flex;
+      flex-direction: row-reverse;
+      .ant-select-selector {
+        flex: 1;
+        order: 1;
+      }
+      .ant-select-arrow {
+        margin-top: 0px;
+        height: inherit;
+        position: unset;
+        font-size: 14px;
+        margin-left: 4px;
+      }
+      .ant-select-clear {
+        position: unset;
+        margin-top: 0px;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        height: inherit;
+        font-size: 14px;
+        margin-right: 2px;
+      }
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+      .ant-select-single.ant-select-show-arrow
+        .ant-select-selection-placeholder {
+        padding-right: 0px;
+      }
+    }
+  }
+  .input_disable {
+    :global {
+      .ant-input-affix-wrapper-disabled {
+        border-right: 0px;
+        border-bottom: 0px;
+        border-top: 0px;
+      }
+      .ant-input-disabled {
+        color: inherit !important;
+      }
+      .ant-input-group-addon {
+        border: 0px;
+        padding: 0 4px;
+        background: #f5f5f5;
+      }
+    }
+  }
+}
+//弹框搜索
+.search_warp {
+  overflow: hidden;
+  padding: 8px 8px 0px 8px;
+  .search_button {
+    overflow: hidden;
+    & > button {
+      float: right;
+      margin-left: 10px;
+    }
+  }
+  :global {
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      border-radius: 4px;
+    }
+    .ant-form-inline .ant-form-item {
+      margin-bottom: 16px !important;
+    }
+    .ant-form-item-label {
+      width: 80px;
+    }
+  }
+}

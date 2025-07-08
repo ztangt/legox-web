@@ -1,0 +1,67 @@
+.originBox {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .originItem {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+}
+
+.timelineBox {
+    display: flex;
+    justify-content: space-between;
+    height: 10px;
+    background-color: #efefef;
+    border-radius: 5px;
+    width: 100%;
+
+    .timelineItem {
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .timelineTitle {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            text-align: center;
+            width: max-content;
+        }
+    }
+}
+.warnExecute_warp {
+    padding-bottom: 40px;
+    :global {
+        .ant-table-tbody {
+            .ant-table-cell {
+                height: 80px !important;
+            }
+        }
+    }
+}
+//列表
+.listBox {
+    :global {
+        .ant-list-item {
+            display: flex;
+            justify-content: flex-start;
+            //padding:20px 10px 0;
+            padding: 0;
+        }
+    }
+    .nameItem {
+        padding-left: 20px;
+        padding-right: 20px;
+        //flex: 1;
+        //text-align: center;
+    }
+}

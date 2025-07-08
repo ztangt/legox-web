@@ -1,0 +1,81 @@
+
+  .column {
+    height:inherit;
+    overflow: hidden;
+  }
+  .column_left {
+    // height: inherit;
+    background-color: #fff;
+    position: relative;
+    float: left;
+  }
+
+  .column_right {
+    height: inherit;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .resize_save {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    bottom: 0;
+    left: 0;
+    padding: 0 16px 0 16px;
+    width: inherit;
+    //overflow-x: scroll;
+  }
+
+  .resize_bar {
+    width: 300px;
+    min-width: 100px;
+    max-width: 400px;
+    height: inherit;
+    resize: horizontal;
+    cursor: ew-resize;
+    opacity: 0;
+    overflow: scroll;
+  }
+  .resize_bar :last-child{
+    max-width: 400px;
+  }
+  /* 拖拽线 */
+  .resize_line {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #E9E9E9;
+    pointer-events: none;
+    margin-top: 23px;
+  }
+
+  .resize_bar:hover~.resize_line,
+  .resize_bar:active~.resize_line {
+      border-left: 1px dashed #E9E9E9;
+  }
+
+  .resize_bar::-webkit-scrollbar {
+      width: 300px;
+      height: inherit;
+  }
+
+  /* Firefox只有下面一小块区域可以拉伸 */
+  @supports (-moz-user-select: none) {
+
+      .resize_bar:hover~.resize_line,
+      .resize_bar:active~.resize_line {
+          border-left: 1px solid #bbb;
+      }
+
+      .resize_bar:hover~.resize_line::after,
+      .resize_bar:active~.resize_line::after {
+          content: '';
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          bottom: 0;
+          right: -8px;
+          background-size: 100% 100%;
+      }
+  }

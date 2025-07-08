@@ -1,0 +1,117 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  // &>div{
+  //     height: 100%;
+  // &>div{
+  //     height: 100%;
+  // }
+  // }
+}
+.tree {
+  height: 100%;
+  :global {
+    .ant-spin-nested-loading {
+      overflow: auto;
+      height: calc(100% - 40px);
+    }
+  }
+  .tree_search {
+    padding: 0px 8px 0px 8px; //为了选择单位弹框的样式
+    height: 32px;
+    background: #ffffff;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 8px; //为了选择单位弹框的样式
+    :global {
+      .ant-input-suffix {
+        margin-right: 10px;
+      }
+    }
+  }
+  .tree_list {
+    overflow: auto;
+    height: calc(100% - 40px);
+  }
+  :global {
+    .ant-tree-switcher-noop,
+    .ant-tree-show-line .ant-tree-indent-unit {
+      visibility: hidden;
+      // display: none;
+    }
+    //多选
+    .ant-tree-checkbox-inner {
+      width: 14px;
+      height: 14px;
+      border: solid 1px #ccc;
+      border-radius: 2px;
+      // top: 2px;
+    }
+    .ant-tree-checkbox-inner::after {
+      position: absolute;
+      top: 47%;
+      left: 18.5%;
+    }
+
+    .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+      background-color: #fff;
+      border-color: #505766;
+    }
+    .ant-tree-checkbox-checked .ant-tree-checkbox-inner::after {
+      position: absolute;
+      display: table;
+      // border: 2px solid #03a4ff;//加上这个单位选择弹出框的选中就会出问题
+      border-top: 0;
+      border-left: 0;
+      transform: rotate(45deg) scale(1) translate(-50%, -50%);
+      opacity: 1;
+      transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+      content: ' ';
+    }
+    .ant-tree-checkbox-wrapper:hover .ant-tree-checkbox-inner,
+    .ant-tree-checkbox:hover .ant-tree-checkbox-inner,
+    .ant-tree-checkbox-input:focus + .ant-tree-checkbox-inner,
+    .ant-tree-checkbox .ant-tree-checkbox-checked,
+    .ant-tree-checkbox-checked::after {
+      border: solid 1px #505766;
+    }
+    .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner::after {
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 2px;
+      background-color: #5b95f4;
+      border: 0;
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      content: ' ';
+    }
+    .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+      background-color: #f0f7ff;
+      border-radius: 4px;
+    }
+    .ant-tree .ant-tree-node-content-wrapper:hover {
+      background-color: #f8f8f8;
+      border-radius: 4px;
+    }
+    .ant-tabs-ink-bar .ant-tabs-ink-bar-animated {
+      width: 22px;
+      height: 3px;
+      background: #03a4ff;
+      border-radius: 2px;
+    }
+  }
+}
+.table {
+  padding-top: 7px;
+  padding-right: 16px;
+}
+.edit {
+  display: none;
+}
+.tree_node:hover .edit {
+  display: inherit;
+  margin-left: 8px;
+}

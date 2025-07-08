@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="153px" height="80px" viewBox="0 0 153 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形</title>
+    <defs>
+        <linearGradient x1="1.32076406%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F67850" offset="0%"></stop>
+            <stop stop-color="#F8403C" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="153" height="80" rx="8"></rect>
+        <linearGradient x1="100%" y1="50%" x2="-3.55271368e-13%" y2="48.8595051%" id="linearGradient-4">
+            <stop stop-color="#F7423D" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="173.361937%" y1="53.2692402%" x2="-3.55271368e-13%" y2="49.1005616%" id="linearGradient-5">
+            <stop stop-color="#F7423D" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="列表、左侧菜单规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人桌面-通知公告" transform="translate(-288.000000, -460.000000)">
+            <g id="矩形" transform="translate(288.000000, 460.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <path d="M196.45251,95.8793231 C191.336965,102.220776 183.46556,105.690073 175.333512,105.187454 L2.59367436,94.5108923 C-3.7378778,94.1195569 -9.70303288,91.4081597 -14.1611333,86.8951744 C-18.0345775,82.974043 -18.0770538,76.6802272 -14.2568685,72.7071899 C-6.1315075,64.2566425 -0.504632789,58.7992539 2.62375569,56.3350241 C27.4895188,36.7482769 56.412729,28.3447118 89.3933863,31.1243291 C114.483531,33.2389321 137.737219,40.0535761 159.154451,51.5682611" id="路径" fill="url(#linearGradient-4)" opacity="0.176906041" mask="url(#mask-3)" transform="translate(89.679082, 67.920803) rotate(-14.000000) translate(-89.679082, -67.920803) "></path>
+                <path d="M14.1525766,68.8209937 C58.7404979,66.8412822 86.8879596,66.8217738 98.5949615,68.7624684 C112.813727,71.1195434 135.632557,78.2259463 167.051454,90.081677 L167.051454,90.081677 L168.897787,95.6161066 C169.968649,98.8260446 173.155441,100.834703 176.513319,100.41625 C201.585803,97.2916153 190.749158,99.6912404 144.003384,107.615125 C103.997408,114.396545 63.6339163,120.826427 22.9129072,126.904773 C6.01654674,129.426871 -9.72619645,117.777006 -12.2531557,100.881372 C-14.5367206,85.6131097 -4.01054348,71.3845424 11.2577189,69.1009775 C12.2171594,68.9574808 13.1834195,68.8640274 14.1525766,68.8209937 Z" fill="url(#linearGradient-5)" opacity="0.176906041" mask="url(#mask-3)" transform="translate(86.412889, 99.359115) rotate(-13.000000) translate(-86.412889, -99.359115) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,132 @@
+.add_form{
+    .bt_group{
+        width: 168px;
+        position:relative;
+        left:50%;
+        margin-left: -84px;
+        button{
+            width: 80px;
+            border-radius: 4px;
+            height: 28px;
+            
+            
+        }
+        [class^="ant-bt"]{
+            padding: 0;
+        }
+    }
+    :global{
+      .ant-form-item .ant-mentions, .ant-form-item textarea.ant-input {
+        height: 28px;
+    }
+    }
+}
+.search{
+    width: 200px!important;
+}
+.other{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+     margin-left: 8px;
+    .bt_gp{
+        button{
+
+        //     border-radius: 4px;
+        //     // border: 1px solid #E4E4E4;
+            margin-left: 8px;
+        //     height: 28px;
+        //     // width: 64px;
+        //     padding: 0 10px !important;
+        //     font-size: 14px;
+        // }
+        
+        // [class^="ant-bt"]{
+        //     padding: 0;
+        }
+    }
+}
+
+.text{
+    // color: var(--ant-primary-color);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.opinionDomain {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    // margin-bottom: 30px;
+  }
+  
+  .opinionDomain_legend {
+    width: auto !important;
+    border: none !important;
+    padding: 10px !important;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-left: 30px;
+    margin-bottom: 0 !important;
+  }
+  .wrap_box {
+    :global {
+      form {
+        // padding: 10px 50px;
+      }
+  
+      .ant-row.ant-form-item {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .form_item{
+    
+    @media screen and (min-width:575px){
+      &>div{
+        &:first-child{
+          margin-left: 20px; 
+        }
+      }
+    }
+    // :global {
+      
+    //   .ant-form-horizontal.ant-form-item-label {
+    //     margin-left: -10px;
+    //     }
+    // }
+  }
+
+  .orgTreeStyle{
+    // white-space: nowrap;
+    width: 112px;
+  }
+  .add_Modal{
+    height:100%;
+  }
+    
+  .types{
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  .unitInfo_table{
+    height:calc(100% - 90px);
+    // :global{
+    //   .ant-table-body{
+    //     height:100%
+    //   }
+    // }
+  }
+  .dataRuleInfo_container{
+    height: 100%;
+    background: rgb(255, 255, 255);
+    padding: 8px;
+    position:relative;
+    :global{
+        .ant-table-body{
+          height:100%;
+        }
+      }
+}

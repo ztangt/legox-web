@@ -1,0 +1,86 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 14px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.departmentTree {
+  padding-top: 7px;
+}
+
+.link_data_src {
+  margin-bottom: 8px;
+  margin-top: 2px;
+
+  button {
+    width: 100%;
+  }
+}
+
+.data_src_search {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.search {
+  width: 200px !important;
+}
+
+.table {
+  padding-top: 7px;
+}
+
+.other {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  .bt_gp {
+    >span {
+      display: inline-block;
+    }
+
+    button {
+      margin-right: 10px;
+    }
+
+    :global(.ant-upload-list.ant-upload-list-text) {
+      display: none;
+    }
+  }
+}
+
+.right_click_menu {
+  min-width: 100px;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px 3px #ccc;
+
+  >.item_menu {
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .5s;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+
+  :global {
+    .ant-tree-list-holder-inner {
+      div[class^="ant-tree-treenode ant-tree-treenode-switcher"] {
+        >span:last-child {
+          min-width: 100px;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.submit_warp{
+
+  :global{
+    .ant-tabs-tab{
+      padding: 16px 0px 8px 0px;
+    }
+    // .ant-tree .ant-tree-node-content-wrapper{
+    //   margin-bottom:5px;
+    // }//这个不能加，加了以后送交弹框的左侧树的选中就不居中了
+    .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected{
+      background-color:#f0f3f9;
+      border-radius: 45px;
+    }
+    .ant-tree .ant-tree-node-content-wrapper:hover {
+      background-color: #fff5e2;
+      border-radius: 45px;
+  }
+    .ant-modal-body{
+      padding:0px
+    }
+    .ant-tabs-nav-wrap{
+      margin-left: 10px;
+    }
+    .ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before{
+      border-bottom:1px solid #505766;
+    }
+    .ant-tabs-top > .ant-tabs-nav, .ant-tabs-bottom > .ant-tabs-nav, .ant-tabs-top > div > .ant-tabs-nav, .ant-tabs-bottom > div > .ant-tabs-nav{
+      margin: 0px;
+    }
+  }
+  .submitWrap{
+    height: calc(100vh - 322px);
+    height: 100%;
+    position: relative;
+    overflow:hidden;
+    :global{
+      .ant-tabs-content-holder{
+        display: none;
+      }
+    }
+  }
+  .left_org_tree{
+    padding-top: 8px;
+    overflow: hidden;
+    height: 100%;
+    .tree_warp{
+      height: calc(100% - 48px);
+      overflow: auto;
+      :global{
+        .ant-tree-title{
+          white-space: nowrap;
+        }
+        .ant-tree-list{
+          width:100%;
+        }
+      }
+    }
+    .no_icon_tree{
+      :global{
+        .ant-tree-switcher{
+          width: 0px!important;//这个是不显示展开收起的icon
+        }
+        .ant-tree .ant-tree-node-content-wrapper{
+          padding: 0px!important;//ant-tree-switcher这个已经有8px,所以这个需要是0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,271 @@
+.user_warp {
+  height: 100%;
+  position: relative;
+  //margin-top: 16px;
+  overflow: hidden;
+  >div{
+    padding-left: 8px;
+  }
+  .searchInput {
+    padding-right: 8px;
+    display: inline-block;
+    :global {
+      .ant-input-suffix {
+        margin-right: 10px;
+      }
+    }
+  }
+  :global {
+    .v_resize___3wsl9 {
+      left: 238px;
+      height: calc(100% - 23px);
+      margin-top: 23px;
+    }
+  }
+  .split_line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: #464d5b;
+    top: 30px;
+    z-index: 1;
+    height: 1px;
+  }
+
+  .left_org_tree {
+    height: 100%;
+
+    .title {
+      display: block;
+      color: #333;
+      margin-bottom: 9px;//这个应该是距离下面是8px，加上1px的线
+      margin-left: 8px;
+    }
+
+    .content {
+      padding-top: 8px;
+      overflow: hidden;
+      height: calc(100% - 31px);
+      >div{
+        height: 100%;
+        :global{
+          .ant-spin-nested-loading{
+            height: calc(100% - 40px);
+            overflow-y: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.await_select_list {
+  height: 100%;
+  overflow: hidden;
+  margin-left: 8px;
+  //padding-top: 12px;
+  .title {
+    display: block;
+    color: #333;
+    margin-bottom: 9px;//这个应该是距离下面是8px，加上1px的线
+  }
+  .searchInput{
+    padding-right: 8px;
+  }
+  :global {
+    .ant-input {
+      height: 32px;
+      border-right: 0px;
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+    }
+    .ant-table-body{
+      overflow-y: auto !important;
+    }
+    .ant-input-search
+      .ant-input:hover
+      + .ant-input-group-addon
+      .ant-input-search-button:not(.ant-btn-primary),
+    .ant-input-search
+      .ant-input:focus
+      + .ant-input-group-addon
+      .ant-input-search-button:not(.ant-btn-primary) {
+      border-color: #333 !important;
+    }
+  }
+  .content {
+    overflow: hidden;
+    //height: calc(100% - 34px);
+    height: 100%;
+    padding-top: 8px;
+
+    & > span {
+      margin-bottom: 12px;
+    }
+    .middle_list {
+      margin-top: 8px;
+
+      overflow: auto;
+      height: calc(100% - 40px);
+    }
+    .check_box_middle {
+      :global {
+        .ant-checkbox + span {
+          white-space: nowrap;
+          /*强制span不换行*/
+          width: 100%;
+          /*限制宽度*/
+        }
+      }
+    }
+
+    .check_box_user {
+      :global {
+        .ant-checkbox-wrapper {
+          position: relative;
+        }
+
+        .ant-checkbox + span {
+          white-space: nowrap;
+          /*强制span不换行*/
+          width: 100%;
+          /*限制宽度*/
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+.select_list {
+  height: 100%;
+
+  .title {
+    display: block;
+    color: #333;
+    margin-bottom: 9px;//这个应该是距离下面是8px，加上1px的线
+    margin-left: 8px;
+  }
+
+  .list {
+    height: 100%;
+    // padding-left: 8px;
+
+    .opration {
+      float: right;
+      height: 32px;
+      margin-top: 8px;
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      & > span {
+        margin-right: 8px;
+        svg{
+          font-size: 18px;
+        }
+      }
+    }
+
+    .content {
+      clear: both;
+      padding-top: 8px;
+      height: calc(100% - 40px);
+      overflow: hidden;
+      .card {
+        height: 100%;
+        overflow: auto;
+      }
+      :global {
+        .ant-table-tbody > tr > td {
+          border-bottom: 0px;
+        }
+        .ant-table-body {
+          height: calc(100% - 40px);
+          //overflow: auto;
+        }
+      }
+
+      .tag_info {
+        display: inline-block;
+        padding: 0 8px 0 8px;
+        height: 24px;
+        line-height: 24px;
+        background: #f8f8f8;
+        border-radius: 4px;
+        margin-right: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// table表格选中框
+.ant-checkbox-checked {
+  .ant-checkbox-inner {
+    background-color: #fff;
+    border-color: #5b95f4;
+  }
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  position: absolute;
+  display: table;
+  border: 2px solid #5b95f4;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45deg) scale(1) translate(-50%, -50%);
+  opacity: 1;
+  transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+  content: ' ';
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+  border: 0;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  content: ' ';
+}
+.content{
+  :global{
+    
+    .ant-input-search .ant-input:hover, .ant-input-search .ant-input:focus {
+      border-color: #505766;
+      // border-right: none;
+      box-shadow: none;
+      .ant-input-group-addon{
+        border-color: #505766;
+        border-left:none;
+      }
+  }
+  }
+}
+.await_select_list{
+  :global{
+    .ant-input{
+      border-radius: 4px !important;
+      z-index: 9 !important;
+      border: 1px solid #d9d9d9 !important;
+    }
+    .ant-input-search .ant-input-search-button {
+      padding: 0px 0px 0px 1px !important;
+      border-color: #d9d9d9 !important;
+      border-left: none;
+      color: #505766 !important;
+      height: 32px !important;
+      position: absolute;
+      right: 0px;
+      top: 0;
+      border: 0;
+      background: transparent !important;
+      z-index: 9;
+    }
+  }
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 150px !important;
+}

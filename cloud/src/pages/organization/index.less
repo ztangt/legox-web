@@ -1,0 +1,118 @@
+.other{
+    display: flex;
+    justify-content: space-between;
+    // margin: 8px 0;
+    .search{
+        width: 200px!important;
+    }
+    :global{
+        .ant-table-body{
+            height:calc(100vh - 200px)
+        }
+    }
+}
+.fontSize7{
+    font-size: 12px;
+    svg{
+        font-size: 12px;
+    }
+}
+.addMain{
+    height:100%;
+    // height:calc(100% - 52px);
+    overflow:auto;
+    display: flex;
+    // border-bottom: 1px solid #ccc;
+    &::-webkit-scrollbar {
+        height: 6px;
+        width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #c3c3c3;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 0;
+    }
+}
+.rowClass{
+    background-color: #fafafa;
+    cursor: pointer;
+}
+.hoverClass{
+    cursor: pointer;
+}
+.active{
+    >span{
+        color: #40a9ff;
+    }
+}
+.identityModal{
+    display: flex;
+    .left{
+        width: 35%;
+        height: 400px;
+        border-right: 1px solid #ccc;
+        overflow: auto;
+    }
+    .right{
+        width: 65%;
+        height: 400px;
+        overflow: auto;
+    }
+    div{
+        &::-webkit-scrollbar {
+            height: 6px;
+            width: 6px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #c3c3c3;
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 0;
+        }
+    }
+}
+.opinionDomain {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    // margin-bottom: 30px;
+  }
+  
+  .opinionDomain_legend {
+    width: auto !important;
+    border: none !important;
+    padding: 10px !important;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-left: 30px;
+    margin-bottom: 0 !important;
+  }
+  .wrap_box {
+    :global {
+      form {
+        // padding: 10px 50px;
+      }
+  
+      .ant-row.ant-form-item {
+        margin-bottom: 10px;
+      }
+    }
+  }
+.joinTitle{
+    display: flex;
+    .post{
+        position: absolute;
+        flex-wrap: nowrap;
+        right: 20px;
+        .select{
+            width: 180px;
+        }
+        span{
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+    }
+}

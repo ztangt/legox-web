@@ -1,0 +1,75 @@
+
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.drag_contianer{
+    flex: 1;
+    padding-left: 10px;
+}
+.layout_container{    
+    // height: 1300px!important;
+    background: #eee;
+    min-height:100%;
+    margin:0 auto;
+}
+.right_container{
+    flex: 5;
+    margin-left: 20px;
+
+}
+
+.droppable_element{
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+.drag_item{
+    border: 1px solid red;
+    // border-radius: 2px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+}
+.drag_item_label{
+    border-right: 1px solid red;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drag_item_value{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.input_block{
+    border: none;
+    width:'80%';
+    height:'80%';
+    display: block;
+    margin: 4% auto;
+}
+.text{
+    background: pink;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.tool{
+    .tool_select{
+        width: 200px;
+        margin: 10px 0px;
+    }
+}
+.remove{
+    position: absolute;
+    right: 2px;
+    top: 6px;
+    cursor: pointer;
+    line-height: 0px;
+}

@@ -1,0 +1,35 @@
+@import '~antd/lib/style/themes/default.less';
+
+.dn-array-table {
+  td {
+    .ant-formily-item-label {
+      display: none;
+    }
+  }
+  .ant-table-tbody > tr > td {
+    padding: 0px;
+    color: #333333;
+  }
+  .ant-table-cell {
+    height: 32px;
+  }
+  .ant-table-tbody > tr {
+    .operation {
+      padding: 0 8px !important;
+    }
+  }
+  .ant-table-thead > tr > th {
+    padding: 0px 8px !important;
+  }
+  /*整个滚动条*/
+  ::-webkit-scrollbar {
+    width: 10px;
+
+    height: 10px;
+  }
+  .ant-formily-array-base-addition {
+    span:last-child {
+      overflow: unset !important;
+    }
+  }
+}

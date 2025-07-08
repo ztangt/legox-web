@@ -1,0 +1,156 @@
+.basic_td {
+  white-space: nowrap;
+}
+.sticky {
+  position: sticky;
+  left: 0px;
+}
+// .sub_table{
+//   tfoot{
+//     tr{
+//       td:nth-child(1){
+
+//         left: 0px;
+//         position: sticky!important;
+//         z-index: 2;
+//         background: #fff;
+
+//       }
+//       td:nth-child(2){
+//         left: 50px;
+//         position: sticky!important;
+
+//       }
+//       td:nth-child(3){
+//         left: unset;
+//         position: unset!important;
+
+//       }
+//       td:nth-child(3)::after{
+//         position: unset!important;
+
+//       }
+//     }
+//   }
+// }
+.first_td {
+  left: 0px;
+  position: sticky !important;
+  z-index: 2;
+  background: #fff;
+}
+.second_td {
+  left: 50px !important;
+  position: sticky !important;
+}
+.third_td {
+  left: unset !important;
+  z-index: 1 !important;
+}
+.third_td::after {
+  position: unset !important;
+}
+.last_td {
+  right: 0px;
+  position: sticky !important;
+}
+.footer {
+  text-align: right;
+  font-size: 14px;
+}
+.sub_table {
+  :global {
+    /*定义滑块*/
+    ::-webkit-scrollbar-thumb {
+      background-color: rgb(193, 193, 193) !important;
+    }
+    .ant-table-body {
+      // overflow-y: hidden!important;
+      width: calc(100% + 6px);
+      color: #333333;
+    }
+    .ant-table-cell-fix-right-first {
+      right: 0px !important;
+    }
+    .ant-table-cell-scrollbar {
+      margin-left: 6px !important;
+    }
+    td {
+      .ant-formily-item-label {
+        display: none;
+      }
+    }
+    .ant-table-tbody > tr > td {
+      padding: 0px;
+    }
+    .ant-table-tbody > tr {
+      .operation {
+        padding: 0 8px;
+      }
+    }
+    .ant-table-thead > tr > th {
+      padding: 0px 8px !important;
+    }
+    .ant-table-cell {
+      height: 32px !important; //行高统一40px
+    }
+    .ant-table-footer {
+      padding: 0px;
+      height: 32px;
+      line-height: 32px;
+      padding-right: 8px;
+    }
+    /*整个滚动条*/
+    // ::-webkit-scrollbar {
+    //   width: 10px;
+    //   height: 10px;
+    // }
+    .ant-formily-item-help {
+      // top: 40% !important;
+      top: 50% !important;
+      background: inherit !important;
+      box-shadow: none !important;
+      min-height: 12px !important;
+      line-height: 12px !important;
+      padding: 0px !important;
+    }
+    .ant-pagination,
+    .ant-pagination-item a {
+      color: #333333;
+    }
+    .ant-pagination .ant-pagination-item-active a {
+      color: #ffffff;
+    }
+
+    .ant-table-summary {
+      & > tr {
+        & > td {
+          padding: 8px;
+        }
+      }
+    }
+  }
+}
+
+.landSecreen {
+  height: 18px;
+  line-height: 18px;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+.td_text {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+.error_visible {
+  display: none;
+}
+[id^='array_table_modal'] {
+  .decorator_hidden {
+    display: none !important;
+  }
+}

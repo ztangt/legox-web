@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="92px" viewBox="0 0 91 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>224用户</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FEFEFE" offset="0%"></stop>
+            <stop stop-color="#D2B6FD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="云管理平台首页" transform="translate(-1116.000000, -377.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="编组" transform="translate(1001.000000, 218.000000)">
+                <g id="224用户" transform="translate(115.000000, 159.000000)">
+                    <path d="M44.0751566,0.0389794574 C32.7713987,0.703906388 23.4624217,9.91789386 22.7025052,21.2216517 C21.8475992,34.5201903 32.2964509,45.633969 45.4050104,45.633969 C58.0386221,45.633969 68.2025052,35.3750964 68.2025052,22.8364742 C68.2974948,9.72791474 57.2787056,-0.720937035 44.0751566,0.0389794574 Z M45.5,53.0431548 C30.3016701,53.0431548 0,60.6423197 0,75.8406496 L0,87.239397 C0,89.3291673 1.70981211,91.0389795 3.79958246,91.0389795 L87.2004175,91.0389795 C89.2901879,91.0389795 91,89.3291673 91,87.239397 L91,75.74566 C91,60.6423197 60.6983299,53.0431548 45.5,53.0431548 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

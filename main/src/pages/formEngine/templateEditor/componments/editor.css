@@ -1,0 +1,23 @@
+.ck-content .table {
+  width: 100% !important;
+  margin: -1px !important;
+}
+.ck-content table {
+  table-layout: fixed;
+}
+.ck-editor__main {
+  height: calc(100vh - 218px);
+  min-height: calc(100vh - 218px);
+  overflow-y: auto;
+}
+.ck-source-editing-area {
+  min-height: calc(100vh - 218px);
+}
+.ck-editor__editable_inline {
+  height: calc(100vh - 218px);
+  min-height: calc(100vh - 218px);
+}
+/*去掉底部的提示*/
+/*.ck-body-wrapper{*/
+/*  display: none !important;*/
+/*}*/

@@ -1,0 +1,36 @@
+.other {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+
+    .search {
+        width: 200px !important;
+    }
+}
+
+.fontSize7 {
+    font-size: 12px;
+
+    svg {
+        font-size: 12px;
+    }
+}
+
+.beyondHiding(){
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.buttonName{
+    .beyondHiding();
+    color: var(--ant-primary-color);
+}
+.buttonDesc{
+    .beyondHiding();
+}
+.buttonLibrary{
+    height: 100%;
+    background: #fff;
+    padding: 8px;
+}

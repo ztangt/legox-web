@@ -1,0 +1,91 @@
+.fontSize7 {
+  font-size: 12px;
+
+  svg {
+    font-size: 12px;
+  }
+}
+
+.marginBottom2 {
+  >svg {
+    // margin-bottom: 2px;
+
+  }
+}
+
+.other {
+  margin:0px 8px 8px;
+  display: flex;
+  justify-content: space-between;
+
+  .search {
+    width: 200px !important;
+  }
+}
+
+.body {
+  background-color: #fff;
+  height: 100%;
+}
+
+//[class^='ant-input-suffix']
+.text {
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.add_button {
+  width: 64px;
+  height: 28px;
+  line-height: 6px;
+  background: #409DFF;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.bt_group {
+  width: 168px;
+  margin: 0 auto;
+
+  button {
+    width: 80px;
+    border-radius: 4px;
+    height: 28px;
+  }
+
+  [class^="ant-bt"] {
+    padding: 0;
+  }
+}
+
+.bt_group_set {
+  .bt_group;
+  margin: 10px 0;
+  &>button:first-child{
+    margin-right: 8px;
+  }
+
+}
+
+
+.bottom_btn {
+  width: 168px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+
+  button {
+    width: 80px;
+    border-radius: 4px;
+    height: 28px;
+  }
+
+  [class^="ant-bt"] {
+    padding: 0;
+  }
+}

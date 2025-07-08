@@ -1,0 +1,95 @@
+.text {
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 4px;
+  }
+  
+  .departmentTree {
+    padding-top: 8px;
+    height:calc(100% - 50px);
+    :global{
+      .ant-tree{
+        height:100%;
+        overflow: auto;
+      }
+    }
+  }
+  
+  .search {
+    width: 205px !important;
+    margin-bottom: 8px;
+  }
+  
+  .table {
+    padding-top: 8px;
+    height:100%;
+    :global{
+      .ant-table-body{
+        height:100%;
+      }
+    }
+  }
+  
+  .other {
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 8px 9px;
+    height:32px;
+    .bt_gp {
+      button {
+        margin-right: 8px;
+      }
+    }
+  }
+  
+  .siteTreeSearchValue{
+    // color: #1890ff;
+    background: rgba(255,235,117);
+  }
+  
+  
+  .space_ele {
+    margin-bottom: 10px;
+  }
+  
+  .right_click_menu {
+    min-width: 125px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 5px 3px #ccc;
+  
+    >.item_menu {
+      padding: 0 10px;
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: .5s;
+  
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  
+  
+    :global {
+      .ant-tree-list-holder-inner {
+        div[class^="ant-tree-treenode ant-tree-treenode-switcher"] {
+          >span:last-child {
+            min-width: 100px;
+          }
+        }
+  
+      }
+    }
+  }

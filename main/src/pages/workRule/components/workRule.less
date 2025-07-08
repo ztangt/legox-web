@@ -1,0 +1,62 @@
+.work_rule_warp{
+  width: inherit;
+  background: #fff;
+  height: 100%;
+  :global{
+    .ant-tree-switcher{
+      margin-top: 2px !important;
+    }
+    .main_body___nGMB0{
+      overflow: hidden;
+    }
+    .left___ou89_{
+      overflow-y: hidden !important;
+    }
+  }
+  .left{
+    margin-top: 10px;
+    height: 100%;
+    overflow: hidden;
+    :global{
+      .ant-tree{
+        height: calc(100% - 68px);
+        overflow: auto;
+      }
+    }
+    .addTypesButton{
+      margin-bottom: 8px;
+    }
+  }
+  .right{
+    margin-top: 8px;
+    margin-left: 8px;
+    .save_biz{
+      position:absolute;
+      right: 8px;
+      z-index: 10;
+    }
+  }
+  .transfer{
+    height: 100%;
+    :global{
+      .ant-transfer-list{
+        width: 360px !important; 
+        height: 100% !important;
+        overflow: auto;
+      }
+    }
+  }
+  .gorup_tree_title{
+    .hover_opration{
+      display: none;
+      &>span{
+        margin-left: 5px;
+      }
+    }
+    &:hover{
+      .hover_opration{
+        display:inline-block;
+      }
+    }
+  }
+}

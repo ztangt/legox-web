@@ -1,0 +1,17 @@
+//图片预览(全局不能遮挡，则需要重新设置z-index)
+.ant-image-preview-operations {
+  background: rgba(0, 0, 0, 0.2);
+}
+.ant-image-preview-img {
+  padding-top: 46px;
+  padding-bottom: 28px; //需要上下留空隙
+}
+.ant-image-preview-wrap{
+  z-index: 10080!important;
+}
+.ant-image-preview-mask{
+  z-index: 10000!important;
+}
+.ant-image-preview-operations-wrapper{
+  z-index: 10081!important;
+}

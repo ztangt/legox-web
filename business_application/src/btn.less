@@ -1,0 +1,94 @@
+//按钮
+.ant-btn {
+  color: var(--ant-primary-color) !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  padding: 0px 6px !important;
+  border-color: var(--ant-primary-color) !important;
+  background-color: #ffffff;
+  line-height: 27px; //默认为antd button中的large
+  height: 32px;
+  box-shadow: none !important;
+  min-width: 48px;
+}
+
+.ant-btn:hover {
+  color: #fff !important;
+  border-color: var(--ant-primary-color-hover) !important;
+  background: var(--ant-primary-color-hover) !important;
+}
+
+.ant-btn[disabled],
+.ant-btn[disabled]:hover,
+.ant-btn[disabled]:focus,
+.ant-btn[disabled]:active {
+  color: #ffffff;
+  border-color: #616875;
+  background: #616875;
+  opacity: 0.5;
+  cursor: default;
+}
+
+.ant-btn>.anticon+span,
+.ant-btn>span+.anticon {
+  margin-left: 2px !important;
+}
+
+// //主按钮
+
+.ant-btn-primary {
+  background-color: #fff !important;
+  // color: var(--ant-primary-color) !important;
+  border-color: var(--ant-primary-color) !important;
+  text-shadow:none !important;//去掉文字阴影
+  .iconfont {
+    svg {
+      transform: translateX(14000px);
+      filter: drop-shadow(var(--ant-primary-color) -14000px 0px 0px);
+    }
+  }
+}
+
+.ant-btn-primary:hover {
+  // border-color: #2bb8ff;
+  // background: #2bb8ff;
+  border-color: var(--ant-primary-color-hover);
+  background: #ffffff;
+
+  .iconfont {
+    svg {
+      transform: translateX(14000px);
+      filter: drop-shadow(#ffffff -14000px 0px 0px);
+    }
+  }
+}
+
+.ant-btn-primary[disabled],
+.ant-btn-primary[disabled]:hover,
+.ant-btn-primary[disabled]:focus,
+.ant-btn-primary[disabled]:active {
+  color: var(--ant-primary-color);
+  background-color: #fff;
+  border-color: var(--ant-primary-color);
+  opacity: 0.5;
+  cursor: default;
+}
+
+//次按钮为默认样式
+//行按钮
+.ant-btn-sm {
+  width: 48px;
+  height: 26px;
+  line-height: 25px;
+}
+.ant-btn-group>.ant-btn:first-child:not(:last-child),
+.ant-btn-group>span:first-child:not(:last-child)>.ant-btn {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.ant-btn-group>.ant-btn:last-child:not(:first-child),
+.ant-btn-group>span:last-child:not(:first-child)>.ant-btn {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

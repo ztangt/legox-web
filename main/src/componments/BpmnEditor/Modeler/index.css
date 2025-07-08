@@ -1,0 +1,27 @@
+[class*=" bpmn-icon-task"],[class*=" miyue-sql-task"],[class*=" bpmn-icon-gateway-none"],[class*=" bpmn-icon-group"],[class*=" bpmn-icon-participant"],[class*=" bpmn-icon-data-"],[class*=" bpmn-icon-intermediate-event-none"],[class*=' bpmn-icon-script-task'],[class*=' bpmn-icon-service-task']{
+    display: none;
+}
+
+.group .bpmn-icon-task,.group .bpmn-icon-gateway-none,.group .bpmn-icon-intermediate-event-none,.group .bpmn-icon-lasso-tool,.djs-palette.two-column.open .group .bpmn-icon-connection-multi,.group .bpmn-icon-color{
+    display: none;
+}
+.djs-context-pad.open .group .bpmn-icon-start-event-none,.djs-context-pad.open .group .bpmn-icon-screw-wrench{
+    display: none;
+}
+.djs-context-pad.open .group{
+    display: inline-block;
+}
+.djs-palette.two-column.open{
+    margin-top: 100px;
+}
+.djs-minimap{
+    position: absolute;
+    left: 380px;
+    top: 5px;
+    width: 320px;
+    z-index: 10;
+}
+.djs-overlay-linting{
+    left: 5px !important;
+}
+/* [class^="bpmn-icon-"]:before */

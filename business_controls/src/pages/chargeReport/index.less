@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 14px;
+  background: #ffffff;
+  border-radius: 4px;
+  .list_head {
+    // display: flex;
+    .header {
+      width: 100%;
+      height: 48px;
+      margin-bottom: 10px;
+      display: flex;
+      padding-top: 10px;
+      justify-content: space-between;
+      .button_group {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto;
+      }
+      .search {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto;
+      }
+      .mr_4 {
+        margin-right: 4px;
+      }
+    }
+    .more {
+      width: 100%;
+      margin-bottom: 10px;
+      display: flex;
+      padding-top: 10px;
+    }
+  }
+  :global {
+    .ant-picker {
+      height: 32px;
+    }
+    .ant-table-tbody > tr > td {
+      white-space: pre-wrap;
+    }
+    //input框
+    .ant-input {
+      height: 32px;
+      line-height: 32px;
+    }
+    .ant-input-search {
+      .ant-input-affix-wrapper {
+        height: 32px;
+        padding: 0px;
+        .ant-input {
+          height: 28px;
+          padding: 0px 0px 0px 8px;
+        }
+      }
+      .ant-input-search-button {
+        height: 32px !important;
+      }
+    }
+    .ant-btn {
+      height: 32px;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.redColor {
+  color: red;
+}

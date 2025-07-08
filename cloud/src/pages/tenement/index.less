@@ -1,0 +1,32 @@
+.table_warp{
+  background-color: #ffffff;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding:8px;
+  .table_header{
+    height: 32px;
+    margin-bottom: 8px;
+    .left{
+      float: left;
+    }
+    .right{
+      float: right;
+      .upload_button{
+        position: relative;
+        cursor: pointer;
+        &>input{
+          position: absolute;
+          font-size: 100px;
+          right: 0;
+          top: 0;
+          opacity: 0;
+          filter: alpha(opacity=0);
+          cursor: pointer;
+          width: 88px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

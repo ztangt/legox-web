@@ -1,0 +1,113 @@
+.drag_tabel {
+  height: 100%;
+  position: relative;
+
+  &>div {
+    height: 100%;
+  }
+
+  :global {
+    .ant-table-empty{
+      table{
+        height: 100% !important;
+      }
+      .ant-table-measure-row{
+        height: 1px !important;
+      }
+      tr>td{
+        border-bottom: none !important; 
+      }
+    }
+    .ant-table-cell {
+      height: 40px; //行高统一40px
+      padding: 0 8px !important;
+    }
+
+    .oddRow {
+      &>td {
+        background-color: #fff;
+      }
+    }
+
+    .evenRow {
+      &>td {
+        background-color: #f8f9fa;
+      }
+    }
+
+    .oddRow:hover,
+    .evenRow:hover {
+      &>td {
+        // background: var(--ant-primary-color-deprecated-f-12) !important;
+        background: var(--ant-primary-color-active-deprecated-d-02) !important;
+      }
+    }
+    // .ant-table-body{//数据位超出时不出现滚动条
+    //   overflow: overlay !important;
+    // }
+    // /*整个滚动条*/
+    // ::-webkit-scrollbar {
+    //   width: 6px;
+    //   height: 8px;
+    //   background-color: #fff;
+    // }
+    // .ant-table-cell-fix-right {
+    //   position: sticky !important;
+    //   z-index: 2;
+    //   right:0px !important;
+    // }
+    // .ant-table-cell-fix-right{
+    //   opacity: 0;
+    // }
+  }
+}
+
+
+.ant-table-header {
+  -moz-user-select: none;
+  /* Firefox私有属性 */
+  -webkit-user-select: none;
+  /* WebKit内核私有属性 */
+  -ms-user-select: none;
+  /* IE私有属性(IE10及以后) */
+  -khtml-user-select: none;
+  /* KHTML内核私有属性 */
+  -o-user-select: none;
+  /* Opera私有属性 */
+  user-select: none;
+  /* CSS3属性 */
+}
+.dragHandler {
+  color: #333333;
+}
+.dragHandler:hover {
+  cursor: move;
+}
+
+.react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  bottom: 0;
+  right: -3px;
+  cursor: col-resize;
+  z-index: 99;
+  background-image: none !important;
+}
+
+
+/** 这里是偏移的时候显示的竖线，只有表头有竖线;
+如果需要联通表格请自行修改高度，1000倍表头高度，然后超出表格隐藏什么的（自行研究） */
+.react-resizable-handle.active::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  border-left: solid 1px red;
+}

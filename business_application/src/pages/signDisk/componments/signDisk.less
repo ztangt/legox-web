@@ -1,0 +1,195 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 14px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  :global{
+    .tree_dom___psmWh{
+      overflow-y: hidden !important;
+    }
+    .ant-table-body{
+      overflow-y: auto !important;
+    }
+  }
+  .left {
+    :global {
+      .ant-tree-switcher-noop,
+      .ant-tree-show-line .ant-tree-indent-unit {
+        visibility: hidden;
+      }
+      .ant-tree-icon__customize{
+        color: #1890ff;
+      }
+      .ant-tree .ant-tree-node-content-wrapper .ant-tree-iconEle{
+        line-height: 22px;
+      }
+      .ant-tree-list-holder{
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      .ant-tree-treenode{
+        margin-bottom: 6px;
+      }
+      .ant-tree-treenode:first-child{
+
+      }
+    }
+  }
+
+  .right {
+    width: 100%;
+    height: calc(100% - 22px);
+    .rightTop {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 8px;
+    }
+    .rightDown{
+      height: calc(100% - 51px);
+      :global{
+        .ant-table-cell{
+          height: 48px;
+        }
+      }
+    }
+  }
+
+  .breadcrumb {
+    // margin-top: 8px;
+    // margin-left: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    position: relative;
+    top:4px;
+  }
+}
+
+.tree_title {
+  .hover_opration {
+    display: none;
+
+    & > span {
+      margin-left: 5px;
+    }
+  }
+
+  &:hover {
+    .hover_opration {
+      display: inline-block;
+    }
+  }
+}
+.button_width{
+  width: 48px;
+  height: 32px;
+}
+.myfileNewDir {
+  margin-right: 10px;
+}
+
+.myfileUpload {
+  margin-right: 10px;
+  width: 48px;
+  height: 32px;
+}
+
+.myfileShare {
+  margin-right: 10px;
+  width: 48px;
+  height: 32px;
+}
+
+.myfileDownload {
+  margin-right: 10px;
+  width: 48px;
+  height: 32px;
+}
+
+.otherdownload {
+  margin-right: 10px;
+  width: 48px;
+  height: 32px;
+}
+
+.back {
+  margin-right: 10px;
+  width: 48px;
+  height: 32px;
+}
+
+.addModal {
+  position: relative !important;
+  top: 30% !important;
+}
+
+.uploadModal {
+  position: relative !important;
+  top: 30% !important;
+}
+
+.org {
+  // height: 445px;
+  padding: 0px;
+  :global {
+    .ant-tree-show-line .ant-tree-indent-unit {
+      opacity: 0;
+    }
+  }
+}
+.sort {
+  height: 100% !important;
+}
+.left {
+  padding-top: 10px;
+}
+
+.btnList {
+  :global {
+    .ant-dropdown-trigger {
+      line-height: 27px;
+    }
+  }
+}
+
+.searchInput {
+  :global {
+    .ant-input-suffix {
+      margin-right: 10px;
+    }
+  }
+}
+
+.signDiskPersonList{
+  padding-top: 8px;
+  :global{
+    .ant-table-cell{
+      padding-left: 8px;
+    }
+    .ant-table-thead{
+      >tr{
+        >th{
+          height: 48px;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+    } 
+    .ant-table-tbody{
+      color: var(--adm-color-primary);
+      >tr{
+        >td{
+          padding-top: 0;
+          padding-bottom: 0;
+          height: 48px;
+        }
+      }
+    }
+  }
+}
+.input_search{
+  padding-left: 8px;
+  position: relative;
+  top: 8px;
+}

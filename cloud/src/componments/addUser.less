@@ -1,0 +1,129 @@
+.wrap{
+    height: 550px;
+    overflow: auto;
+    margin-bottom: 50px;
+    .top{
+        padding-bottom: 40px;
+        // border-bottom: 1px solid #EAEAEA;
+        >div:nth-child(1){
+            width: 50%;
+            margin-left: 100px;
+            >span:nth-child(1){
+                background: #fafafa;
+                display: inline-block;
+                text-align: center;
+                width: 300px;
+                line-height: 150px;
+                height: 150px;
+                >div:nth-child(1){
+                    // margin-top: 48px;
+                }
+            }
+        }
+        >div:nth-child(2){
+            width: 50%;
+            margin-left: 100px;
+            >span:nth-child(1){
+                background: #fafafa;
+                display: inline-block;
+                text-align: center;
+                width: 300px;
+                line-height: 150px;
+                height: 150px;
+                >div:nth-child(1){
+                    // margin-top: 48px;
+                }
+            }
+        }
+    }
+    .displayFlex{
+        display: flex;
+    }
+    &::-webkit-scrollbar {
+        height: 6px;
+        width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #c3c3c3;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 0;
+    }
+    .top{
+        padding-bottom: 40px;
+        border-bottom: 1px solid #EAEAEA;
+        >div:nth-child(1){
+            width: 60%;
+        }
+        >div:nth-child(2){
+            width: 40%;
+        }
+    }
+    .displayFlex{
+        display: flex;
+    }
+    .avatarUploader  {
+        >div{
+            width: 100px;
+            height: 100px;
+            border: 0;
+            margin-left: 400px;
+            position: relative;
+            >span{
+                >p{
+                    position: absolute;
+                    bottom: -30%;
+                    left: 50%; 
+                    transform: translateX(-50%);
+                    display: inline-block;
+                    white-space:nowrap;
+                    font-size: 12px;
+                }
+                >img{
+                    height: 100%;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+    .signAvatarUploader{
+        >div{
+            width: 200px;
+            height: 100px;
+            border: 0;
+            margin-left: 100px;
+            position: relative;
+            >span{
+                >p{
+                    position: absolute;
+                    bottom: -30%;
+                    left: 50%; 
+                    transform: translateX(-50%);
+                    display: inline-block;
+                    white-space:nowrap;
+                    font-size: 12px;
+                }
+                >img{
+                   // width: 130px !important;
+                    height: 90px;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+    .modalItemTitle{
+        color: #333;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+}
+
+.bt_group{
+    position: absolute;
+    left: 45%;
+    top:92%;
+    // width: 150px;
+    // margin: 0 auto;
+}

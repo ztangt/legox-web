@@ -1,0 +1,65 @@
+.container {
+  font-family: PingFangSC-Regular, PingFang SC;
+  .main {
+    padding: 10px;
+
+    ul {
+      height: calc(100% - 20px);
+      overflow: auto;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        span {
+          margin-top: 20px;
+          font-size: 50px;
+        }
+      }
+    }
+
+    .app {
+      // width: 84px;
+      text-align: center;
+      margin: 0 39px 20px 0;
+      cursor: pointer;
+      width: 120px;
+      height: 120px;
+      border: 1px solid #e7e7e7;
+      background: #ffffff;
+      border-radius: 16px;
+
+      i {
+        margin-top: 8px;
+        display: block;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 400;
+        // width: 48px;
+        color: #333333;
+        line-height: 22px;
+      }
+    }
+
+    .app:hover {
+      background: rgba(63, 121, 255, 0.08);
+      // background: var(--ant-primary-color) !important;
+    }
+    :global {
+      .ant-tabs-tab {
+        border: none;
+        background: none !important;
+      }
+      .ant-tabs-tab-active {
+        background: #1890ff !important;
+        border-radius: 8px !important;
+      }
+      .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #ffffff;
+      }
+      .ant-tabs-nav {
+        padding-right: 8px;
+        background: #eff3fe;
+        border-radius: 8px;
+      }
+    }
+  }
+}

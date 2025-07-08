@@ -1,0 +1,164 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../public/images/main_bg.jpg);
+    background-size: 100% 100%;
+
+    .bigTopTitle {
+        width: 100%;
+        color: #17caf0;
+        font-size: 22px;
+        display: flex;
+        height: 6vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .bigBotTitle {
+        width: 100%;
+        color: #17caf0;
+        font-size: 22px;
+        display: flex;
+        height: 6vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top {
+        display: flex;
+        height: 28vh;
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            .wrap {
+                width: 90%;
+                height: 100%;
+                background-image: url(../../public/images/bg_cover.png);
+                background-size: 100% 100%;
+            }
+            h3 {
+                margin: 2% 0 0 3%;
+                height: 20%;
+                color: #00cbef;
+                font-size: 22px;
+            }
+            .data {
+                height: 30%;
+                display: flex;
+                justify-content: space-around;
+                p {
+                    color: #ffffff;
+                }
+                span {
+                    color: #00f4ff;
+                    font-size: 22px;
+                }
+                .d_left {
+                }
+                .d_middle {
+                }
+                .d_right {
+                }
+            }
+            .number {
+                height: 30%;
+                display: flex;
+                justify-content: space-around;
+                .n_left {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                }
+                .n_right {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                }
+            }
+            .status {
+                height: 20%;
+                display: flex;
+                justify-content: space-around;
+                color: #00f4ff;
+                font-size: 12px;
+                span {
+                    display: flex;
+                    justify-content: center;
+                    flex: 1;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            .wrap {
+                width: 90%;
+                height: 100%;
+                background-image: url(../../public/images/bg_cover.png);
+                background-size: 100% 100%;
+                h3 {
+                    margin: 2% 0 0 3%;
+                    height: 20%;
+                    color: #00cbef;
+                    font-size: 22px;
+                }
+                .pie {
+                    width: 80%;
+                    height: 28vh;
+                    // height: 100px;
+                }
+            }
+        }
+    }
+
+    .middle {
+        height: 30vh;
+        .bar {
+            width: 100%;
+            height: 30vh;
+        }
+    }
+
+    .bottom {
+        height: 30vh;
+        .bar {
+            width: 100%;
+            height: 30vh;
+        }
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+.title_num {
+    margin-right: 14px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.day_num {
+    min-height: 47px;
+    background-image: url(../../public/images/blue_icon.png);
+    background-size: 47px 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.month_num {
+    //切图问题  俩图不一样高
+    min-height: 52px;
+    background-image: url(../../public/images/green_icon.png);
+    background-size: 47px 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

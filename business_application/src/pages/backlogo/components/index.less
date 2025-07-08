@@ -1,0 +1,44 @@
+.table{
+    width: 100%;
+    height: 100%;
+    .topContent{
+        width: 100%;
+        display: inline-block;
+        padding:8px 0px 8px;
+        .search{
+            float: left;
+            width:226px;
+            margin-left: 8px;
+            :global{
+                .ant-input-affix-wrapper{
+                  padding-right: 2px;
+                }
+            }
+        }
+        .button{
+            float: right;
+            // height: 28px;
+            background: #fff;
+            margin-right:8px;
+        }
+    }
+}
+.read{
+    padding:0 4px;
+    background: rgba(0, 186, 125, 0.1);
+    border-radius: 2px;
+    color:#00ba7d;
+}
+.unRead{
+    padding:0 4px;
+    background: rgba(255, 244, 242, 0.76);
+    border-radius: 2px;
+    color: #FF451D;
+}
+.msgTitle{
+    max-width:400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}

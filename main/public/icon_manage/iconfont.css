@@ -1,0 +1,636 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3805709 */
+  src: url('iconfont.woff2?t=1709177255458') format('woff2'),
+       url('iconfont.woff?t=1709177255458') format('woff'),
+       url('iconfont.ttf?t=1709177255458') format('truetype'),
+       url('iconfont.svg?t=1709177255458#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-globalReviewer:before {
+  content: "\e74b";
+}
+
+.icon-holidaysManage:before {
+  content: "\e74c";
+}
+
+.icon-desktopLayout:before {
+  content: "\e74d";
+}
+
+.icon-pluginManage:before {
+  content: "\e74e";
+}
+
+.icon-fangda:before {
+  content: "\e6b2";
+}
+
+.icon-suoxiao:before {
+  content: "\e6b3";
+}
+
+.icon-fanhuidingbu:before {
+  content: "\e6b1";
+}
+
+.icon-guanbi:before {
+  content: "\e68c";
+}
+
+.icon-sceneConfig:before {
+  content: "\e742";
+}
+
+.icon-incompatibleFunctionClassify:before {
+  content: "\e743";
+}
+
+.icon-chartEngine:before {
+  content: "\e741";
+}
+
+.icon-yingyongshangcheng:before {
+  content: "\e744";
+}
+
+.icon-sceneAuthorization:before {
+  content: "\e745";
+}
+
+.icon-portalModel:before {
+  content: "\e746";
+}
+
+.icon-incompatibleRoleAlert:before {
+  content: "\e747";
+}
+
+.icon-yingyongfabu:before {
+  content: "\e748";
+}
+
+.icon-incompatibleSettings:before {
+  content: "\e749";
+}
+
+.icon-incompatibleRuleSettings:before {
+  content: "\e74a";
+}
+
+.icon-interfaceManagement:before {
+  content: "\e666";
+}
+
+.icon-default:before {
+  content: "\e734";
+}
+
+.icon-buttonLibrary:before {
+  content: "\e68d";
+}
+
+.icon-buttonSolution:before {
+  content: "\e68e";
+}
+
+.icon-biaodanshejiqi:before {
+  content: "\e68f";
+}
+
+.icon-buttonManage:before {
+  content: "\e690";
+}
+
+.icon-basicDataForm:before {
+  content: "\e691";
+}
+
+.icon-jichushujuguanli:before {
+  content: "\e692";
+}
+
+.icon-deptMg:before {
+  content: "\e693";
+}
+
+.icon-workflowEngine:before {
+  content: "\e694";
+}
+
+.icon-platformCodeRules:before {
+  content: "\e695";
+}
+
+.icon-moduleResourceMg:before {
+  content: "\e696";
+}
+
+.icon-unitInfoManagement:before {
+  content: "\e697";
+}
+
+.icon-fuwuzhongxin:before {
+  content: "\e698";
+}
+
+.icon-dataDriven:before {
+  content: "\e699";
+}
+
+.icon-postMg:before {
+  content: "\e69a";
+}
+
+.icon-passwordMg:before {
+  content: "\e69b";
+}
+
+.icon-writeSignStyle:before {
+  content: "\e69c";
+}
+
+.icon-sysRole:before {
+  content: "\e69d";
+}
+
+.icon-shouquanchakan:before {
+  content: "\e69e";
+}
+
+.icon-listMoudles:before {
+  content: "\e69f";
+}
+
+.icon-applicationModel:before {
+  content: "\e6a0";
+}
+
+.icon-applyModel:before {
+  content: "\e6a1";
+}
+
+.icon-dataRuleMg:before {
+  content: "\e6a2";
+}
+
+.icon-eventRegister:before {
+  content: "\e6a3";
+}
+
+.icon-userInfoManagement:before {
+  content: "\e6a4";
+}
+
+.icon-useDataBuildModel:before {
+  content: "\e6a5";
+}
+
+.icon-appFormEngine:before {
+  content: "\e6a6";
+}
+
+.icon-formEngine:before {
+  content: "\e6a7";
+}
+
+.icon-allRole:before {
+  content: "\e6a8";
+}
+
+.icon-accreditLook:before {
+  content: "\e6a9";
+}
+
+.icon-sysConfig:before {
+  content: "\e6aa";
+}
+
+.icon-orgAuth:before {
+  content: "\e6ab";
+}
+
+.icon-businessUseSort:before {
+  content: "\e6ac";
+}
+
+.icon-userGroupMg:before {
+  content: "\e6ad";
+}
+
+.icon-yonghuzhongxin:before {
+  content: "\e6ae";
+}
+
+.icon-unitRole:before {
+  content: "\e6af";
+}
+
+.icon-businessFormManage:before {
+  content: "\e6b0";
+}
+
+.icon-dynamicPage_fivePublicExpenditure:before {
+  content: "\e687";
+}
+
+.icon-claimExpense:before {
+  content: "\e689";
+}
+
+.icon-dynamicPage_conference:before {
+  content: "\e68a";
+}
+
+.icon-dynamicPage_trainingFree:before {
+  content: "\e68b";
+}
+
+.icon-codingScheme:before {
+  content: "\e688";
+}
+
+.icon-zhankaishouqi:before {
+  content: "\e663";
+}
+
+.icon-zhankaixiala:before {
+  content: "\e685";
+}
+
+.icon-xiangmuyusuanzhibiao:before {
+  content: "\e686";
+}
+
+.icon-budgetTargetState:before {
+  content: "\e627";
+}
+
+.icon-baoxiaofeiyong:before {
+  content: "\e628";
+}
+
+.icon-dynamicPage_deptBudgetIndicatorAnalysis:before {
+  content: "\e629";
+}
+
+.icon-caiwuyusuanershangshenbao:before {
+  content: "\e62b";
+}
+
+.icon-caiwuyusuanyishangshenbao:before {
+  content: "\e62c";
+}
+
+.icon-caigouguanli:before {
+  content: "\e62d";
+}
+
+.icon-dynamicPage_gov_pro:before {
+  content: "\e62e";
+}
+
+.icon-travelExpense:before {
+  content: "\e62f";
+}
+
+.icon-circulateWork:before {
+  content: "\e630";
+}
+
+.icon-caizhengyusuanshenbao:before {
+  content: "\e631";
+}
+
+.icon-chalvbaoxiao:before {
+  content: "\e632";
+}
+
+.icon-waitMatter:before {
+  content: "\e633";
+}
+
+.icon-chalvshenqing:before {
+  content: "\e634";
+}
+
+.icon-invoiceManagement:before {
+  content: "\e635";
+}
+
+.icon-gerenjiekuan:before {
+  content: "\e636";
+}
+
+.icon-signDisk:before {
+  content: "\e637";
+}
+
+.icon-daorujichushuju:before {
+  content: "\e638";
+}
+
+.icon-feiyongshenqing:before {
+  content: "\e639";
+}
+
+.icon-traceWork:before {
+  content: "\e63a";
+}
+
+.icon-workItem:before {
+  content: "\e63b";
+}
+
+.icon-hetongguanli:before {
+  content: "\e63c";
+}
+
+.icon-gongnengkemuzhihangfenxi:before {
+  content: "\e63d";
+}
+
+.icon-dynamicPage_functional:before {
+  content: "\e63e";
+}
+
+.icon-gongwenguanli:before {
+  content: "\e63f";
+}
+
+.icon-workTrust:before {
+  content: "\e640";
+}
+
+.icon-dynamicPage_account:before {
+  content: "\e641";
+}
+
+.icon-huiyifeibaoxiao:before {
+  content: "\e642";
+}
+
+.icon-guanzhushixiang:before {
+  content: "\e643";
+}
+
+.icon-jichushujumabiao:before {
+  content: "\e644";
+}
+
+.icon-huiyifeishenqing:before {
+  content: "\e645";
+}
+
+.icon-a-jibenzhichushengchengyusuanzhibiao:before {
+  content: "\e646";
+}
+
+.icon-basicData:before {
+  content: "\e647";
+}
+
+.icon-jibendanganjiezhuan:before {
+  content: "\e648";
+}
+
+.icon-jiekuanchaoqiyujing:before {
+  content: "\e649";
+}
+
+.icon-publicDisk:before {
+  content: "\e64a";
+}
+
+.icon-caiwuyusuanpifu:before {
+  content: "\e64b";
+}
+
+.icon-jiekuan:before {
+  content: "\e64c";
+}
+
+.icon-jiekuandan:before {
+  content: "\e64d";
+}
+
+.icon-peixunfeishenqing:before {
+  content: "\e64e";
+}
+
+.icon-dynamicPage_economic:before {
+  content: "\e64f";
+}
+
+.icon-jingjikemuzhihangfenxi:before {
+  content: "\e650";
+}
+
+.icon-renyuanguanli:before {
+  content: "\e651";
+}
+
+.icon-peixunfeibaoxiao:before {
+  content: "\e652";
+}
+
+.icon-laowufeibaoxiao:before {
+  content: "\e653";
+}
+
+.icon-shihoubaoxiao:before {
+  content: "\e654";
+}
+
+.icon-shiqianshenqing:before {
+  content: "\e655";
+}
+
+.icon-qitafeiyongbaoxiao:before {
+  content: "\e656";
+}
+
+.icon-personWork:before {
+  content: "\e657";
+}
+
+.icon-calendarMg:before {
+  content: "\e658";
+}
+
+.icon-richangbaoxiao:before {
+  content: "\e659";
+}
+
+.icon-custom:before {
+  content: "\e65a";
+}
+
+.icon-addressBook:before {
+  content: "\e65b";
+}
+
+.icon-allWork:before {
+  content: "\e65c";
+}
+
+.icon-monitorWork:before {
+  content: "\e65d";
+}
+
+.icon-notification:before {
+  content: "\e65e";
+}
+
+.icon-noticeAnnouncement:before {
+  content: "\e65f";
+}
+
+.icon-trustedWork:before {
+  content: "\e660";
+}
+
+.icon-notificationList:before {
+  content: "\e661";
+}
+
+.icon-trustWork:before {
+  content: "\e662";
+}
+
+.icon-dynamicPage_project:before {
+  content: "\e664";
+}
+
+.icon-dynamicPage_projectBudgetIndicatorLedger:before {
+  content: "\e665";
+}
+
+.icon-dynamicPage_projecttPrcentWarning:before {
+  content: "\e667";
+}
+
+.icon-a-xiangmuzhichushengchengyusuanzhibiao:before {
+  content: "\e668";
+}
+
+.icon-dynamicPage_budgetPrcentWarning:before {
+  content: "\e669";
+}
+
+.icon-dynamicPage_budgetDispenReduece:before {
+  content: "\e66a";
+}
+
+.icon-budgetBasicData:before {
+  content: "\e66b";
+}
+
+.icon-sendWork:before {
+  content: "\e66c";
+}
+
+.icon-dynamicPage_budgetDispenAdd:before {
+  content: "\e66d";
+}
+
+.icon-yusuanbianbaoguanli:before {
+  content: "\e66e";
+}
+
+.icon-doneWork:before {
+  content: "\e66f";
+}
+
+.icon-yusuanzhibiaotiaozheng:before {
+  content: "\e670";
+}
+
+.icon-dynamicPage_budgetAdjustment:before {
+  content: "\e671";
+}
+
+.icon-dynamicPage_budgetDecompose:before {
+  content: "\e672";
+}
+
+.icon-dynamicPage_budget:before {
+  content: "\e673";
+}
+
+.icon-dynamicPage_budgetRelease:before {
+  content: "\e674";
+}
+
+.icon-dynamicPage_budgetIndicatorLedger:before {
+  content: "\e675";
+}
+
+.icon-budgetTarget:before {
+  content: "\e676";
+}
+
+.icon-budgetTargetMange:before {
+  content: "\e677";
+}
+
+.icon-zhichuguanli:before {
+  content: "\e678";
+}
+
+.icon-zhifutaizhang:before {
+  content: "\e679";
+}
+
+.icon-disk:before {
+  content: "\e67a";
+}
+
+.icon-exBasicData:before {
+  content: "\e67b";
+}
+
+.icon-indicatorWarning:before {
+  content: "\e67c";
+}
+
+.icon-dynamicPage_expense:before {
+  content: "\e67d";
+}
+
+.icon-zhijiebaoxiao:before {
+  content: "\e67e";
+}
+
+.icon-dynamicPage_addReduceBudget:before {
+  content: "\e67f";
+}
+
+.icon-information:before {
+  content: "\e680";
+}
+
+.icon-infoAnnouncement:before {
+  content: "\e681";
+}
+
+.icon-informationList:before {
+  content: "\e682";
+}
+
+.icon-zichanguanli:before {
+  content: "\e683";
+}
+
+.icon-zichanfenlei:before {
+  content: "\e684";
+}
+

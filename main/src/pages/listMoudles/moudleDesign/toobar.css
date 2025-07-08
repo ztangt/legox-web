@@ -1,0 +1,10 @@
+.ql-toolbar.ql-snow .ql-formats{
+    margin-right: 0px;
+}
+.ql-toolbar.ql-snow{
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.ql-container.ql-snow{
+    border: none;
+}

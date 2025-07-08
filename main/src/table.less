@@ -1,0 +1,117 @@
+.drag_title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.custom_btn:hover {
+  opacity: 1;
+}
+
+.ant-table-wrapper{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.ant-table{
+  height: 100%;
+}
+.ant-table-container{
+  height: 100%;
+}
+.ant-table-content{
+  height: 100%;
+}
+.ant-spin-nested-loading{
+  height: 100%;
+}
+.ant-spin-container{
+  height: 100%;
+}
+//表格
+.ant-table-thead > tr > th{
+  position: relative;
+  padding:0;
+  overflow-wrap: break-word;
+  white-space: nowrap;
+}
+.ant-table-cell{
+  height:45px;
+}
+.ant-table-tbody > tr > td{
+  font-size: 14px;
+}
+.ant-table-cell>div>:nth-child(1).ant-btn-default {
+  margin-left: 0px;
+}
+.ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  width: 0px;
+}
+.ant-table-header,.ant-table-thead,.ant-table-content{
+  border-top:solid 1px #333;
+}
+.ant-table-cell .ant-table-cell-fix-right .ant-table-cell-fix-right-first{
+  right:0;
+}
+.ant-table tfoot > tr > td{
+  padding:0px 0px;
+  height: 44px;//TODO横线出不来暂时写成这样
+}
+.ant-table-cell-fix-right {
+  position: sticky !important;
+  z-index: 2;
+  //right:0px !important;//加上他横向滚动有空隙
+}
+//table操作
+.table_operation{
+  padding: 4px 2px;
+  span ,a{
+    margin-left: 4px;
+    cursor: pointer;
+  }
+  &>:nth-child(1){
+    margin-left:0;
+  }
+}
+
+  table tr td.ant-table-selection-column, table tr th.ant-table-selection-column{
+    padding-right: 32px;
+    padding-left: 8px;
+    text-align: center;
+  }
+.table_operation span,
+.table_operation___9bCQY span,
+.table_operation___9bCQY a,
+.work_warp___1SbXj .table___82VQW .title___N9v3O,.table_operation a {
+  color: var(--ant-primary-color) !important;
+}
+tr {
+  .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+    background-color: var(--ant-primary-color);
+    color: #fff;
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+    border: solid 1px var(--ant-primary-color);
+  }
+
+  .ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end) .ant-picker-cell-inner {
+    background-color: #ecf3fe;
+  }
+}
+tr {
+  th {
+    font-size: 14px;
+  }
+}
+

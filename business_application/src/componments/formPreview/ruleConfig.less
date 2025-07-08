@@ -1,0 +1,75 @@
+
+.right_rule_config_warp{
+  overflow: hidden;
+  height: 100%;
+  :global{
+    .ant-tabs{
+      height: 100%;
+    }
+    .ant-tabs-tabpane{
+      height: 100%;
+    }
+    .ant-table-wrapper{
+      height: auto;
+    }
+    .ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+      width: 0px;
+    }
+    .ant-table-header,
+    .ant-table-thead,
+    .ant-table-content {
+      border-top: solid 1px #333;
+    }
+    .drag_tabel___2L49k{
+      height: unset;
+      .ant-table-thead{
+        &>tr:first-child{
+          &>th:first-child{
+            padding-left: 16px!important;
+          }
+        }
+      }
+    }
+  }
+  .rule_right{
+    height: 100%;
+    overflow: auto;
+    .rule_message{
+      padding-left: 16px;
+      &>p{
+        margin-bottom: 8px;
+      }
+    }
+    :global{
+      .drag_tabel___ovkrI{
+        height: auto;
+      }
+    }
+  }
+}
+.empty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.empty_small{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  flex-direction: column;
+  :global{
+    .ant-empty-image{
+      height: calc(100% - 22px);
+    }
+  }
+}
+.empty_tab{
+  :global{
+    .ant-tabs-ink-bar{
+      background-color: unset;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@grid_width: calc((100%)/12); //grid大小
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid red;
+  //padding: 0px 16px 0px 0px;
+  width: 100%;
+  overflow-y: auto;
+  // div{
+  //   height: 100%;
+  // }
+
+}
+.boxLabel {
+  min-width: calc(@grid_width*2);
+  max-width: calc(@grid_width*2);
+  text-align: center;
+}
+.boxInput {
+  width: 100%;
+  border: 1px solid red;
+  height: 100%;
+  padding: 5px;
+  input:hover{
+    border:0px!important;
+  }
+  input{
+    border:0px!important;
+  }
+}
+.form_item_input{
+  height: inherit;
+
+  div{
+    height: inherit;
+
+  }
+
+  input{
+    height: inherit;
+    &:hover{
+      border: 1px solid red;
+    }
+    &:focus{
+      border: 1px solid red;
+      box-shadow:none;
+    }
+  }
+
+  :global{
+    // .ant-select{
+    //   height: inherit;
+    //   &:hover{
+    //     border: 1px solid red;
+    //   }
+    //   &:focus{
+    //     border: 1px solid red;
+    //     box-shadow:none;
+    //   }
+    // }
+    // .ant-select[disabled]:hover{
+    //   border: 1px solid red;
+    // }
+    .ant-input[disabled]:hover{
+      border: 1px solid red;
+    }
+    .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover{
+      border-color:red
+    }
+    .ant-input-suffix{
+      white-space: pre-wrap;
+    }
+    .ant-input-prefix{
+      white-space: pre-wrap;
+    }
+  }
+}
+
+//表格
+.form_warp{
+  margin:40px;
+  box-shadow: 0px 0px 10px 2px #666;
+  padding-bottom: 20px;
+  background: #fff;
+  height: 100%;
+  overflow-y: auto;
+  :global{
+    .ant-form-item{
+      margin-bottom: 0px;
+    }
+    .ant-form-item-explain-error{
+      display: none;
+      // position: absolute;
+      // top: -25px;
+      // right: 0px;
+      // height: 20px;
+      // border: 1px solid;
+    }
+    .ant-form-item-explain{
+      display: none;
+    }
+  }
+}
+.form_detail_warp{
+  height: 100%;
+  .heard{
+    height: 40px;
+    .button_list{
+      float: left;
+      &>button{
+        margin-right: 10px;
+      }
+    }
+    .rule_button{
+      float: right;
+      margin-right: 20px;
+    }
+  }
+}
+.scrollbarStyle{
+  overflow:auto;
+  &::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: #c3c3c3;
+  }
+  &::-webkit-scrollbar-track {
+      border-radius: 0;
+  }
+}
+.pullSearch{
+  width: 200px;
+  float:left;
+  margin: 20px 10px 10px 0px
+}
+//包容网关的样式
+.check_node_form{
+  .form_check{
+    position: relative;
+    height: 32px;
+    padding-top: 5px;
+    .act_name{
+      width: 110px;/*定义块元素的宽度*/
+      white-space: nowrap;/*内容超宽后禁止换行显示*/
+      overflow: hidden;/*超出部分隐藏*/
+      text-overflow:ellipsis;/*文字超出部分以省略号显示*/
+    }
+    :global{
+      .ant-form-item{
+        margin-bottom: 8px;
+      }
+    }
+    .handler_form{
+      position: absolute;
+      left: 140px;
+      top: 0px;
+    }
+    .reader_form{
+      position: absolute;
+      left: 360px;
+      top: 0px;
+    }
+  }
+}
+:global{
+  .ant-tabs-content{
+    height: 100%;
+  }
+}

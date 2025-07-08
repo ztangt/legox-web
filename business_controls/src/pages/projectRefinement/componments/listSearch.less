@@ -1,0 +1,113 @@
+.search {
+  margin-top: 8px;
+  :global {
+    .ant-input-affix-wrapper {
+      height: 32px;
+      padding: 0px;
+      padding-right: 8px;
+      .ant-input {
+        height: 30px !important;
+        padding: 0px 0px 0px 8px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #cccccc;
+        font-size: 14px;
+      }
+
+      &:hover {
+        border-color: #505766 !important;
+      }
+    }
+    .ant-input-affix-wrapper:focus,
+    .ant-input-affix-wrapper-focused {
+      border-color: #505766 !important;
+      box-shadow: none;
+    }
+  }
+  .three_area {
+    // margin-bottom: 8px;
+    padding: 0 8px 0 10px;
+    .top {
+      display: flex;
+      .right {
+        // padding-left: 8px;
+        flex: 1;
+        .right_button {
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          button {
+            margin-left: 8px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      .left {
+        display: flex;
+      }
+      .right {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        button {
+          margin-left: 8px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .single_area {
+    margin-bottom: 8px;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    .left {
+      display: flex;
+      min-width: 288px;
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      button {
+        margin-left: 8px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .high_level {
+    display: inline-block;
+    width: 30px;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 2px;
+    color: var(--ant-primary-color);
+    cursor: pointer;
+    margin-right: 2px;
+    font-size: 14px;
+  }
+  .f_opration {
+    text-align: center;
+    padding: 0 0 8px 0;
+    background: #f7f7f7;
+    //这里单独改按钮背景色  透明色 梅红说的
+    button {
+      margin: 0 4px;
+      // background-color: transparent !important;
+    }
+  }
+
+  .high_form {
+    padding: 8px 0 0 8px !important;
+    background: #f7f7f7;
+  }
+}

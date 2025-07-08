@@ -1,0 +1,915 @@
+@import '~antd/dist/antd.variable.min.css';
+@import '~react-grid-layout/css/styles.css';
+@import '~react-resizable/css/styles.css';
+@import url('./table.less');
+@import url('./common.less');
+@import url('./btn.less');
+@import url('./input.less');
+@import url('./modal.less');
+@import url('./select.less');
+@import url('./pagination.less');
+@import url('./message.less');
+@import url('./tree.less');
+@import url('./menu.less');
+@import url('./checkbox.less');
+@import url('./imagePreview.less');
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+body,
+input,
+legend,
+fieldset,
+i,
+nav,
+header,
+div,
+footer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@color: rgb(24, 144, 255);
+@colorF: #fff;
+
+
+
+
+
+#root-master {
+  // font-family:PingFangRegular;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+
+
+.ant-picker-range .ant-picker-clear {
+  right: 9px !important;
+}
+
+//调整高度为60px
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  padding-top: 60px !important;
+  z-index: 9999 !important;
+}
+
+.ant-pro-basicLayout .ant-layout-header.ant-pro-fixed-header {
+  height: 60px !important;
+  line-height: 60px !important;
+  z-index: 10000 !important;
+}
+
+.ant-pro-top-nav-header.light {
+  background: var(--ant-primary-color) !important;
+}
+
+.ant-layout-header {
+  height: 60px !important;
+  line-height: 60px !important;
+}
+
+.ant-layout-content {
+  height: calc(100vh - 106px);
+  overflow: hidden;
+
+  #fast_wrap {
+    height: 100%;
+
+    &>div {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #dom_container {
+      height: 100%;
+      // height: calc(100% - 32px);//减去标签32的高度0413
+      overflow: hidden;
+    }
+  }
+}
+
+// .ant-btn-default {
+//   margin-left: 8px;
+// }
+
+// .ant-form-item-no-colon {
+//   margin-right: -5px;
+// }
+
+.ka-wrapper {
+  height: calc(100% - 16px);//减去自己的margin-top
+  margin: 16px 16px 0px 16px;
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  // padding: 16px 0;
+}
+
+// .ka-wrapper::-webkit-scrollbar{
+//   display: none;
+// }
+.ka-content {
+  height: 100%;
+  position: relative;
+}
+.ant-layout-footer{
+  height: 28px;
+}
+.ant-pro-global-footer {
+  // margin: 0px !important;
+  // padding: 7px 16px !important;
+  padding: 0px!important;
+  height: 28px;
+  line-height: 28px;
+  margin: 0px!important;
+}
+.ant-pro-global-footer-links{
+  margin-bottom: 0px!important;
+}
+
+//以上样式别动，全局布局样式
+.ant-pro-global-header-logo h1 {
+  display: none;
+  color: var(--ant-primary-color) !important;
+}
+
+//页签样式
+.ant-tabs {
+  overflow: hidden;
+}
+
+.ant-tabs-tab:hover {
+  color:var(--ant-primary-color) !important;
+  // background-color: #efeff1 !important;
+  // border-top-left-radius: 6px !important;
+  // border-top-right-radius: 6px !important;
+
+  .ant-tabs-tab-remove {
+    // color:var(--ant-primary-color);
+    color: #999999;
+  }
+}
+
+.ant-pro-global-header-logo a img,.ant-pro-top-nav-header-logo img, .ant-pro-top-nav-header-logo a > svg {
+  height: auto!important;
+  // width: 200px;
+}
+
+.ant-tabs>.ant-tabs-nav,
+.ant-tabs>div>.ant-tabs-nav {
+  position: relative;
+  display: flex;
+  flex: none;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+  color:var(--ant-primary-color);
+}
+
+
+
+//dropdownTODO
+
+.ant-dropdown-trigger {
+  height: 32px;
+  line-height: 32px;
+  border-radius: 2px;
+  padding: 0 8px;
+}
+
+.ant-dropdown-menu-title-content {
+  padding: 0px 8px 0px 8px;
+}
+
+
+
+.ant-dropdown {
+  .ant-dropdown-menu-item {
+    height: 32px;
+    line-height: 32px;
+    padding: 0px;
+  }
+
+  .ant-dropdown-menu-light {
+    // border: solid 1px #d9d9d9;
+    // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    // padding: 8px 12px; //左右为12
+  }
+
+  .ant-dropdown-menu-light>li {
+    text-align: center;
+    font-size: 12px;
+    color: #1890ff;
+  }
+
+  .ant-dropdown-menu-item:hover {
+    background-color: #f0f0f0;
+  }
+  .ant-dropdown-menu-title-content{//下拉内容是14px
+    font-size: 14px;
+  }
+}
+
+
+//日期TODO
+.ant-form-item-control-input-content {
+  .ant-picker {
+    height: 32px;
+    line-height: 32px;
+    border-radius: 4px;
+    padding: 0px 8px;
+  }
+
+  .ant-picker:hover {
+    border-color: #505766;
+  }
+
+  .ant-picker:focus,
+  .ant-picker-focused {
+    box-shadow: none;
+    border-color: #505766;
+
+    .ant-picker-suffix {
+      color: #999;
+    }
+  }
+
+  .ant-picker-header {
+    height: 40px;
+  }
+
+  .ant-picker-input>input {
+    font-size: 14px;
+  }
+}
+
+.ant-picker-footer {
+  .ant-btn-sm {
+    padding: 0 !important;
+
+    span {
+      // letter-spacing: -2px;
+    }
+  }
+}
+
+.ant-picker:hover, .ant-picker-focused {
+  border-color: #505766 !important;
+}
+
+
+
+
+
+// .ant-tabs-card.ant-tabs-bottom>.ant-tabs-nav .ant-tabs-tab+.ant-tabs-tab,
+// .ant-tabs-card.ant-tabs-bottom>div>.ant-tabs-nav .ant-tabs-tab+.ant-tabs-tab,
+// .ant-tabs-card.ant-tabs-top>.ant-tabs-nav .ant-tabs-tab+.ant-tabs-tab,
+// .ant-tabs-card.ant-tabs-top>div>.ant-tabs-nav .ant-tabs-tab+.ant-tabs-tab {
+//   margin-left: 0;
+// }
+
+.ant-tabs-tab {
+  border-left: 0 !important;
+}
+
+// .ant-tabs-tab:first-child {
+//   border-left: 1px solid #f0f0f0 !important;
+// }
+
+
+
+//表单搜索
+.ant-form-inline .ant-form-item {
+  margin-bottom: 8px !important;
+}
+
+.ant-form-item-label>label {
+  font-size: 14px;
+}
+
+.ant-form .ant-form-item-label > label {
+  color: #333333;
+}
+
+.cell_day_label {
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.cell_day_label_select {
+  width: 18px;
+  height: 18px;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  background: var(--ant-primary-color);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 2px;
+}
+
+.desktop_fs {
+  font-size: 12px;
+}
+
+.desktop_wh {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  margin: 0 auto;
+}
+
+
+// .ant-popover-content {//TOOD:
+//   .ant-popover-inner {
+//     position: absolute;
+//     top: 30px;
+//     left: -237px;
+//   }
+// }
+
+
+
+
+
+
+
+// 表头处小齿轮按钮
+.col_set {
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  z-index: 999;
+}
+
+.flex_space_around {
+  position: relative;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex_column {
+  cursor: pointer;
+  position: relative;
+  // padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.text_center {
+  text-align: center;
+}
+
+// .rbc-row-content, .rbc-row {
+//   height: 100%;
+// }
+
+.plan {
+  display: flex;
+
+  &:hover {
+    background: #00b854;
+  }
+}
+
+.plan_main {
+  display: flex;
+  position: absolute;
+  bottom: 2px;
+  // left: 2px;
+  // left: 50%;
+  // transform: translate(-50%, 0);
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  background: #00b854;
+  border-radius: 50%;
+  margin: 7px 2px 0 0;
+}
+
+.dot_main {
+  // position: absolute;
+  // bottom: 2px;
+  // left: 50%;
+  // transform: translate(-50%, 0);
+  width: 6px;
+  height: 6px;
+  background: var(--ant-primary-color);
+  border-radius: 50%;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.inner_border {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid var(--ant-primary-color);
+  border-radius: 8px;
+}
+
+.inner_bg {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: var(--ant-primary-color-deprecated-f-12);
+  border-radius: 8px;
+}
+
+
+//日历当前时刻按钮
+.ant-picker-now-btn {
+  text-align: center;
+  line-height: 20px;
+  color: #323639;
+  display: block;
+  width: 40px;
+  height: 20px;
+  background-color: #f7f9fd;
+  border-radius: 8px;
+}
+
+.ant-picker-now-btn:active {
+  background-color: #fff7e8;
+  color: #323639;
+}
+
+.ant-picker-now-btn:hover {
+  background-color: #edf1f7;
+  color: #323639;
+}
+
+.ant-picker-cell-today {
+  .ant-picker-cell-inner {
+    color: #5b95f4;
+  }
+}
+
+.ant-select-single .ant-select-selector::after,
+.ant-select-single .ant-select-selector .ant-select-selection-item::after,
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder::after {
+  height: 100%;
+  vertical-align: middle;
+}
+
+//Radio.Group
+#dom_container{
+  .ant-radio-button-wrapper {
+    padding: 0 8px;
+    margin-right: 4px;
+    border: solid 1px #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 22px;
+    line-height: 21px;
+  }
+  
+  .ant-radio-button .ant-radio-button-checked {
+    height: 22px;
+  }
+  
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    z-index: 1;
+    color: #333;
+    border: solid 1px #505766;
+    border-radius: 4px;
+  }
+  
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover,
+  .ant-radio-button-wrapper:hover {
+    color: #333;
+    border-color: #e4e4e4;
+  }
+  
+  .ant-radio-button-wrapper-checked:not([class*=' ant-radio-button-wrapper-disabled']).ant-radio-button-wrapper:first-child {
+    border-right-color: #505766;
+    border-radius: 4px;
+  }
+  
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+    border-color: #505766;
+  }
+  
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+    box-shadow: none !important;
+  }
+  
+  .ant-radio-button-wrapper:not(:first-child)::before {
+    background-color: #fff !important;
+    width: 0 !important;
+  }
+  
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before,
+  .ant-radio-button-wrapper:not(:first-child)::before:focus {
+    background-color: #505766 !important;
+  }
+  
+  .ant-radio-button-wrapper:not(:first-child)::before:hover {
+    background-color: #e4e4e4;
+    border-radius: 4px;
+  }
+  
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover::before {
+    background-color: #505766 !important;
+  }
+  
+  .ant-radio-button-wrapper:first-child {
+    border-left: 1px solid #fff;
+  }
+  
+  .ant-radio-button-wrapper:first-child:hover {
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+  }
+  
+  .ant-radio-button-wrapper:hover {
+    border: solid 1px #e4e4e4;
+    color: #333;
+    border-radius: 4px;
+  }
+  
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover,
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    border: 1px solid var(--ant-primary-color) !important;
+    color: var(--ant-primary-color) !important;
+  }
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: #505766 !important;
+}
+
+//form 表单
+.ant-form {
+  .ant-form-item {
+    margin-bottom: 8px !important;
+  }
+
+  .ant-form-item-label>label {
+    font-size: 14px;
+  }
+
+  .ant-radio-group {
+    .ant-radio-wrapper {
+      font-size: 14px;
+      margin-right: 16px;
+    }
+  }
+
+  // .ant-form-item-label {
+  //   padding-right:8px;
+  // }
+  .ant-form-item-no-colon {
+    margin-right: 0px;
+    line-height: 32px;
+    display: block;
+    min-width: 95px; /* 或其他所需的宽度 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* 防止换行 */
+  }
+
+  .ant-form-item-label {
+    width: 90px;
+  }
+}
+
+//单选按钮
+.ant-radio-inner {
+  width: 14px !important;
+  height: 14px !important;
+  border: solid 1px #ccc !important;
+}
+
+.ant-radio:hover {
+  .ant-radio-inner {
+    border: solid 1px #505766 !important;
+  }
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border: solid 1px #ccc !important;
+}
+
+.ant-radio-checked .ant-radio-inner::after {
+  width: 12px;
+  height: 12px;
+  background-color: var(--ant-primary-color);
+}
+
+.ant-radio-inner::after {
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+}
+
+.ant-radio-input:focus+.ant-radio-inner {
+  box-shadow: none !important;
+  border-color: #505766;
+}
+.ant-radio-checked::after {
+  animation: none !important;
+  border-color: #505766 !important;
+}
+
+//禁用
+.ant-radio-disabled .ant-radio-inner {
+  background-color: #f7f7f7;
+  border-color: #e4e4e4 !important;
+}
+
+.ant-radio-disabled .ant-radio-inner::after {
+  background-color: #ccc;
+}
+.ant-tree .ant-tree-treenode{
+  padding: 4px 0 4px 0 !important;
+  border-radius: 4px;
+}
+
+.ant-layout {
+  height: calc(100vh);
+
+  .ant-modal-wrap {
+    position: absolute !important;
+    top: 0px !important;
+    background-color: rgba(0, 0, 0, 0.45);
+    overflow: hidden !important;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+  }
+}
+
+.ant-badge-multiple-words {
+  padding: 0 2px !important;
+  width: 24px;
+}
+
+// .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+//   color: var(--ant-primary-color) !important;
+// }
+
+// .ant-modal-body {
+//   padding: 31px;
+// }
+
+.ant-upload-select-picture-card {
+  width: 300px !important;
+  height: 150px !important;
+
+  span {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+
+    div {
+      width: 100% !important;
+      height: 100% !important;
+
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
+.ant-pro-global-header-layout-mix {
+  // background-color: var(--ant-primary-color) !important;
+  // background: url('../public/assets/header_banner1.png'), url('../public/assets/header_banner2.png'),linear-gradient(to right, var(--ant-primary-color), var(--ant-primary-4))!important;
+  background: url('../public/assets/header_banner1.png'), url('../public/assets/header_banner2.png'),var(--ant-primary-color)!important;
+  background-repeat: no-repeat, no-repeat, no-repeat !important;
+  background-position: 40%, 70%, 100% !important;
+}
+
+
+#pro-layout{
+  .ant-pro-setting-drawer-handle {
+    width: 30px !important;
+    height: 30px !important;
+    top: 61px !important;
+    z-index: 100002 !important;
+    background: transparent !important;
+    span{
+      color: #333 !important;
+    }
+  }
+}
+#pro-portal-layout{
+  .ant-pro-setting-drawer-handle {
+    width: 30px !important;
+    height: 30px !important;
+    top: 109px !important;
+    z-index: 1000 !important;
+    background: transparent !important;
+    span{
+      color: #333 !important;
+    }
+  }
+}
+.ant-menu-submenu-popup{
+  z-index: 10501 !important;
+}
+.ant-pro-setting-drawer-block-checkbox-item.ant-pro-setting-drawer-block-checkbox-item-dark.ant-pro-setting-drawer-block-checkbox-theme-item,.ant-pro-setting-drawer-block-checkbox-item.ant-pro-setting-drawer-block-checkbox-item-side.ant-pro-setting-drawer-block-checkbox-layout-item
+,.ant-pro-setting-drawer-content .ant-list-items .ant-list-item:not(:last-child)
+{
+  display: none;
+}
+.ant-pro-setting-drawer-content>.ant-list .ant-spin-nested-loading .ant-spin-container .ant-list-items .ant-list-item:last-child{
+  display: none;
+}
+.ant-dropdown .ant-dropdown-menu-light>li {
+  text-align: left !important;
+  color: #333333 ;
+}
+
+.ant-tabs-nav-list {
+  position: relative;
+}
+
+
+// .ant-table-cell {
+//   padding: 0 16px !important;
+// }
+
+.ant-table-cell.ant-table-cell-fix-left.ant-table-cell-fix-left-last {
+  // 👇🏻 这句谁加的  列表建模有标题内容居右的布局 一直不生效 害我找了好几天 特殊的布局别改全局的   2022.11.01
+  // text-align: left !important;
+  // padding-left: 30px !important;
+}
+
+// .workTable___30UlP {//不要这样写，写在页面对应的less中
+//   height: auto !important;
+//   max-height: calc((100% - 59.9844px) - 52px) !important;
+//   overflow: auto;
+// }
+
+
+.lm_goldenlayout {
+  overflow: auto;
+}
+.lm_goldenlayout,
+.lm_item .lm_row {
+  // min-height: 400px;
+}
+
+.lm_item .lm_stack {
+  // min-height: 400px;
+}
+
+
+
+
+.list_warp___2AHwW .head___BLfwP .right___1JfI6>button:nth-child(2) {
+  border: solid 1px var(--ant-primary-color) !important;
+  color: var(--ant-primary-color) !important;
+}
+
+// .form_detail_warp___1SwTJ .heard___3098h .button_list___jm5dl .ant-btn-primary {
+//   background-color: #fff;
+//   color: var(--ant-primary-color) !important;
+//   border-color: var(--ant-primary-color) !important;
+// }
+
+.ant-drawer {
+  left: unset !important;
+  z-index: 10001 !important;
+}
+.ant-table-body {
+  //这样滚动条会一直显示在右侧，并且不会占用页面宽度
+  // overflow-y: scroll !important;
+  overflow-y: scroll;
+}
+/*整个滚动条*/
+::-webkit-scrollbar {
+  width: 6px;
+  // 横向滚动条需要16px（梅红授权）
+  height: 16px !important;
+  border-radius: 100px !important;
+  // background-color: #fff;
+}
+
+/*定义滚动条轨道*/
+
+::-webkit-scrollbar-track {
+  background-color: #fff!important;
+}
+
+/*定义滑块*/
+::-webkit-scrollbar-thumb {
+  background-color: #E9E9E9!important;
+  border-radius: 100px;
+}
+
+.font_size_10 {
+  font-size: 10px;
+}
+
+.font_size_12 {
+  font-size: 12px;
+}
+.ant-drawer-content-wrapper{
+  ::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+  }
+}
+.ant-pro-top-nav-header .anticon,.ant-pro-top-nav-header .ant-pro-menu-item-title {
+  color: #fff !important;
+}
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-active:after, .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-open:after, .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-selected:after, .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item:hover:after, .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-active:after, .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-open:after, .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-selected:after, .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu:hover:after {
+   border-bottom: 2px solid transparent !important;
+}
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item, .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu {
+  margin-bottom: 1px;
+}
+// .ant-menu-item .ant-menu-item-icon, .ant-menu-item .anticon, .ant-menu-submenu-title .ant-menu-item-icon, .ant-menu-submenu-title .anticon {
+//   min-width: 18px !important;
+//   font-size: 18px !important;
+// }
+
+.column_title {
+  color: red !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  cursor: default !important;
+}
+
+.subject_color {
+  // color: var(--ant-primary-color);
+  color: rgb(24, 144, 255);
+}
+
+.adm-floating-bubble-button{
+  height: var(--height-size)!important;
+}
+.ant-spin-dot-item{
+  background-color: var(--ant-primary-color)!important;
+}
+.ant-tabs-dropdown-menu-item-remove:hover {
+  color: var(--ant-primary-5)!important;
+}
+
+.more_menu_list{
+  &>ul{
+    li:first-child {
+      display: none;
+    }
+  }
+}
+.desc_popover{
+  z-index: 99999!important;
+  width:300px;
+  p{
+    margin-bottom: 0px;
+  }
+  .ant-popover-inner-content{
+    padding: 8px 0px 8px 8px;
+  }
+  .ant-popover-title{
+    padding: 5px 8px 4px;
+  }
+}
+.rbc-event-continues-after{
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+.rbc-event, .rbc-day-slot .rbc-background-event{
+  padding: 2px 0px !important;
+}
+.plan:hover{
+  border-radius: 5px !important;
+}

@@ -1,0 +1,24 @@
+.code_name{
+  color: #03A4FF;
+  border-bottom: 1px solid #03A4FF;
+  cursor: pointer;
+}
+.view_line{
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+.col_relation{
+  :global{
+    .ant-select-item-group:first-child{
+      display: none;
+    }
+  }
+}
+.node_bind_code_warp{
+  height: 100%;
+  :global{
+    .ant-table-wrapper{
+      height: calc(100% - 49px);
+    }
+  }
+}

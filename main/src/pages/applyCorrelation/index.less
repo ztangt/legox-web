@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0px 8px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    .header{
+        width: 100%;
+        height:48px;
+        display: flex;
+        padding:8px 0px;
+        justify-content: space-between;
+        button:nth-child(1){
+            margin-right:8px;
+        }
+        button:nth-child(2){
+          margin-right:8px;
+        }
+    }
+    .action{
+        a:nth-child(1),a:nth-child(2){
+            margin-right:8px;
+        }
+    }
+    .table{
+        height:calc(100% - 90px)
+    }
+  }
+  .scrollbarStyle{
+    overflow:auto;
+    &::-webkit-scrollbar {
+        height: 6px;
+        width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #c3c3c3;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 0;
+    }
+}
+.relation_modal{
+    :global{
+     .main___2gllb .main_header___AQ8kD{
+         height: 0;
+     }
+     .main___2gllb{
+        height: calc(100% - 43px);
+     }
+    }
+}

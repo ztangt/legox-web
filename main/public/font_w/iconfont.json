@@ -1,0 +1,177 @@
+{
+  "id": "2428052",
+  "name": "同联7.0协同管理平台首页",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "20464893",
+      "name": "预算指标管理1",
+      "font_class": "yusuanzhibiaoguanli1",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "20464894",
+      "name": "预算编报管理1",
+      "font_class": "yusuanbianbaoguanli1",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "20464895",
+      "name": "基础数据管理1",
+      "font_class": "jichushujuguanli1",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "20464896",
+      "name": "支出管理1",
+      "font_class": "zhichuguanli1",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "20464897",
+      "name": "合同管理1",
+      "font_class": "hetongguanli1",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "20464898",
+      "name": "资产管理1",
+      "font_class": "zichanguanli1",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "20464813",
+      "name": "采购管理1",
+      "font_class": "caigouguanli1",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "20463932",
+      "name": "工作事项",
+      "font_class": "gongzuoshixiang-copy",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "20463882",
+      "name": "工作事项",
+      "font_class": "gongzuoshixiang",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "20463832",
+      "name": "采购管理",
+      "font_class": "caigouguanli",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "20463833",
+      "name": "基础数据管理",
+      "font_class": "jichushujuguanli",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "20463834",
+      "name": "支出管理",
+      "font_class": "zhichuguanli",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "20463835",
+      "name": "预算指标管理",
+      "font_class": "yusuanzhibiaoguanli",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "20463836",
+      "name": "预算编报管理",
+      "font_class": "yusuanbianbaoguanli",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "20463837",
+      "name": "合同管理",
+      "font_class": "hetongguanli",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "20463838",
+      "name": "资产管理",
+      "font_class": "zichanguanli",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "20448417",
+      "name": "待办事项",
+      "font_class": "daibanshixiang",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "20448418",
+      "name": "通讯录",
+      "font_class": "tongxunlu1",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "20448419",
+      "name": "资产卡片清单",
+      "font_class": "zichankapianqingdan",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "20448420",
+      "name": "项目预算指标",
+      "font_class": "xiangmuyusuanzhibiao",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "20448421",
+      "name": "指标",
+      "font_class": "zhibiao",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "20448422",
+      "name": "直接报销",
+      "font_class": "zhijiebaoxiao",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "20448423",
+      "name": "出差申请",
+      "font_class": "chuchashenqing",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "20447100",
+      "name": "通讯录",
+      "font_class": "tongxunlu",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

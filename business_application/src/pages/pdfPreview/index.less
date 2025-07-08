@@ -1,0 +1,65 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .control-area{
+    padding: 8px;
+  }
+  // .control-area-show{
+  //     height: 45px;
+  //     padding: 8px;
+  //     opacity: 1;
+  // }
+
+  .display-area{
+      flex-grow: 1;
+      flex-shrink: 1;
+      display: flex;
+      overflow: hidden;
+
+      .left-nav{
+          width: 20%;
+          height: 100%;
+          transition: width 300ms ease;
+          background-color: #222222f6;
+      }
+      .left-nav-change{
+          width: 0;
+          overflow: hidden;
+      }
+      .center-area{
+          width: 78%;
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: width 300ms ease;
+          background-color: #222;
+      }
+  }
+}
+#viewerWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.viewerWrapperNormal {
+  height: 960px;
+}
+
+.viewerWrapperFull {
+  height: calc(100% - 46px);
+}
+
+#viewerContainer {
+  outline: none;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

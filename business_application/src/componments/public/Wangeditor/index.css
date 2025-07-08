@@ -1,0 +1,18 @@
+/* 表格样式 */
+.w-e-text-container [data-slate-editor] p {
+    margin: 0; 
+}
+.w-e-textarea-divider {
+    border-radius: 3px;
+    margin: 0px auto;
+    padding: 8px;
+}
+.w-e-text-container [data-slate-editor] table td, .w-e-text-container [data-slate-editor] table th {
+    border: 1px solid #333;
+}
+.w-e-text-container [data-slate-editor] table td{
+    text-align: center;
+}
+.w-e-text-container [data-slate-editor] table {
+    width: 100%;
+}

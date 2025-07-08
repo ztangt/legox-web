@@ -1,0 +1,24 @@
+.tree {
+  background: #ffffff;
+  // padding-left: 14px;
+  // padding-right: 14px;
+  padding-top: 16px;
+  height: 100%;
+  .search {
+    width: 205px;
+    margin-bottom: 14px;
+  }
+  .searchContent {
+    background: rgba(255, 235, 117);
+  }
+}
+:global {
+  .ant-tree {
+    height: inherit;
+  }
+  .ant-tree-title {
+    // 张鑫让空格也占位置 bugID 7994
+    white-space: pre;
+    // white-space: nowrap;
+  }
+}

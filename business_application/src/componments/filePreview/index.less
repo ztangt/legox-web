@@ -1,0 +1,38 @@
+
+.file_preview_warp {
+  .checkbox_list {
+    width: 100%;
+    .check_box {
+      width: 100%;
+      & > span:nth-child(2) {
+        display: inline-block;
+        width: calc(100% - 14px);
+      }
+      .check_content {
+        display: inline-flex;
+        width: 100%;
+        .file_size {
+          color: #a3a3a3;
+          cursor: default;
+        }
+      }
+    }
+    :global {
+      .ant-row {
+        width: 100%;
+        margin-bottom: 4px;
+        :last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  .fielName {
+    color: var(--ant-primary-color) !important;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    white-space: pre;
+  }
+}

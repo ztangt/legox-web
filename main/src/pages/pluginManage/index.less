@@ -1,0 +1,98 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+}
+.tree_left_header{
+  .button_types{
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+.actions{
+  a{
+    color: var(--ant-primary-color) !important;
+  }
+}
+.table_warp {
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 8px 8px 16px 0;
+  height: 100%;
+  .header {
+    // height: 48px;
+    padding-bottom: 8px;
+    overflow: hidden;
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+      & > button {
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  .content{
+    height: calc(100% - 30px);
+    position: relative;
+  }
+}
+.edit {
+  display: none;
+}
+.tree_node {
+  display: inline-block;
+  // width: 150px;
+}
+.tree_node:hover .edit {
+  display: inherit;
+  margin-left: 3px;
+}
+
+.right_click_menu {
+  min-width: 100px;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px 3px #ccc;
+  padding: 0 10px;
+
+  > .item_menu {
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  :global {
+    .ant-tree-list-holder-inner {
+      div[class^='ant-tree-treenode ant-tree-treenode-switcher'] {
+        > span:last-child {
+          min-width: 100px;
+        }
+      }
+    }
+  }
+}
+
+.fileList {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  cursor: pointer;
+  .deleIcon {
+    display: none;
+  }
+}
+
+.fileList:hover {
+  background-color: #f8f8f8;
+  .deleIcon {
+    display: block;
+  }
+}

@@ -1,0 +1,99 @@
+.user_warp{
+    height: inherit;
+    position: relative;
+    margin-top: 16px;
+    overflow:auto;
+    .split_line{
+      position: absolute;
+      display: block;
+      width: 952px;
+      background: #464D5B;
+      top: 22px;
+      z-index: 1;
+      height: 1px;
+    }
+    .left_org_tree{
+      .title{
+        display: block;
+        color: #03A4FF;
+      }
+      .content{
+        margin-top: 16px;
+        overflow-y: scroll;
+        height: 350px;
+      }
+    }
+    .await_select_list{
+      .title{
+        display: block;
+        color: #03A4FF;
+      }
+      .content{
+        margin-top: 12px;
+        height: 370px;
+        overflow-y: scroll;
+        &>span{
+          margin-bottom: 12px;
+        }
+        .check_box_middle{
+          :global{
+            .ant-checkbox + span{
+              white-space: nowrap;  /*强制span不换行*/
+              width: 100%;  /*限制宽度*/
+            }
+          }
+        }
+        .check_box_user{
+          :global{
+            .ant-checkbox-wrapper{
+              position: relative;
+            }
+            .ant-checkbox + span{
+              white-space: nowrap;  /*强制span不换行*/
+              width: 100%;  /*限制宽度*/
+              position:absolute;
+            }
+          }
+        }
+      }
+    }
+    .select_list{
+      .title{
+        display: block;
+        color: #03A4FF;
+      }
+      .list{
+        padding-left: 8px;
+        .opration{
+          float: right;
+          height: 32px;
+          margin-top: 12px;
+          &>span{
+            margin-right: 16px;
+          }
+        }
+        .content{
+          clear: both;
+          padding-top: 16px;
+          height: 300px;
+          overflow: auto;
+          :global{
+            .ant-table-tbody > tr > td{
+              border-bottom: 0px;
+            }
+          }
+          .tag_info{
+            display: inline-block;
+            padding:0 8px 0 8px;
+            height: 24px;
+            line-height: 24px;
+            background: #F8F8F8;
+            border-radius: 4px;
+            margin-right: 16px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  

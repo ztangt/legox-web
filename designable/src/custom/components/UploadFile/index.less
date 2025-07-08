@@ -1,0 +1,132 @@
+// .bt {
+//   margin: 2px;
+//   float: right;
+// }
+.redClassName {
+  background-color: #fff4f2 !important;
+  .header {
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: rgb(255, 244, 242);
+    .bt {
+      :global {
+        .ant-btn {
+          background: inherit;
+        }
+      }
+      margin-right: 4px;
+      :last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  :global {
+    .ant-table-wrapper {
+      background-color: initial !important;
+    }
+    .ant-table {
+      background: initial;
+    }
+    .ant-table-thead {
+      .ant-table-cell {
+        background: initial;
+      }
+    }
+    .ant-table-tbody > tr.ant-table-row:hover > td,
+    .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+      background: rgb(255, 244, 242);
+    }
+    .ant-table-tbody > tr.ant-table-placeholder:hover > td {
+      background: rgb(255, 244, 242);
+    }
+  }
+}
+.header {
+  text-align: right;
+  margin-bottom: 4px;
+  margin-right: 4px;
+}
+.upload_warp {
+  :global {
+    // .ant-table-content {
+    //   overflow: hidden !important;
+    // }
+    .ant-table-container {
+      border: 0px !important;
+    }
+    .ant-table-expanded-row-fixed {
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+    }
+    .ant-table-expanded-row-fixed::after {
+      border-right: 0px !important;
+    }
+    .ant-table-tbody tr:last-child {
+      td {
+        border-bottom: 0px !important;
+      }
+    }
+    .ant-table-container table > thead > tr:first-child th:last-child {
+      border-right: 0px !important;
+      border-top-right-radius: 0px !important;
+    }
+    .ant-table-container table > tbody > tr td:last-child {
+      border-right: 0px !important;
+      border-top-right-radius: 0px !important;
+    }
+  }
+  .bt {
+    margin-right: 4px;
+    :last-child {
+      margin-right: 0px;
+    }
+  }
+  .checkbox_list {
+    width: 100%;
+    .check_box {
+      width: 100%;
+      & > span:nth-child(2) {
+        display: inline-block;
+        width: calc(100% - 14px);
+      }
+      .check_content {
+        display: inline-flex;
+        width: 100%;
+        .fielName {
+          color: var(--ant-primary-color) !important;
+          cursor: pointer;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          white-space: pre;
+        }
+        .file_size {
+          color: #a3a3a3;
+          cursor: default;
+        }
+      }
+    }
+    :global {
+      .ant-row {
+        width: 100%;
+        margin-bottom: 4px;
+        :last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+.operation {
+  & > span {
+    margin-right: 8px;
+  }
+  & > span:last-child {
+    margin-right: 0px;
+  }
+}
+//在移动端不能下载的都需要置灰
+.no_fileName {
+  cursor: not-allowed;
+  color: #333;
+}

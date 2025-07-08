@@ -1,0 +1,40 @@
+.list_wrap{
+  // min-width: 1000px;
+  background-color: #ffffff;
+  // padding:8px;
+  height: 100%;
+  background: #ffffff;
+  :global{
+    .ant-pagination{
+      text-align: right;
+      padding-bottom: 10px;
+      // padding-top: 10px;
+      height: 52px;
+    }
+    .ant-table-body{
+      height:100vh
+    }
+  }
+  .hearder{
+    height: 48px;
+    padding: 8px;
+    .h_left{
+      float: left;
+    }
+    .h_right{
+      float: right;
+      &>button{
+        margin-right: 8px;
+        &:last-child{
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  .col_four_width{
+    width:130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

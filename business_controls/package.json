@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "business_controls",
+  "scripts": {
+    "start": "max dev --port=8003",
+    "build": "max build",
+    "postinstall": "max setup",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@umijs/max": "^4.0.0",
+    "ahooks": "^3.8.0",
+    "antd": "4.23.2",
+    "axios": "^1.5.0",
+    "compression-webpack-plugin": "10",
+    "decimal.js": "^10.5.0",
+    "loadsh": "^0.0.4",
+    "moment": "2.29.4",
+    "react-dev-inspector": "1.8.1",
+    "react-drag-listview": "0.2.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-resizable": "3.0.4",
+    "spark-md5": "3.0.2"
+  },
+  "devDependencies": {
+    "lint-staged": "10.0.7",
+    "prettier": "2.2.0",
+    "typescript": "^5.2.2",
+    "yorkie": "2.0.0"
+  }
+}

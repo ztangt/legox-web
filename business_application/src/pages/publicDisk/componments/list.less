@@ -1,0 +1,61 @@
+.file {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  tr {
+    display: flex;
+    justify-content: flex-start;
+
+    td {
+      display: -webkit-box;
+      overflow: hidden;
+      white-space: normal !important;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      margin-top: 8px;
+      width: 50%;
+    }
+  }
+}
+.button_width{
+  width: 48px;
+  height: 32px;
+}
+.resetNameModal {
+  position: relative !important;
+  top: 30% !important;
+}
+
+.warp {
+  position: relative;
+  height: 100%;
+  :global{
+    .ant-table-body{
+      overflow-y: auto !important;
+    }
+    .ant-table-cell{
+      height: 48px;
+    }
+  }
+}
+.disk_name{
+  display: flex;
+  align-items: center;
+}
+
+.page {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.detailModal {
+  :global {
+    .ant-modal-content .ant-modal-body {
+      overflow: hidden !important;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 4px;
+    .list_head {
+        .header {
+            width: 100%;
+            margin-bottom: 6px;
+            display: flex;
+            padding: 8px 8px 0 8px;
+            justify-content: space-between;
+            .button_group {
+                display: flex;
+                width: 40%;
+                .high_level {
+                    width: 36px;
+                    display: inline-block;
+                    height: 32px;
+                    line-height: 32px;
+                    margin-left: 5px;
+                    color: var(--ant-primary-color);
+                    cursor: pointer;
+                    margin-right: 5px;
+                    font-size: 14px;
+                }
+            }
+            .search {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+            }
+            .mbr_4 {
+                margin-bottom: 4px;
+                margin-right: 4px;
+            }
+        }
+        .more {
+            // border: 1px solid red;
+            width: 100%;
+            margin-bottom: 8px;
+            display: flex;
+            // padding-top: 8px;
+        }
+    }
+    :global {
+        .ant-table-tbody > tr > td {
+            white-space: pre-wrap;
+        }
+        //input框
+        .ant-input {
+            height: 32px;
+            line-height: 32px;
+        }
+        .ant-input-search {
+            .ant-input-affix-wrapper {
+                height: 32px;
+                padding: 0px;
+                .ant-input {
+                    height: 28px;
+                    padding: 0px 0px 0px 8px;
+                }
+            }
+            .ant-input-search-button {
+                height: 32px !important;
+            }
+        }
+    }
+}
+
+.redColor {
+    color: red;
+}
+
+.high_form {
+    padding: 8px 8px 0 8px !important;
+    background: #f7f7f7;
+}
+
+.opinionDomain {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.opinionDomain_legend {
+    width: auto !important;
+    border: none !important;
+    padding: 10px !important;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-left: 30px;
+    margin-bottom: 0 !important;
+}
+.wrap_box {
+    //:global {
+    //    .ant-row.ant-form-item {
+    //        margin-bottom: 10px;
+    //    }
+    //}
+}

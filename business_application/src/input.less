@@ -1,0 +1,135 @@
+input {
+  // font-family: Microsoft YaHei, Arial;
+}
+//input框
+.ant-input,.ant-input-affix-wrapper {
+  height: 32px;
+  line-height: 32px;
+  border-radius: 4px !important;
+  padding: 0px 8px;
+  font-size: 14px;
+  color: #ccc;
+  border: 1px solid #d9d9d9;
+}
+
+input::-webkit-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+}
+
+.ant-input-group>.ant-input-affix-wrapper:not(:last-child) .ant-input,
+input:not([type='range']) {
+  color: #333;
+}
+
+.ant-input:hover {
+  border-color: #505766 !important;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: none !important;
+  border-color: #505766 !important;
+  color: #333;
+}
+
+//input 禁用
+.ant-input[disabled] {
+  color: #999;
+  background-color: #f7f7f7;
+  border-color: #eee;
+
+  &:hover {
+    border-color: #eee;
+  }
+}
+
+//搜索框的样式
+.ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+.ant-input-search {
+  .ant-input-affix-wrapper {
+    height: 32px;
+    padding: 0px;
+
+    .ant-input {
+      height: 30px !important;
+      padding: 0px 0px 0px 8px;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #cccccc;
+      font-size: 14px;
+    }
+
+    &:hover {
+      border-right: none;
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-affix-wrapper:hover+.ant-input-group-addon {
+    .ant-input-search-button {
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-group-addon {
+    background-color: #fff !important;
+  }
+
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused {
+    border-color: #505766 !important;
+    box-shadow: none;
+    border-right: none;
+  }
+
+  .ant-input-affix-wrapper:focus+.ant-input-group-addon {
+    .ant-input-search-button {
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-affix-wrapper-focused+.ant-input-group-addon {
+    .ant-input-search-button {
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-search-button {
+    padding: 0px 0px 0px 1px!important;
+    background-color: #ffffff !important;
+    border-color: #d9d9d9 !important;
+    border-left: none;
+    color: #505766 !important;
+    height: 32px !important;
+  }
+}
+
+.ant-input-search>.ant-input-group>.ant-input-group-addon:last-child .ant-input-search-button {
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.ant-input-search .ant-input:hover,
+.ant-input-search .ant-input:focus {
+  border-color: #505766 !important;
+  border-right: none;
+}
+
+.ant-input-search .ant-input:hover+.ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary),
+.ant-input-search .ant-input:focus+.ant-input-group-addon .ant-input-search-button:not(.ant-btn-primary) {
+  border-color: #505766;
+}
+
+.ant-input-number:focus, .ant-input-number-focused ,.ant-input-number:hover,.ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused{
+  border-color: #505766 !important;
+  box-shadow: none !important;
+}
+.ant-input-affix-wrapper > .ant-input:not(textarea) {
+  padding: 0;
+  height: 24px;
+}

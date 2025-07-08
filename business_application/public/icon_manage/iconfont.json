@@ -1,0 +1,1094 @@
+{
+  "id": "3805709",
+  "name": "业务前台左侧菜单",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39382842",
+      "name": "全局审核人",
+      "font_class": "globalReviewer",
+      "unicode": "e74b",
+      "unicode_decimal": 59211
+    },
+    {
+      "icon_id": "39382841",
+      "name": "节假日管理",
+      "font_class": "holidaysManage",
+      "unicode": "e74c",
+      "unicode_decimal": 59212
+    },
+    {
+      "icon_id": "39382840",
+      "name": "桌面布局管理",
+      "font_class": "desktopLayout",
+      "unicode": "e74d",
+      "unicode_decimal": 59213
+    },
+    {
+      "icon_id": "39382839",
+      "name": "插件管理",
+      "font_class": "pluginManage",
+      "unicode": "e74e",
+      "unicode_decimal": 59214
+    },
+    {
+      "icon_id": "39307702",
+      "name": "放大",
+      "font_class": "fangda",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "39307698",
+      "name": "缩小",
+      "font_class": "suoxiao",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "39307690",
+      "name": "返回顶部",
+      "font_class": "fanhuidingbu",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "39307682",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "39033862",
+      "name": "场景配置",
+      "font_class": "sceneConfig",
+      "unicode": "e742",
+      "unicode_decimal": 59202
+    },
+    {
+      "icon_id": "39033861",
+      "name": "职能分类",
+      "font_class": "incompatibleFunctionClassify",
+      "unicode": "e743",
+      "unicode_decimal": 59203
+    },
+    {
+      "icon_id": "39033860",
+      "name": "图表设计",
+      "font_class": "chartEngine",
+      "unicode": "e741",
+      "unicode_decimal": 59201
+    },
+    {
+      "icon_id": "39033859",
+      "name": "应用商城",
+      "font_class": "yingyongshangcheng",
+      "unicode": "e744",
+      "unicode_decimal": 59204
+    },
+    {
+      "icon_id": "39033853",
+      "name": "场景授权",
+      "font_class": "sceneAuthorization",
+      "unicode": "e745",
+      "unicode_decimal": 59205
+    },
+    {
+      "icon_id": "39033858",
+      "name": "门户建模",
+      "font_class": "portalModel",
+      "unicode": "e746",
+      "unicode_decimal": 59206
+    },
+    {
+      "icon_id": "39033857",
+      "name": "不相容角色预警",
+      "font_class": "incompatibleRoleAlert",
+      "unicode": "e747",
+      "unicode_decimal": 59207
+    },
+    {
+      "icon_id": "39033856",
+      "name": "应用发布",
+      "font_class": "yingyongfabu",
+      "unicode": "e748",
+      "unicode_decimal": 59208
+    },
+    {
+      "icon_id": "39033855",
+      "name": "不相容设置",
+      "font_class": "incompatibleSettings",
+      "unicode": "e749",
+      "unicode_decimal": 59209
+    },
+    {
+      "icon_id": "39033854",
+      "name": "不相容规则设置",
+      "font_class": "incompatibleRuleSettings",
+      "unicode": "e74a",
+      "unicode_decimal": 59210
+    },
+    {
+      "icon_id": "36012690",
+      "name": "API管理",
+      "font_class": "interfaceManagement",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "34817250",
+      "name": "通用图标",
+      "font_class": "default",
+      "unicode": "e734",
+      "unicode_decimal": 59188
+    },
+    {
+      "icon_id": "33258186",
+      "name": "按钮库",
+      "font_class": "buttonLibrary",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "33258187",
+      "name": "按钮方案",
+      "font_class": "buttonSolution",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "33258188",
+      "name": "表单设计器",
+      "font_class": "biaodanshejiqi",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "33258189",
+      "name": "按钮管理",
+      "font_class": "buttonManage",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "33258190",
+      "name": "基础数据码表",
+      "font_class": "basicDataForm",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "33258191",
+      "name": "基础数据管理",
+      "font_class": "jichushujuguanli",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "33258192",
+      "name": "部门信息管理",
+      "font_class": "deptMg",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "33258193",
+      "name": "流程设计器",
+      "font_class": "workflowEngine",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "33258194",
+      "name": "平台编码规则",
+      "font_class": "platformCodeRules",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "33258195",
+      "name": "模块资源管理",
+      "font_class": "moduleResourceMg",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "33258196",
+      "name": "单位信息管理",
+      "font_class": "unitInfoManagement",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "33258197",
+      "name": "服务中心",
+      "font_class": "fuwuzhongxin",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "33258198",
+      "name": "数据驱动管理",
+      "font_class": "dataDriven",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "33258199",
+      "name": "岗位信息管理",
+      "font_class": "postMg",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "33258200",
+      "name": "密码管理",
+      "font_class": "passwordMg",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "33258201",
+      "name": "意见样式管理",
+      "font_class": "writeSignStyle",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "33258202",
+      "name": "系统角色",
+      "font_class": "sysRole",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "33258203",
+      "name": "授权查看",
+      "font_class": "shouquanchakan",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "33258204",
+      "name": "列表建模",
+      "font_class": "listMoudles",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "33258205",
+      "name": "应用建模",
+      "font_class": "applicationModel",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "33258206",
+      "name": "业务应用建模",
+      "font_class": "applyModel",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "33258207",
+      "name": "数据规则定义",
+      "font_class": "dataRuleMg",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "33258208",
+      "name": "事件注册管理",
+      "font_class": "eventRegister",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "33258209",
+      "name": "用户信息管理",
+      "font_class": "userInfoManagement",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "33258210",
+      "name": "应用数据建模",
+      "font_class": "useDataBuildModel",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "33258211",
+      "name": "APP表单设计",
+      "font_class": "appFormEngine",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "33258212",
+      "name": "PC表单设计",
+      "font_class": "formEngine",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "33258213",
+      "name": "全局角色",
+      "font_class": "allRole",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "33258214",
+      "name": "权限管理",
+      "font_class": "accreditLook",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "33258215",
+      "name": "系统配置",
+      "font_class": "sysConfig",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "33258216",
+      "name": "组织与权限",
+      "font_class": "orgAuth",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "33258217",
+      "name": "业务应用类别",
+      "font_class": "businessUseSort",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "33258218",
+      "name": "用户组信息管理",
+      "font_class": "userGroupMg",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "33258219",
+      "name": "用户中心",
+      "font_class": "yonghuzhongxin",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "33258220",
+      "name": "单位角色",
+      "font_class": "unitRole",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "33258221",
+      "name": "业务表单管理",
+      "font_class": "businessFormManage",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "33267095",
+      "name": "五公经费同比分析",
+      "font_class": "dynamicPage_fivePublicExpenditure",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "33267096",
+      "name": "超事前报销设置",
+      "font_class": "claimExpense",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "33267097",
+      "name": "培训费标准",
+      "font_class": "dynamicPage_conference",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "33267098",
+      "name": "会议费标准",
+      "font_class": "dynamicPage_trainingFree",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "33260574",
+      "name": "编码方案",
+      "font_class": "codingScheme",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "33259942",
+      "name": "展开收起",
+      "font_class": "zhankaishouqi",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "33259943",
+      "name": "展开下拉",
+      "font_class": "zhankaixiala",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "33259944",
+      "name": "项目预算指标",
+      "font_class": "xiangmuyusuanzhibiao",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "33246729",
+      "name": "报表",
+      "font_class": "budgetTargetState",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "33246730",
+      "name": "报销费用",
+      "font_class": "baoxiaofeiyong",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "33246731",
+      "name": "部门预算指标执行分析",
+      "font_class": "dynamicPage_deptBudgetIndicatorAnalysis",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "33246733",
+      "name": "财务预算二上申报",
+      "font_class": "caiwuyusuanershangshenbao",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "33246734",
+      "name": "财务预算一上申报",
+      "font_class": "caiwuyusuanyishangshenbao",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "33246735",
+      "name": "采购管理",
+      "font_class": "caigouguanli",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "33246736",
+      "name": "采购物品目录",
+      "font_class": "dynamicPage_gov_pro",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "33246737",
+      "name": "差旅费标准（国内）",
+      "font_class": "travelExpense",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "33246738",
+      "name": "传阅事项",
+      "font_class": "circulateWork",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "33246739",
+      "name": "财政预算申报",
+      "font_class": "caizhengyusuanshenbao",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "33246740",
+      "name": "差旅报销",
+      "font_class": "chalvbaoxiao",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "33246741",
+      "name": "待办事项",
+      "font_class": "waitMatter",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "33246742",
+      "name": "差旅申请",
+      "font_class": "chalvshenqing",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "33246743",
+      "name": "发票管理",
+      "font_class": "invoiceManagement",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "33246744",
+      "name": "个人借款",
+      "font_class": "gerenjiekuan",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "33246745",
+      "name": "个人云盘",
+      "font_class": "signDisk",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "33246746",
+      "name": "导入基础数据",
+      "font_class": "daorujichushuju",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "33246747",
+      "name": "费用申请",
+      "font_class": "feiyongshenqing",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "33246748",
+      "name": "跟踪事项",
+      "font_class": "traceWork",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "33246749",
+      "name": "工作事项",
+      "font_class": "workItem",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "33246750",
+      "name": "合同管理",
+      "font_class": "hetongguanli",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "33246751",
+      "name": "功能科目执行分析",
+      "font_class": "gongnengkemuzhihangfenxi",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "33246752",
+      "name": "功能科目",
+      "font_class": "dynamicPage_functional",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "33246753",
+      "name": "公文管理",
+      "font_class": "gongwenguanli",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "33246754",
+      "name": "工作委托",
+      "font_class": "workTrust",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "33246755",
+      "name": "会计科目",
+      "font_class": "dynamicPage_account",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "33246756",
+      "name": "会议费报销",
+      "font_class": "huiyifeibaoxiao",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "33246757",
+      "name": "关注事项",
+      "font_class": "guanzhushixiang",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "33246758",
+      "name": "基础数据码表",
+      "font_class": "jichushujumabiao",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "33246760",
+      "name": "会议费申请",
+      "font_class": "huiyifeishenqing",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "33246761",
+      "name": "基本支出 生成预算指标",
+      "font_class": "a-jibenzhichushengchengyusuanzhibiao",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "33246762",
+      "name": "基础数据管理",
+      "font_class": "basicData",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "33246763",
+      "name": "基本档案结转",
+      "font_class": "jibendanganjiezhuan",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "33246764",
+      "name": "借款超期预警",
+      "font_class": "jiekuanchaoqiyujing",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "33246765",
+      "name": "公共云盘",
+      "font_class": "publicDisk",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "33246766",
+      "name": "财务预算批复",
+      "font_class": "caiwuyusuanpifu",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "33246767",
+      "name": "借款",
+      "font_class": "jiekuan",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "33246768",
+      "name": "借款单",
+      "font_class": "jiekuandan",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "33246769",
+      "name": "培训费申请",
+      "font_class": "peixunfeishenqing",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "33246770",
+      "name": "经济科目",
+      "font_class": "dynamicPage_economic",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "33246771",
+      "name": "经济科目执行分析",
+      "font_class": "jingjikemuzhihangfenxi",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "33246772",
+      "name": "人员管理",
+      "font_class": "renyuanguanli",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "33246773",
+      "name": "培训费报销",
+      "font_class": "peixunfeibaoxiao",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "33246774",
+      "name": "劳务费报销",
+      "font_class": "laowufeibaoxiao",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "33246775",
+      "name": "事后报销",
+      "font_class": "shihoubaoxiao",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "33246776",
+      "name": "事前申请",
+      "font_class": "shiqianshenqing",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "33246777",
+      "name": "其他费用报销",
+      "font_class": "qitafeiyongbaoxiao",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "33246778",
+      "name": "事项分类",
+      "font_class": "personWork",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "33246779",
+      "name": "日程管理",
+      "font_class": "calendarMg",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "33246780",
+      "name": "日常报销",
+      "font_class": "richangbaoxiao",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "33246781",
+      "name": "通用功能",
+      "font_class": "custom",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "33246782",
+      "name": "通讯录",
+      "font_class": "addressBook",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "33246783",
+      "name": "所有事项",
+      "font_class": "allWork",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "33246784",
+      "name": "事项监控",
+      "font_class": "monitorWork",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "33246785",
+      "name": "通知公告发布",
+      "font_class": "notification",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "33246786",
+      "name": "通知公告",
+      "font_class": "noticeAnnouncement",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "33246787",
+      "name": "受委托事项",
+      "font_class": "trustedWork",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "33246788",
+      "name": "通知公告栏",
+      "font_class": "notificationList",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "33246789",
+      "name": "委托事项",
+      "font_class": "trustWork",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "33246791",
+      "name": "项目分类",
+      "font_class": "dynamicPage_project",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "33246792",
+      "name": "项目预算指标台账",
+      "font_class": "dynamicPage_projectBudgetIndicatorLedger",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "33246794",
+      "name": "项目预算指标百分比预警",
+      "font_class": "dynamicPage_projecttPrcentWarning",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "33246795",
+      "name": "项目支出 生成预算指标",
+      "font_class": "a-xiangmuzhichushengchengyusuanzhibiao",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "33246796",
+      "name": "预算指标百分比预警",
+      "font_class": "dynamicPage_budgetPrcentWarning",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "33246797",
+      "name": "预算指标调剂（减）",
+      "font_class": "dynamicPage_budgetDispenReduece",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "33246798",
+      "name": "预算基础数据",
+      "font_class": "budgetBasicData",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "33246799",
+      "name": "已发事项",
+      "font_class": "sendWork",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "33246800",
+      "name": "预算指标调剂（增）",
+      "font_class": "dynamicPage_budgetDispenAdd",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "33246801",
+      "name": "预算编报管理",
+      "font_class": "yusuanbianbaoguanli",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "33246802",
+      "name": "已办事项",
+      "font_class": "doneWork",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "33246803",
+      "name": "预算指标调整",
+      "font_class": "yusuanzhibiaotiaozheng",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "33246804",
+      "name": "预算指标调账",
+      "font_class": "dynamicPage_budgetAdjustment",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "33246805",
+      "name": "预算指标分解",
+      "font_class": "dynamicPage_budgetDecompose",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "33246806",
+      "name": "预算指标申请",
+      "font_class": "dynamicPage_budget",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "33246807",
+      "name": "预算指标下达",
+      "font_class": "dynamicPage_budgetRelease",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "33246808",
+      "name": "预算指标台账",
+      "font_class": "dynamicPage_budgetIndicatorLedger",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "33246809",
+      "name": "预算指标库",
+      "font_class": "budgetTarget",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "33246810",
+      "name": "预算指标管理",
+      "font_class": "budgetTargetMange",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "33246811",
+      "name": "支出管理",
+      "font_class": "zhichuguanli",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "33246812",
+      "name": "支付台账",
+      "font_class": "zhifutaizhang",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "33246813",
+      "name": "云盘",
+      "font_class": "disk",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "33246814",
+      "name": "支出基础数据",
+      "font_class": "exBasicData",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "33246815",
+      "name": "指标预警",
+      "font_class": "indicatorWarning",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "33246816",
+      "name": "支出分类",
+      "font_class": "dynamicPage_expense",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "33246817",
+      "name": "直接报销",
+      "font_class": "zhijiebaoxiao",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "33246818",
+      "name": "追加减预算指标",
+      "font_class": "dynamicPage_addReduceBudget",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "33246819",
+      "name": "咨讯公告发布",
+      "font_class": "information",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "33246820",
+      "name": "咨讯公告",
+      "font_class": "infoAnnouncement",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "33246821",
+      "name": "资讯公告栏",
+      "font_class": "informationList",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "33246822",
+      "name": "资产管理",
+      "font_class": "zichanguanli",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "33246823",
+      "name": "资产分类",
+      "font_class": "zichanfenlei",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    }
+  ]
+}

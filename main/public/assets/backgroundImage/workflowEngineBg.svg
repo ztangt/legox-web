@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="225px" height="220px" viewBox="0 0 225 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="225" height="220" rx="8"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-290.000000, -463.000000)">
+            <g id="用户管理" transform="translate(290.000000, 463.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="蒙版" fill="#00BAEB" xlink:href="#path-1"></use>
+                <g id="流程设计器-填充" mask="url(#mask-2)" fill="#00B4E4" fill-rule="nonzero">
+                    <g transform="translate(29.000000, 36.000000)" id="路径">
+                        <polygon points="101.298913 33.5384615 101.298913 0 33.7663043 0 33.7663043 8.38461538 8.44157609 8.38461538 8.44157609 58.6923077 53.8150476 58.6923077 67.5326087 72.3173077 81.2501698 58.6923077 92.857337 58.6923077 92.857337 92.2307692 67.5326087 92.2307692 67.5326087 75.4615385 0 75.4615385 0 109 67.5326087 109 67.5326087 100.615385 101.298913 100.615385 101.298913 50.3076923 81.2501698 50.3076923 67.5326087 36.6826923 53.8150476 50.3076923 16.8831522 50.3076923 16.8831522 16.7692308 33.7663043 16.7692308 33.7663043 33.5384615"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

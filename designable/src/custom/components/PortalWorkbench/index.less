@@ -1,0 +1,97 @@
+.container {
+  margin: 8px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  .main {
+    padding: 8px 0;
+    ul {
+      height: calc(100% - 20px);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 120px);
+      grid-template-rows: repeat(auto-fit, 120px);
+      grid-row-gap: 24px;
+      grid-column-gap: 24px;
+      // justify-content:space-between;
+      li {
+        span {
+          margin-top: 20px;
+          font-size: 48px;
+        }
+      }
+    }
+
+    .app {
+      // width: 84px;
+      text-align: center;
+      padding: 0 2px;
+      // margin: 0 24px 24px 0;
+      cursor: pointer;
+      width: 120px;
+      height: 120px;
+      border: 1px solid #e7e7e7;
+      background: #ffffff;
+      border-radius: 16px;
+
+      i {
+        margin-top: 8px;
+        display: block;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 22px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: keep-all;
+      }
+    }
+
+    .app:hover {
+      background: rgba(63, 121, 255, 0.08);
+      // background: var(--ant-primary-color) !important;
+    }
+    :global {
+      .ant-tabs-tab {
+        font-size: 18px;
+        border: none;
+        background: none !important;
+        padding: 8px 32px !important;
+      }
+      .ant-tabs-tab-active {
+        background: #1890ff !important;
+        border-radius: 8px !important;
+      }
+      .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #ffffff;
+      }
+      .ant-tabs-nav {
+        height: 56px;
+        padding-right: 8px !important;
+        background: #eff3fe;
+        border-radius: 8px;
+        margin-bottom: 16px !important;
+      }
+    }
+  }
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 32px;
+  background: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  h6 {
+    margin-top: 6px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+  }
+}

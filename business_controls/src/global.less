@@ -1,0 +1,519 @@
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+body,
+input,
+legend,
+fieldset,
+i,
+nav,
+header,
+div,
+footer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.qiankun-micro-app-container {
+  height: 100%;
+}
+[id^='__qiankun_microapp_wrapper_for_business_controls'] {
+  height: 100%;
+}
+.ant-layout .ant-modal-wrap {
+  overflow: auto !important;
+  position: absolute !important;
+  // top: 63px !important;
+  // left:200px;
+  background-color: rgba(0, 0, 0, 0.45);
+  //z-index: auto !important;这样的话弹框会有问题
+}
+input {
+  // font-family: Microsoft YaHei, Arial;
+}
+
+#root-master {
+  // font-family: Microsoft YaHei, Arial;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+#root {
+  height: 100%;
+}
+.qiankun-micro-app-container {
+  height: 100%;
+}
+#__qiankun_microapp_wrapper_for_business_controls_1__,
+#__qiankun_microapp_wrapper_for_business_controls_2__,
+#__qiankun_microapp_wrapper_for_business_controls_3__,
+#__qiankun_microapp_wrapper_for_business_controls__ {
+  height: 100%;
+  .ka-wrapper {
+    height: 100%;
+    margin: 0px !important;
+  }
+}
+.ka-wrapper {
+  height: 100%;
+  margin: 16px 16px 0px 16px;
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: auto;
+}
+.ka-content {
+  height: 100%;
+  & > div:first-child {
+    height: 100%;
+  }
+}
+.ant-layout-header {
+  height: 60px !important;
+  line-height: 60px !important;
+}
+
+.ant-layout-content {
+  height: calc(100vh - 160px);
+  overflow: auto;
+
+  & > div {
+    height: 100%;
+  }
+}
+.ant-table-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.ant-table {
+  height: 100%;
+}
+.ant-table-container {
+  height: 100%;
+}
+.ant-table-content {
+  height: 100%;
+}
+.ant-spin-nested-loading {
+  height: 100%;
+}
+.ant-spin-container {
+  height: 100%;
+}
+//表格
+.ant-table-tbody > tr > td,
+.ant-table-thead > tr > th {
+  position: relative;
+  padding: 0;
+  overflow-wrap: break-word;
+  white-space: nowrap;
+}
+.ant-table-cell {
+  height: 45px;
+}
+.ant-table-body {
+  height: 100%;
+}
+.ant-table-tbody > tr > td {
+  font-size: 14px;
+}
+.ant-table-cell > div > :nth-child(1).ant-btn-default {
+  margin-left: 0px;
+}
+// .ant-table-thead
+//   > tr
+//   > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+//   width: 0px !important;
+// }//暂时注释掉这样会影响表头的竖线
+.ant-table-header,
+.ant-table-thead,
+.ant-table-content {
+  border-top: solid 1px #333;
+}
+.ant-table-cell .ant-table-cell-fix-right .ant-table-cell-fix-right-first {
+  right: 0;
+}
+.ant-table tfoot > tr > td {
+  padding: 0px 0px;
+  height: 44px; //TODO横线出不来暂时写成这样
+}
+.ant-table-cell-fix-right {
+  position: sticky !important;
+  z-index: 2;
+  // right: 0px !important;
+}
+//table操作
+.table_operation {
+  span,
+  a {
+    margin-left: 4px;
+    cursor: pointer;
+    // color: #588ce9;
+  }
+  & > :nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+table tr td.ant-table-selection-column,
+table tr th.ant-table-selection-column {
+  padding-right: 32px;
+  padding-left: 8px;
+  text-align: center;
+}
+.ant-tree .ant-tree-node-content-wrapper {
+  padding: 0 4px !important;
+  border-radius: 4px !important;
+}
+// .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+//   background-color: #f0f3f9 !important;
+// }
+// .ant-tree .ant-tree-node-content-wrapper:hover {
+//   background-color: #fff5e2 !important;
+// }
+.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected,
+.ant-tree .ant-tree-node-content-wrapper:hover {
+  height: 22px;
+  border-radius: 4px;
+  // padding: 0 12px;
+}
+.ant-tree-show-line .ant-tree-indent-unit,
+.ant-tree-switcher-noop {
+  visibility: hidden;
+}
+.ant-tree.ant-tree-block-node
+  .ant-tree-list-holder-inner
+  .ant-tree-node-content-wrapper {
+  flex: none;
+}
+.ant-tree-show-line .ant-tree-switcher {
+  width: 15px;
+  height: 24px;
+}
+
+.ant-form-item-label > label {
+  color: #333;
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+.ant-tabs > .ant-tabs-nav {
+  background-color: #f7f9fd;
+  color: #505766;
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+.ant-tabs-content-holder {
+  overflow: auto;
+}
+.ant-tabs-ink-bar {
+  background-color: transparent !important;
+}
+.ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar {
+  height: 3px !important;
+}
+.ant-tabs-top .ant-tabs-ink-bar-animated:before {
+  content: ' ';
+  background-color: var(--ant-primary-color);
+  width: 25px;
+  height: 3px !important;
+  position: absolute;
+  margin: auto;
+  margin-left: 20%;
+  border-radius: 2px !important;
+}
+
+//input框
+.ant-input {
+  height: 32px;
+  line-height: 32px;
+  border-radius: 4px;
+  padding: 0px 8px;
+  font-size: 16px;
+  color: #ccc;
+  border: 1px solid #d9d9d9;
+}
+
+.ant-input-group > .ant-input-affix-wrapper:not(:last-child) .ant-input,
+input:not([type='range']) {
+  color: #333;
+}
+
+.ant-input:hover {
+  border-color: #505766 !important;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: none !important;
+  border-color: #505766 !important;
+  color: #333;
+}
+
+//input 禁用
+.ant-input[disabled] {
+  color: #999;
+  background-color: #f7f7f7;
+  border-color: #eee;
+}
+
+//下拉select
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 8px;
+  border-radius: 4px;
+
+  &:hover {
+    border-color: #505766;
+  }
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-radius: 4px !important;
+}
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.antd-select-customize-input)
+  .ant-select-selector {
+  box-shadow: none !important;
+  border-color: #505766;
+}
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector:hover {
+  border-color: #505766 !important;
+}
+
+.ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+  // font-size: 16px;
+  // line-height: 26px;
+}
+
+.ant-select-item-option-content {
+  // font-size: 16px;
+}
+
+.ant-tree-title {
+  // width: 100px;
+}
+.ant-btn {
+  height: 32px;
+  span {
+    font-size: 14px;
+  }
+}
+.ant-select-selection-overflow {
+  height: 32px;
+  overflow: auto;
+}
+.ant-select-selector:hover {
+  border-color: #505766 !important;
+}
+.ant-select-show-search.ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-radius: 4px;
+}
+.ant-select
+  .ant-select-in-form-item
+  .ant-select-multiple
+  .ant-select-show-search {
+  &:hover,
+  &:focus {
+    border-color: #505766 !important;
+  }
+}
+.ant-select:hover {
+  border-color: #505766 !important;
+}
+//分页
+.ant-pagination {
+  font-size: 12px;
+  color: #666666;
+  height: 32px !important;
+  line-height: 32px;
+
+  .ant-pagination-total-text {
+    height: 32px;
+    line-height: 32px;
+    margin-right: 4px;
+  }
+
+  .ant-pagination-disabled .ant-pagination-item-link {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+  }
+
+  .ant-pagination-prev,
+  .ant-pagination-next {
+    min-width: 32px;
+    height: 32px !important;
+    line-height: 32px;
+    border: none;
+  }
+
+  .ant-pagination-prev .ant-pagination-item-link,
+  .ant-pagination-next .ant-pagination-item-link {
+    border: none;
+    color: #666666;
+    height: 32px !important;
+    line-height: 32px;
+  }
+
+  .ant-pagination-prev:hover .ant-pagination-item-link,
+  .ant-pagination-next:hover .ant-pagination-item-link {
+    color: #333333;
+  }
+
+  .ant-pagination-jump-prev
+    .ant-pagination-item-container
+    .ant-pagination-item-ellipsis,
+  .ant-pagination-jump-next
+    .ant-pagination-item-container
+    .ant-pagination-item-ellipsis,
+  .container .ant-pagination-jump-prev,
+  .container .ant-pagination-jump-next,
+  .ant-pagination-item-link {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .ant-pagination-item {
+    min-width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: #666666;
+    font-size: 12px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 4px;
+  }
+
+  .ant-pagination-prev {
+    margin-right: 4px;
+  }
+
+  .ant-select-single .ant-select-selector .ant-select-selection-item {
+    line-height: 32px;
+  }
+
+  .ant-pagination-options {
+    margin: 0;
+  }
+
+  .ant-select-selector {
+    margin-left: 4px;
+    color: #666;
+  }
+
+  .ant-select-item {
+    font-size: 12px;
+  }
+
+  .ant-select-arrow {
+    font-size: 12px;
+  }
+
+  .ant-select-dropdown {
+    width: 83px;
+    max-height: 165px;
+    border-radius: 4px;
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    width: 83px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  .ant-pagination-options-quick-jumper {
+    height: 32px;
+    line-height: 32px;
+
+    input {
+      width: 50px;
+      height: 32px;
+      border-radius: 4px;
+    }
+  }
+
+  .ant-pagination-options-quick-jumper input:focus {
+    box-shadow: none;
+    border-color: #505766;
+  }
+
+  .ant-pagination-options-quick-jumper input:hover {
+    border-color: #505766;
+  }
+
+  //分页(选中)
+  .ant-pagination-item-active {
+    display: inline-block;
+    background-color: #adb4bc;
+    // width: 20px;
+    // height: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+
+    a {
+      color: #ffffff;
+      font-size: 12px;
+    }
+  }
+
+  //滑过
+  .ant-pagination-item:hover {
+    // width: 20px;
+    // height: 20px;
+    border: solid 1px #adb4bc;
+    border-radius: 4px;
+
+    a {
+      color: #333333;
+      font-size: 12px;
+    }
+  }
+
+  .ant-pagination-item:focus {
+    // width: 20px;
+    // height: 20px;
+    border: solid 1px #adb4bc;
+    background-color: #adb4bc;
+    border-radius: 4px;
+
+    a {
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+}
+.ant-pagination-jump-prev
+  .ant-pagination-item-container
+  .ant-pagination-item-link-icon,
+.ant-pagination-jump-next
+  .ant-pagination-item-container
+  .ant-pagination-item-link-icon {
+  color: #333;
+}
+.ant-tree-select-dropdown
+  .ant-select-tree-list-holder-inner
+  .ant-select-tree-treenode
+  .ant-select-tree-node-content-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.table_ellipsis {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

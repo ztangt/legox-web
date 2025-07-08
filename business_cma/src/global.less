@@ -1,0 +1,173 @@
+@import url('./common.less');
+@import url('./mixinAll.less');
+@import url('./number.scss');
+
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+body,
+input,
+legend,
+fieldset,
+i,
+nav,
+header,
+div,
+footer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+//cma的弹窗样式
+[id^='dom_container-panel-/business_cma/'] {
+    .ant-modal-mask {
+        z-index: 999; //解决弹窗在message之下的问题//TODO暂时这么解决
+    }
+    .ant-modal-wrap {
+        z-index: 999; //解决弹窗在message之下的问题//TODO暂时这么解决
+        .ant-modal .ant-modal-content .ant-modal-footer {
+            border-top-left-radius: 0 !important;
+            border-top-right-radius: 0 !important;
+        }
+
+        //表格头高度为40px
+        .ant-table-thead {
+            .ant-table-cell {
+                height: 40px;
+                font-weight: bolder;
+                padding: 0 16px;
+            }
+        }
+
+        //根据ui修改下拉的样式
+        .ant-select {
+            .ant-select-arrow {
+                .ant-select-suffix {
+                    font-size: 14px;
+                    color: #333;
+                }
+            }
+
+            .ant-select-clear {
+                width: 14px;
+                height: 14px;
+            }
+        }
+
+        //修改某些输入框border-radius
+        .ant-select-selector {
+            border-radius: 4px !important;
+        }
+
+        .ant-input-number {
+            border-radius: 4px !important;
+            width: 100%;
+        }
+
+        .ant-select-selector {
+            border-radius: 4px !important;
+        }
+
+        .ant-input-number {
+            border-radius: 4px !important;
+        }
+
+        //日期输入框的样式
+        .ant-picker {
+            border-radius: 4px !important;
+        }
+    }
+}
+
+[id^='__qiankun_microapp_wrapper_for_business_cma_'] {
+    height: 100%;
+    #root {
+        //height: 100%;
+        ////+8是为了解决容器多8px的问题，等公司改了去掉这个
+        height: calc(100% - 8px);
+        position: relative;
+    }
+
+    #root > div:first-child {
+        height: 100%;
+    }
+
+    //表格头高度为40px
+    .ant-table-thead {
+        .ant-table-cell {
+            height: 40px;
+            font-weight: bolder;
+            padding: 0 16px;
+        }
+    }
+
+    //根据ui修改下拉的样式
+    .ant-select {
+        .ant-select-arrow {
+            .ant-select-suffix {
+                font-size: 14px;
+                color: #333;
+            }
+        }
+
+        .ant-select-clear {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    //修改某些输入框border-radius
+    .ant-select-selector {
+        border-radius: 4px !important;
+    }
+
+    .ant-input-number {
+        border-radius: 4px !important;
+    }
+
+    .ant-modal-wrap {
+        .ant-select-selector {
+            border-radius: 4px !important;
+        }
+
+        .ant-input-number {
+            border-radius: 4px !important;
+        }
+    }
+
+    //日期输入框的样式
+    .ant-picker {
+        border-radius: 4px !important;
+    }
+
+    .ant-select-selector:hover {
+        border-color: #505766 !important;
+    }
+
+    .ant-select-show-search.ant-select:not(.ant-select-customize-input).ant-select-selector {
+        border-radius: 4px;
+    }
+
+    .ant-select .ant-select-in-form-item .ant-select-multiple .ant-select-show-search {
+        &:hover,
+        &:focus {
+            border-color: #505766 !important;
+        }
+    }
+
+    .ant-select:hover {
+        border-color: #505766 !important;
+    }
+
+    .ant-modal-wrap .ant-modal-confirm .ant-modal-content {
+        overflow: hidden;
+    }
+}

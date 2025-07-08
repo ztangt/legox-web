@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0px 14px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    :global{
+              //树结构样式
+          .ant-tree .ant-tree-node-content-wrapper{
+            margin-bottom:4px;
+            width:190px;
+            padding: 0 16px 0 6px;
+          }
+          .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected{
+            background-color:#f0f3f9;
+            border-radius: 90px;
+          }
+          .ant-tree .ant-tree-node-content-wrapper:hover {
+            background-color: #fff5e2;
+            border-radius: 90px;
+          }
+          .ant-tree-switcher{
+            width:5px;
+          }
+          
+    }
+  }
+  .backlog_left{
+    height: 360px;
+    .leftTree{
+      width: 180px;
+    }
+    .treeTitle{
+      margin-left: 5px;
+      font-size: 14px;
+      .leftTitle{
+        margin-right:4px
+      }
+    }
+  }

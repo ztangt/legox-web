@@ -1,0 +1,159 @@
+@8px: 0.57rem; // 8px
+@12px: 0.85rem; //12px;
+@14px: 1rem; //14px;
+@24px: 1.71rem; // 左右24px
+@20px: 1.42rem; // 20px
+@72px: 5.14rem; // 72px 
+@26px: 1.85rem; 
+@30px: 2.14rem;
+@10px: 0.71rem;
+@36px: 2.57rem;
+@15px: 1.07rem;
+@13px: 0.93rem;
+@54px: 3.86rem;
+@16px: 1.142rem;
+@4px: 0.286rem;
+@154px: 11rem;
+@32px: 2.284rem;
+@56px: 4rem;
+@28px: 2rem;
+@296px: 21.14rem;
+*{
+    margin: 0;
+    padding: 0;
+}
+.detail_box{
+    background: #f5f5f5;
+    border-top: 1px solid transparent;
+    .detail_main{
+        margin-top: @12px;
+        padding: @12px;
+        background: #fff;
+        position: relative;
+        .title_box{
+            text-align: center;
+            .title{
+                font-weight: bold;
+                font-size: @20px;
+                color: #333333;
+                text-align: center;
+                width: calc(100% - 70px);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .collect{
+                position: absolute;
+                right: @12px;
+                top: @15px;
+                width: @56px;
+                height: @26px;
+                background: rgba(25,143,255,0.15);
+                border-radius: @4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: @14px;
+                color: #198FFF;
+                img{
+                    width: @14px;
+                    height: @12px;
+                    margin-right: @4px;
+                }
+            }
+        }
+        .subTitle{
+            font-size: @14px;
+            color: #666;
+            margin-top: @8px;
+            text-align: center;
+            span{
+                color: #666666;
+                margin-left: @12px;
+            }
+            .noticeType{
+                margin-left: 0;
+            }
+        }
+        .title_range{
+            font-size: @14px;
+            color: #666;
+            margin-top: @8px;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center; 
+            span{
+                margin-left: @12px;
+            }
+            .appoint{   
+                overflow: hidden;
+                display: inline-block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }   
+        }
+        .detail_content{
+            margin-top: @20px;
+            :global(img){
+                max-width: 100%;
+            }
+            img{
+                max-width: 100%;
+            }
+            .detail_img{
+                margin-bottom: @12px;
+            }
+            .text{
+                // text-indent: @28px;
+                font-size: @16px;
+                line-height: @30px;
+                p{
+                    // display: flex;
+                    overflow: hidden;
+                    word-break: break-all;
+                    margin-bottom: 0.25em;
+                }
+                ol, ul, dl{
+                    margin-bottom: 0.25em;
+                }
+                ul li{
+                    list-style-type: disc;
+                    list-style-position:inside;
+                }
+                ol li{
+                
+                    list-style-type:decimal;
+                    
+                    list-style-position:inside;
+                }
+            }
+            .annex{
+                font-size: @16px;
+                font-weight: bold;
+                color: #333;
+                margin-top: @24px;
+                display: flex;
+                .file_data{
+                    width: calc(100% - 50px);
+                    span{
+                        display: inline-block;
+                        width: 100%;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap; 
+                        a{
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+            .view_times{
+                color: #333;
+                font-size: @16px;
+                margin-top: @8px;
+            }
+        }
+
+    }
+}

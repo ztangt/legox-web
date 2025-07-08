@@ -1,0 +1,170 @@
+.login_container{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  // background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  .img_logo_container{
+    height: 100px;
+    // padding-left: 60px;
+    display: flex;
+    align-items: center;
+    // background: #FFF;
+    position: fixed;
+    width: 100%;
+    img{
+      height: auto;
+    }
+  }
+  .form_container{
+    height: 100%;
+    width: 100%;  
+    .form{
+      width: 20%;
+      height: 45%;
+      // width: 390px;
+      // height: 490px;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 16px 0px rgba(162,162,162,0.5);
+      border-radius: 16px;
+      position: absolute;
+      // top: 11%;
+      // right: 18%;
+      // top: 119px;
+      // right: 341px;
+      // padding: 30px;
+      top: 20%;
+      right: 18%;
+      padding: 0 1.6%;
+      min-height: 362px;
+      min-width: 358px;
+      max-height: 490px;
+      max-width: 390px;
+    }
+    .form_title{
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 900;
+      font-size: 32px;
+      color: rgba(0, 0, 0, 0.75);
+      letter-spacing: 2px;
+      text-align: left;
+      font-style: normal;
+      margin-top: 15.4%;
+      margin-bottom: 8.3%;
+      width: 100%;
+      text-align: center;
+      line-height: 1.41;
+    }
+    .item{
+      width: 100%;
+      height: 100%;
+      background: #F4F6F8;
+      border-radius: 28px;
+      padding-left: 6.2%;
+      border: none;
+      min-height: 32px;
+      // margin-bottom: 20px;
+      input{
+        background: inherit;
+      }
+    }
+    .item_button{
+      background: #1890FF;
+      box-shadow: 0px 3px 9px 0px #A7BAE6;
+      border-radius: 27px;
+      font-family: PingFangSC, PingFang SC;
+      font-weight: 500;
+      font-size: 18px;
+      color: #FFFFFF;
+      line-height: 1.389;
+      font-style: normal;
+      text-align: center;
+    }
+    .check_div{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      :global{
+        .ant-checkbox-wrapper{
+          font-family: PingFangSC, PingFang SC;
+          font-weight: 400;
+          font-size: 16px;
+          color: #666666;
+          line-height: 1.375;
+          text-align: left;
+          font-style: normal;
+        }
+        .ant-checkbox-inner{
+          border-radius: 2px;
+          border: 1px solid #CBCBCB;
+        }
+        .ant-checkbox-checked .ant-checkbox-inner{
+          border: none;
+        }
+      }
+
+    }
+    .check_div_right{
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+    .base{
+      float: right;
+      margin-left: 8px;
+      font-size: 16px;
+    }
+    .form_item{
+      margin-bottom: 0;
+      // margin-bottom: 6.154%;
+      padding-bottom: 6.154%;
+
+      // height: 11.22%;
+      :global{
+        // .ant-form-item{
+
+        // }
+        [class*='ant-form-item-']{
+          height: 100% !important;
+        }
+        .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper, .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:hover{
+          background: #F4F6F8;
+        }
+        .ant-form-item-explain{
+          position: absolute;
+          line-height: 1.4;
+        }
+        .ant-input-affix-wrapper-focused, .ant-input-affix-wrapper:focus{
+          box-shadow: 0 0 0 1px #1890FF;
+        }
+        .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper-focused{
+          box-shadow: 0 0 0 1px #ff4d4f;
+        }
+        .ant-input-prefix{
+          margin-right: 16px;
+        }
+      }
+      .ant-input-prefix{
+        margin-right: 16px;
+      }
+    }
+    .form_item_password{
+      margin-bottom: 0;
+      padding-bottom: 12.32%;
+    } 
+  }
+  .login_footer{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    position: fixed;
+    bottom: 0;
+    color: #333333;
+    background: rgba(255,255,255,0.2);
+  }
+}

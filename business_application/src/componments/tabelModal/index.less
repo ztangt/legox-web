@@ -1,0 +1,67 @@
+.table_modal {
+  :global {
+    .ant-modal-body {
+      padding: 0px;
+      padding-top: 4px;
+    }
+  }
+  .header {
+    text-align: right;
+    overflow: hidden;
+    .right {
+      float: right;
+      width: 200px;
+    }
+    button {
+      margin-right: 10px;
+    }
+  }
+}
+.tree_tabel_warp {
+  position: relative;
+  :global {
+    .ant-select-selector,
+    .ant-select,
+    .ant-tree-select,
+    .ant-select-single {
+      border-radius: 4px !important;
+      border: none !important;
+      height: 28px !important;
+    }
+    .ant-select-clear {
+      right: 50px;
+    }
+    .ant-select-multiple .ant-select-selection-item-remove {
+      display: none;
+    }
+    .ant-select-multiple .ant-select-selection-item {
+      background: unset;
+      border: unset;
+    }
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+      padding: 0px 8px;
+    }
+  }
+}
+//弹框搜索
+.search_warp {
+  padding: 10px;
+  .search_button {
+    overflow: hidden;
+    & > button {
+      float: right;
+      margin-left: 10px;
+    }
+  }
+  :global {
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      border-radius: 4px;
+    }
+    .ant-form-inline .ant-form-item {
+      margin-bottom: 16px !important;
+    }
+    .ant-form-item-label {
+      width: 80px;
+    }
+  }
+}

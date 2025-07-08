@@ -1,0 +1,74 @@
+.applyPublish_container{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 4px;
+  }
+  .table_warp{
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 100%;
+    .header{
+      padding: 8px 8px 8px 8px;
+      overflow: hidden;
+      .left{
+        float: left;
+      }
+      .right{
+        float: right;
+        &>button{
+          margin-right:8px;
+          &:last-child{
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+  .addPublish_content{
+    width: 100%;
+    height:100%;
+    &>div:first-child{
+      height:calc(100% - 89px) !important
+    }
+    .ability_search{
+      width:200px;
+      padding:8px 0px;
+    }
+    .ability_tree{
+      height:calc(100% - 50px);
+      overflow: auto;
+    }
+  }
+  .publish_content{
+      width:100%;
+      height:100%;
+      .publich_header{
+          display: flex;
+          justify-content: space-between;
+          padding:8px;
+          &>span{
+              width: 200px;
+          }
+      }
+  }
+  .rowColor{
+    background-color:var(--ant-primary-color-hover)
+  }
+  .operation{
+    color: var(--ant-primary-color);
+    cursor: pointer;
+  }
+  .registerTree{
+    padding-top: 7px;
+    padding-left: 8px;
+    .tree_list{
+        margin-top: 14px;
+    }
+    .tree_search{
+        margin-right: 15px;
+        height: 32px;
+        background: #FFFFFF;
+        width: 205px;
+    }
+  }

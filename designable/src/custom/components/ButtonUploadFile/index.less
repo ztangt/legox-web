@@ -1,0 +1,92 @@
+@root-entry-name: 'default';
+@import (reference) '~antd/es/style/themes/index.less';
+.button_upload_file_warp {
+  & > span {
+    margin-right: 8px;
+    color: var(--ant-primary-color) !important;
+    cursor: pointer;
+  }
+  //在移动端不能下载的都需要置灰
+  .no_fileName {
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.25) !important;
+  }
+  .upload_warp {
+    color: var(--ant-primary-color) !important;
+    cursor: pointer;
+  }
+  .disabled_warp {
+    cursor: not-allowed;
+    color: @disabled-color!important;
+  }
+}
+//详情弹框
+.detail_warp {
+  .content_warp {
+    height: calc(100% - 72px);
+    overflow: auto;
+    .row_warp {
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      .col_wap {
+        padding: 0px;
+        padding-right: 16px;
+        // &:last-child {
+        //   padding-right: 0px;
+        // }
+        .card_warp {
+          width: 100%;
+          border: 1px solid rgba(217, 217, 217, 1);
+          border-radius: 4px;
+          padding: 2px;
+          padding-top: 8px;
+          .img_icon {
+            height: 150px;
+            width: 135px;
+            margin: 0 auto;
+          }
+          .p_file_name {
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          :global {
+            .ant-card-body {
+              padding: 8px;
+            }
+          }
+          .opration_warp {
+            text-align: center;
+            & > span {
+              margin-right: 8px;
+              color: var(--ant-primary-color) !important;
+              &:last-child {
+                margin-right: 0px;
+              }
+            }
+            .disabled_warp {
+              cursor: not-allowed;
+              color: @disabled-color!important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .page_warp {
+    position: absolute;
+    bottom: 0px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    width: calc(100% - 32px);
+    font-size: 18px;
+  }
+  .header_warp {
+    margin-bottom: 8px;
+    text-align: right;
+  }
+}

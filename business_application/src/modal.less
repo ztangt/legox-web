@@ -1,0 +1,292 @@
+.ant-layout .ant-modal-wrap {
+  overflow: auto !important;
+  position: absolute !important;
+  top: 87px !important;
+  background-color: rgba(0, 0, 0, 0.45);
+  //z-index: 100000;
+}
+// //浮层按钮
+// .ant-modal-footer {
+//   button {
+//     span {
+//       // letter-spacing: -2px;
+//     }
+//     height:26px;
+//     line-height: 26px;
+//   }
+
+//   .ant-btn:nth-child(1) {
+//     height: 26px;
+//     line-height: 26px;
+//     border: none;
+//     background-color: #e5e9ec ;
+//     color: #505766 ;
+
+//     &:hover,
+//     &:focus {
+//       background-color: #dbe0e5 ;
+//     }
+//   }
+
+//   .ant-btn:nth-child(2) {
+//     height: 26px;
+//     line-height: 26px;
+//     border: none;
+//     background-color: #5b95f4 ;
+//     color: #fff ;
+
+//     &:hover,
+//     &:focus {
+//       background-color: #4487fa;
+//     }
+//   }
+// }
+
+//取消按钮
+.cancle_btn {
+  color: #505766;
+  border-color: #e5e9ec;
+  background-color: #e5e9ec;
+}
+
+.cancle_btn:hover {
+  color: #505766;
+  border-color: #dbe0e5;
+  background-color: #dbe0e5;
+}
+
+.cancle_btn:disabled {
+  color: #505766;
+  border-color: #f7f7f7;
+  background-color: #f7f7f7;
+  cursor: default;
+}
+
+.cancle_btn:disabled:hover {
+  color: #505766;
+  border-color: #f7f7f7;
+  background-color: #f7f7f7;
+  cursor: default;
+}
+//浮层按钮
+.ant-modal-footer {
+  button {
+    span {
+      // letter-spacing: -2px;
+    }
+    height:32px;
+    line-height: 32px;
+  }
+
+  .ant-btn:nth-of-type(1) {//这块应该用nth-of-type不应该用nth-child
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    background-color: #e5e9ec !important;
+    color: #505766 !important;
+
+    &:hover,
+    &:focus {
+      background-color: #dbe0e5 !important;
+    }
+  }
+
+  .ant-btn:nth-of-type(2) {//这块应该用nth-of-type不应该用nth-child
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    background-color: var(--ant-primary-color) !important;
+    color: #fff !important;
+
+    &:hover,
+    &:focus {
+      background-color: var(--ant-primary-color-hover) !important;
+    }
+  }
+}
+
+//取消按钮
+.cancle_btn {
+  color: #505766;
+  border-color: #e5e9ec;
+  background-color: #e5e9ec;
+}
+
+.cancle_btn:hover {
+  color: #505766;
+  border-color: #dbe0e5;
+  background-color: #dbe0e5;
+}
+
+.cancle_btn:disabled {
+  color: #505766;
+  border-color: #f7f7f7;
+  background-color: #f7f7f7;
+  cursor: default;
+}
+
+.cancle_btn:disabled:hover {
+  color: #505766;
+  border-color: #f7f7f7;
+  background-color: #f7f7f7;
+  cursor: default;
+}
+//大弹框
+.ant-layout .ant-modal,
+.ant-modal {
+  // position: absolute;
+  top: 10%;
+  width: 800px;
+  // max-width: 100vw !important;
+
+  .ant-modal-content {
+    //width: 800px;
+    border-radius: 5px !important;
+
+    .ant-modal-close {
+      .ant-modal-close-x {
+        svg {
+          fill: @colorF !important;
+          width: 16px !important;
+          height: 16px !important;
+        }
+      }
+    }
+
+    .ant-modal-header {
+      width: 100%;
+      padding: 10px 24px 10px 16px;
+      border-radius: 4px !important;
+      background-color: var(--ant-primary-color) !important;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      height: 40px !important;
+      // display: flex !important;
+      // align-items: center !important;
+
+      .ant-modal-title {
+        font-size: 14px;
+        color: @colorF !important;
+      }
+    }
+
+    .ant-modal-body {
+      width: 100%;
+      height: calc(100vh - 322px);
+      overflow: auto;
+
+      .ant-form-item {
+        .ant-form-item-label > label {
+          font-size: 14px;
+          color: #666;
+          // padding-right: 8px;
+        }
+
+        .ant-picker-input > input,
+        .ant-input[disabled] {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .ant-modal-footer {
+      background-color: #fff;
+      padding: 10px 16px;
+      border-radius: 5px !important;
+      .ant-btn-primary {
+        background-color: var(--ant-primary-color);
+      }
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 14px;
+  }
+}
+
+.ant-modal-close-x {
+  color: #999999 !important;
+  font-size: 12px;
+}
+
+//小弹框 确认框
+.ant-modal-wrap {
+  // margin-top: 240px;
+  .ant-modal-confirm {
+    position: relative;
+    top: 32%;
+    width: 400px;
+    height: 180px;
+
+    .ant-modal-content {
+      width:100%;
+      height:100%;
+      // margin-top: 170px;
+      border-radius: 4px;
+    }
+
+    .ant-modal-body {
+      width: 100% !important;
+      height: 100% !important;
+      // padding: 55px 32px 24px;
+
+      .ant-modal-confirm-body-wrapper {
+        width: 100%;
+        height: 100%;
+
+        .ant-modal-confirm-content {
+          height: 80%;
+        }
+      }
+    }
+
+    .ant-modal-confirm-btns {
+      width: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+      margin-top: 0;
+      border-top: solid 1px #f0f0f0;
+      padding-top: 10px;
+      padding-right: 10px;
+      text-align: right;
+
+      .ant-btn:nth-child(1) {
+        height: 32px;
+        line-height: 32px;
+        border: none;
+        background-color: #e5e9ec !important;
+        color: #505766 !important;
+
+        &:hover,
+        &:focus {
+          background-color: #dbe0e5 !important;
+        }
+      }
+
+      .ant-btn:nth-child(2) {
+        height: 32px;
+        line-height: 32px;
+        border: none;
+        background-color: var(--ant-primary-color) !important;
+        color: #fff !important;
+        margin-right: 8px;
+
+        &:hover,
+        &:focus {
+          background-color: var(--ant-primary-color-hover) !important;
+        }
+      }
+    }
+  }
+}
+
+.ant-modal-confirm-body .ant-modal-confirm-title {
+  font-size: 14px;
+}
+.ant-modal-confirm-confirm{
+  .ant-modal-confirm-body{
+    // height: 100px;
+    overflow: auto;
+  }
+}

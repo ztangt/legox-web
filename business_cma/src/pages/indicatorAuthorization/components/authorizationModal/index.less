@@ -1,0 +1,109 @@
+.transfer {
+    height: 100%;
+    :global {
+        .ant-btn-primary {
+            color: #fff !important;
+            background-color: #1890ff !important;
+        }
+        .ant-transfer .ant-transfer-list-content-item-disabled {
+            color: #000;
+        }
+
+        .ant-tabs-tab {
+            padding: 5px 0;
+        }
+    }
+    .user_warp {
+        //height: calc(100% - 48px);
+    }
+}
+.transferTree {
+    :global {
+        .ant-transfer-list-body-customize-wrapper {
+            height: 100% !important;
+        }
+    }
+}
+
+.department {
+    position: relative;
+    //height: calc(100% - 48px);
+    :global {
+        .v_resize___2uAcc,
+        .v_resize {
+            height: calc(100% - 22px) !important;
+            margin-top: 22px !important;
+        }
+    }
+    .theme {
+        font-size: 14px;
+        color: #1890ff;
+    }
+    .split_line {
+        position: absolute;
+        background: gainsboro;
+        height: 1px;
+        width: 100%;
+        top: 22px;
+        z-index: 2;
+    }
+    .left_org_tree {
+        height: 100%;
+        overflow: hidden;
+        .content {
+            margin-top: 8px;
+            height: calc(100% - 30px);
+            overflow: hidden !important;
+            > div {
+                height: 100%;
+                overflow: auto;
+                #orgTree {
+                    overflow: auto !important;
+                    height: calc(100% - 50px) !important;
+                }
+            }
+        }
+    }
+    :global {
+        .tree_dom,
+        .tree_dom___2XRWt {
+            overflow: hidden !important;
+        }
+    }
+    .right_table {
+        padding: 0 8px 8px 8px;
+    }
+    .opration {
+        padding: 5px 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.userGroupBox {
+    //height: calc(100% - 48px);
+    .userGroupItemLeft {
+        border: 1px solid #d9d9d9;
+        flex: 1;
+        margin-right: 20px;
+        padding: 10px;
+        .checkboxGroup {
+            height: calc(100% - 30px);
+            overflow-y: auto;
+        }
+        .allCheckBox {
+            height: 30px;
+        }
+    }
+    .userGroupItemRight {
+        border: 1px solid #d9d9d9;
+        padding: 10px;
+        flex: 1;
+        .hasChooseTitle {
+            height: 30px;
+        }
+        .hasChooseBox {
+            height: calc(100% - 30px);
+            overflow-y: auto;
+        }
+    }
+}

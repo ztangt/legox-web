@@ -1,0 +1,179 @@
+.work_warp {
+  .header {
+    height:48px;
+    .left {
+      float: left;
+      padding:8px 0 8px 8px;
+      input {
+        width: 200px;
+        font-size: 14px;
+      }
+    }
+
+    .right {
+      float: right;
+      padding:8px 8px 0 0;
+      button {
+        margin-right: 8px;
+        span{
+          // letter-spacing: -2px;
+        }
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  :global {
+    .ant-input-suffix {
+      margin-right: 4px;
+    }
+    .ant-table-body{
+      height:100vh
+    }
+  }
+}
+
+.add_modal {
+
+  //添加页面
+  .add_form {
+    width: 50%;
+    float: left;
+
+    .idea_item {
+      position: relative;
+
+      .idea_list {
+        width: 220px;
+        height: 143px;
+        border: 1px solid #D9D9D9;
+        border-radius: 4px;
+      }
+
+      .check_idea {
+        height: 96px;
+        overflow: auto;
+
+        .check_one {
+          position: relative;
+          height: 34px;
+          line-height: 34px;
+          padding-left: 12px;
+          padding-right: 10px;
+
+          &:hover {
+            background: #F3F5F9;
+          }
+
+          .del_idea {
+            position: absolute;
+            top: 11px;
+            right: 10px;
+          }
+        }
+      }
+
+      .add_idea {
+        position: absolute;
+        left: 14px;
+        bottom: 14px;
+        cursor: pointer;
+        font-size: 14px;
+        &>span {
+          color: var(--ant-primary-color);
+        }
+      }
+    }
+  }
+
+  .work_warp {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    color:#666;
+    // margin-left: 100px;
+    .work_title{
+      display: block;
+      margin-left: 68px;
+    }
+    &>p::before {
+      display: inline-block;
+      margin-right: 4px;
+      color: #ff4d4f;
+      font-size: 14px;
+      font-family: SimSun, sans-serif;
+      line-height: 1;
+      content: '*';
+    }
+
+    .work_list {
+      width: 220px;
+      height: 317px;
+      border: 1px solid #D9D9D9;
+      text-align: center;
+      margin-top: 4px;
+      margin-left: 69px;
+      padding-top: 10px;
+      border-radius: 4px;
+      .search {
+        width: 200px;
+        height: 30px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+      }
+
+      .check_all {
+        width: 100%;
+        height: 34px;
+        line-height: 34px;
+        position: relative;
+
+        &>span:nth-child(1) {
+          position: absolute;
+          top: 9px;
+          right: 16px;
+        }
+
+        &>span:nth-child(2) {
+          margin-left: 8px;
+          font-size: 14px;
+        }
+      }
+
+      .check_list {
+        overflow-y: auto;
+        height: 233px;
+
+        .check_one {
+          height: 34px;
+          line-height: 34px;
+          position: relative;
+          width: 100%;
+          font-size: 14px;
+          &:hover {
+            background: #F3F5F9;
+          }
+
+          &>span:nth-child(1) {
+            position: absolute;
+            top: 9px;
+            right: 10px;
+            border-color:#505766;
+          }
+
+          &>span:nth-child(2) {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.work_list___36Reg {
+  margin-top: 5px;
+}
+

@@ -1,0 +1,23 @@
+@12px: 0.85rem; //12px;
+@8px: 0.57rem; // 8px
+@16px: 1.142rem;
+.theme{
+    background: #f5f5f5;
+    padding: @12px;
+    :global{
+        .adm-input{
+            padding: @12px;
+            background: #fff;
+            border-radius: @8px;
+            color: #333;
+            font-size: @16px;
+        }
+    }
+    .save{
+        font-size: @16px;
+        // color: #333;
+        margin-top: @12px;
+        text-align: center;
+        border-radius: @8px;
+    }
+}

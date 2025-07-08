@@ -1,0 +1,121 @@
+.container {
+  margin: 8px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  .header {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background: #eff3fe;
+    border-radius: 6px;
+    // height: 40px;
+  }
+  :global {
+    .ant-picker {
+      border: 1px solid #e7e7e7 !important;
+    }
+    .ant-table-container {
+      border-top: 1px solid #505766;
+    }
+    .ant-table-title {
+      padding: 0 !important;
+    }
+    .ant-table-header,
+    .ant-table-thead,
+    .ant-table-content {
+      border-top: none;
+    }
+    .ant-table-title + .ant-table-container table > thead > tr:first-child th {
+      padding-left: 25px;
+    }
+    .ant-table.ant-table-small .ant-table-tbody > tr > td {
+      padding-left: 25px;
+    }
+    .rbc-month-view {
+      border: none;
+    }
+    .rbc-now {
+      background: #1890ff;
+      border-radius: 6px;
+    }
+    .rbc-month-header {
+      margin: 20px 0;
+    }
+    .rbc-month-row {
+      padding: 2px;
+      border-top: none !important;
+    }
+    .rbc-day-bg {
+      border-left: none !important;
+    }
+    .rbc-header {
+      border-left: none !important;
+      border-right: none !important;
+      border-bottom: none !important;
+      span {
+        display: inline-block;
+        margin: 12px 0 6px 0;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+      }
+    }
+    .rbc-time-view .rbc-allday-cell {
+      height: inherit;
+    }
+    .rbc-calendar * {
+      box-sizing: inherit;
+      font-weight: 400;
+    }
+    .rbc-row-content,
+    .rbc-row {
+      height: 100%;
+    }
+    // .rbc-today {
+    //   &:hover {
+    //     background-color: #ffff;
+    //   }
+    // }
+    .rbc-event {
+      padding: 0;
+    }
+    .plan {
+      display: flex;
+      margin-bottom: 2px;
+      &:hover {
+        border-radius: 6px;
+      }
+    }
+    .flex_space_around {
+      margin-bottom: 8px;
+    }
+    .rbc-row-segment {
+      padding: 0 2px 1px 2px;
+    }
+    .rbc-off-range {
+      opacity: 0.4;
+    }
+    .rbc-off-range-bg {
+      background: #ffffff;
+    }
+  }
+}
+
+.today_button {
+  // margin: 0 16px 0 8px !important;
+  // height: 28px;
+  width: 100px;
+  background: #fff !important;
+  border: solid 1px #e7e7e7 !important;
+  color: #505766 !important;
+
+  &:hover,
+  &focus {
+    background-color: #fff;
+    border-color: #505766;
+    color: #505766;
+  }
+}

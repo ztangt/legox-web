@@ -1,0 +1,196 @@
+// //input框
+.ant-input-affix-wrapper {
+  .ant-input {
+    //不能定义这个，影响整体0412
+    height: 28px;
+    line-height: 28px;
+    //border-radius: 4px;
+    // padding: 0px 4px;
+    font-size: 12px;
+    // color: #ccc;
+    border: unset;
+  }
+}
+
+.ant-input-group > .ant-input-affix-wrapper:not(:last-child) .ant-input,
+input:not([type='range']) {
+  color: #333;
+}
+
+.ant-input:hover {
+  border-color: #505766;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: none;
+  border-color: #505766;
+  color: #333;
+}
+
+//input 禁用
+.ant-input[disabled] {
+  color: #999;
+  background-color: #f7f7f7;
+  border-color: #eee;
+}
+
+//搜索框的样式
+.ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+.ant-input-search {
+  .ant-input-affix-wrapper {
+    height: 32px;
+    padding: 0px;
+
+    .ant-input {
+      height: 30px !important;
+      padding: 0px 0px 0px 8px;
+    }
+    input::-webkit-input-placeholder {
+      color: #cccccc;
+      font-size: 14px;
+    }
+
+    &:hover {
+      border-right: none;
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-affix-wrapper:hover + .ant-input-group-addon {
+    .ant-input-search-button {
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused {
+    border-color: #505766 !important;
+    box-shadow: none;
+    border-right: none;
+  }
+
+  .ant-input-affix-wrapper:focus + .ant-input-group-addon {
+    .ant-input-search-button {
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-affix-wrapper-focused + .ant-input-group-addon {
+    .ant-input-search-button {
+      border-color: #505766 !important;
+    }
+  }
+
+  .ant-input-search-button {
+    padding: 0px !important;
+    background-color: #ffffff !important;
+    border-color: #d9d9d9 !important;
+    border-left: none;
+    color: #505766 !important;
+    height: 32px !important;
+  }
+}
+
+.ant-input-search
+  > .ant-input-group
+  > .ant-input-group-addon:last-child
+  .ant-input-search-button {
+  border-radius: 0 4px 4px 0 !important;
+}
+.ant-input-search .ant-input:hover,
+.ant-input-search .ant-input:focus {
+  border-color: #505766 !important;
+  border-right: none;
+}
+.ant-input-search
+  .ant-input:hover
+  + .ant-input-group-addon
+  .ant-input-search-button:not(.ant-btn-primary),
+.ant-input-search
+  .ant-input:focus
+  + .ant-input-group-addon
+  .ant-input-search-button:not(.ant-btn-primary) {
+  border-color: #505766;
+}
+
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrapper:focus {
+  box-shadow: none;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #cccccc;
+}
+textarea::placeholder {
+  font-size: 14px;
+  color: #cccccc;
+}
+.ant-formily-item-control-content-component {
+  input {
+    color: inherit;
+    font-size: inherit;
+  }
+}
+.ant-picker-focused,
+.ant-picker:focus,
+.ant-picker:hover,
+.ant-input-number-focused,
+.ant-input-number:focus,
+.ant-input-number:hover,
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.antd-select-customize-input)
+  .ant-select-selector,
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector:hover,
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover,
+.ant-input-affix-wrapper > input.ant-input:focus,
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrapper:focus {
+  box-shadow: none;
+  border-color: #505766;
+}
+
+.ant-input-affix-wrapper-disabled,
+.ant-select-disabled,
+.ant-picker-disabled,
+.ant-input-number-disabled,
+.ant-input-disabled {
+  background: #f5f5f5 !important;
+}
+//图标与表单之间的间距为4px，图标与“x”之间间距为4px
+.ant-input-affix-wrapper {
+  padding: 4px 4px;
+  .anticon {
+    margin-left: 4px;
+  }
+}
+.ant-input-clear-icon {
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+}
+
+textarea:disabled,
+input:disabled {
+  -webkit-text-fill-color: #999999 !important;
+  color: #999999 !important;
+}
+.ant-input-affix-wrapper-disabled,
+.ant-select-disabled,
+.ant-picker-disabled,
+.ant-input-number-disabled,
+.ant-input-disabled,
+// .pull_wrap___Iu1Wg,//下面的控件暂时先这么写
+// .invoice_container___XRSma,
+.ant-radio-wrapper-disabled,
+.tree_tabel_warp___VknQN .input_disable___xamtx .ant-input-group-addon {
+  -webkit-text-fill-color: #999999 !important;
+  color: #999999 !important;
+  .anticon {
+    color: #d9d9d9 !important; //不可编辑状态下图标颜色统一
+  }
+}

@@ -1,0 +1,40 @@
+.h_resize_container {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: inherit;
+  .h_top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .h_resize {
+    height: 1px;
+    width: 100%;
+    background: #e9e9e9;
+    position: absolute;
+    bottom: 100px;
+    z-index: 1;
+    cursor: row-resize;
+    user-select: none;
+  }
+  .h_bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .h_icon {
+    width: 32px;
+    height: 14px;
+    background: #f6f6f6;
+    border-radius: 2px 2px 0px 0px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    height: calc(100% - 14px);
+  }
+}

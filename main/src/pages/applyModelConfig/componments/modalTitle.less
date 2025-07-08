@@ -1,0 +1,54 @@
+.title_warp{
+  :global{
+    .ant-modal-body{
+      padding:0px;
+    }
+  }
+  .title{
+    color: #1890ff;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 8px;
+    &>span{
+      margin-right: 8px;
+      cursor: pointer;
+    }
+  }
+  .table{
+    height: calc(100% - 40px);
+    overflow: hidden;
+    border-top: 1px solid #464D5B;
+    .opration{
+      color: #03A4FF;
+      &>p{
+        cursor: pointer;
+      }
+    }
+    :global{
+      .ant-table-tbody > tr.ant-table-row-selected > td {
+        background: none;
+        border-color: none;
+      }
+      .ant-table-tbody > tr.ant-table-row-selected:hover > td {
+        background: none;
+      }
+      .ant-table-tbody > tr > td{
+        padding: 8px 8px;
+      }
+    }
+    .data_list{
+      margin-bottom: 0px;
+      &>li{
+        margin-bottom: 8px;
+        width: max-content;
+        &:last-child{
+          margin-bottom: 0px;
+        }
+      }
+      .select_one{
+        border: 1px solid #03A4FF;
+        border-radius: 4px;
+      }
+    }
+  }
+}

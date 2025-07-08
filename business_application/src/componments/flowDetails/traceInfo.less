@@ -1,0 +1,38 @@
+.info_warp{
+  .cell_col{
+    min-height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    white-space: nowrap;
+  }
+  .warn_info{
+    float: left;
+    span{
+      margin-right: 8px;
+    }
+    span>i{
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 4px;
+    }
+  }
+  :global{
+    .ant-descriptions-header{
+      margin: 8px;
+    }
+    .ant-table-tbody{
+      .ant-table-cell{
+        padding: 0px !important;
+      }
+    }
+    .drag_tabel___ovkrI{
+      height: unset;
+    }
+    .ant-descriptions-bordered .ant-descriptions-item-label, .ant-descriptions-bordered .ant-descriptions-item-content{
+      padding: 8px;
+    }
+  }
+}

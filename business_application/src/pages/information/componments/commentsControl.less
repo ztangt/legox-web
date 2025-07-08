@@ -1,0 +1,64 @@
+.warpModel {
+  :global {
+    .ant-modal-content .ant-modal-body {
+      overflow: hidden !important;
+    }
+  }
+  .content_modal{
+    height: 100%;
+    .warp_table {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: calc(100% - 24px);
+      :global{
+        .ant-table-empty{
+          table{
+            height: 100% !important;
+          }
+          .ant-table-measure-row{
+            height: 1px !important;
+          }
+          tr>td{
+            border-bottom: none !important; 
+          }
+        }
+
+        .ant-table-cell {
+          height: 40px; //行高统一40px
+          padding: 0 8px !important;
+        }
+    
+        .oddRow {
+          &>td {
+            background-color: #fff;
+          }
+        }
+    
+        .evenRow {
+          &>td {
+            background-color: #f8f9fa;
+          }
+        }
+    
+        .oddRow:hover,
+        .evenRow:hover {
+          &>td {
+            background: var(--ant-primary-color-deprecated-f-12) !important;
+          }
+        }
+      }
+      // overflow: auto;
+      // .page {
+      //   position: absolute;
+      //   bottom: -26px;
+      //   right: -20px;
+      //   width: 100%;
+      // }
+    }
+  }
+}
+.button_width{
+  width: 48px;
+  height: 32px;
+}

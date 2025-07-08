@@ -1,0 +1,44 @@
+.warp {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .handleWarp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  .tableWarp {
+    display: flex;
+    margin-top: 8px;
+  }
+
+  :global {
+    .ant-btn span {
+      font-size: 14px;
+    }
+    // .ant-btn :hover {
+    //   background: var(--ant-primary-color);
+    // }
+    .ant-table-thead
+      > tr
+      > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      width: 0px;
+      height: 0px;
+    }
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td,
+    .ant-table tfoot > tr > th,
+    .ant-table tfoot > tr > td {
+      padding: 0;
+    }
+    .ant-table-header {
+      height: 40px !important;
+      line-height: 40px;
+    }
+    .ant-table-cell {
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.warp {
+  display: flex;
+  flex-direction: column;
+  .searchWarp {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    .searchInput {
+      width: 226px;
+      color: white;
+      height: 32px;
+      :global {
+        .ant-input-suffix {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

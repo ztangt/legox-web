@@ -1,0 +1,107 @@
+.text {
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 4px;
+  :global{
+    .container___cH9K3 .left___ou89_ {
+      overflow-y: visible !important;
+    }
+  }
+}
+
+.departmentTree {
+  padding-top: 8px;
+  height:100%;
+    :global{
+      .ant-tree{
+        overflow: auto;
+        height:calc(100% - 45px)
+      }
+    }
+}
+.search {
+  width: 205px !important;
+  margin-bottom: 8px;
+}
+
+.table {
+  padding-top: 8px;
+  height:100%;
+}
+
+.other {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8px;
+  .bt_gp {
+    margin-right: 8px;
+    button {
+      border-radius: 4px;
+      // border: 1px solid #E4E4E4;
+      margin-left: 8px;
+      font-size: 14px;
+    }
+
+    [class^="ant-bt"] {
+      padding: 0;
+    }
+  }
+}
+
+.siteTreeSearchValue{
+  // color: #1890ff;
+  background: rgba(255,235,117);
+}
+
+
+.space_ele {
+  margin-bottom: 10px;
+}
+.hover_opration{
+  display: none;
+  span{
+    margin-left: 3px;
+  }
+}
+.group_tree_title{
+  &:hover{
+    .hover_opration{
+      display: inline-block;
+    }
+  }
+}
+// .right_click_menu {
+//   min-width: 100px;
+//   border: 1px solid #f2f2f2;
+//   border-radius: 5px;
+//   background-color: #f2f2f2;
+//   box-shadow: 0 0 5px 3px #ccc;
+//   padding: 0 10px;
+
+//   >.item_menu {
+//     height: 30px;
+//     line-height: 30px;
+//     cursor: pointer;
+//     font-size: 14px;
+//   }
+
+//   :global {
+//     .ant-tree-list-holder-inner {
+//       div[class^="ant-tree-treenode ant-tree-treenode-switcher"] {
+//         >span:last-child {
+//           min-width: 100px;
+//         }
+//       }
+
+//     }
+//   }
+// }
+

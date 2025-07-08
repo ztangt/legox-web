@@ -1,0 +1,36 @@
+.authorityControl {
+  // height: 473px;
+  display: flex;
+  flex-direction: column;
+  .auth_box{
+    position: relative;
+    height: 100%;
+    .auth_line{
+      position: absolute;
+      height: 99%;
+      width: 1px;
+      background: #E9E9E9;
+      left: 110px;
+      top: 30px;
+    }
+    .auth {
+      display: flex;
+      width: 100%;
+      padding-bottom: 20px;
+      height: 100%;
+    }
+    .radios{
+      position: absolute;
+      top: 193px;
+      :global{
+        .ant-radio-wrapper:first-child{
+          margin-right: 8px;
+        }
+        .ant-radio-wrapper:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  
+}

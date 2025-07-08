@@ -1,0 +1,84 @@
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 100px;
+  padding: 0;
+  height: 100%;
+
+  .left {
+    position: relative;
+    float: left;
+    width: 200px;
+    overflow-y: auto;
+    // height: calc(100vh - 160px);
+    height: 100%; //这个100%是容器的高度，不能更改，弹框里面也需要
+    padding-right: 8px;
+    :global {
+      .ant-tree-list {
+        // margin-right: -4px !important;
+      }
+    }
+  }
+  .v_resize {
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    background: #e9e9e9;
+    left: 500px;
+    //top: -8px;这不能写top,会影响其他页面，需要的话再自己页面写
+    z-index: 999;
+    cursor: col-resize;
+    user-select: none;
+  }
+  .tree_dom {
+    margin-left: 202px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    background: #fff;
+    :global {
+      .ant-table-wrapper {
+        clear: none;
+      }
+      .ant-card-body {
+        padding-left: 0px;
+      }
+      .ant-table-tbody > tr > td {
+        word-break: break-all;
+      }
+    }
+  }
+  .desktop {
+    overflow-y: hidden;
+    background: #f0f2f5;
+    // border: 1px solid red;
+  }
+  .drag_bt {
+    width: 8px;
+    height: 20px;
+    line-height: 16px;
+    background: #ececec;
+    border-radius: 2px 0 0 2px;
+    display: block;
+    position: relative;
+    top: 50%;
+    right: 15px;
+    text-align: center;
+    cursor: pointer;
+    // span {
+    //   font-size: 8px;
+    //   color: #858181;
+    // }
+  }
+}
+.drag_expand {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  & > img {
+    transform: rotate(180deg);
+  }
+}

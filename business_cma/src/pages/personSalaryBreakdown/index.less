@@ -1,0 +1,90 @@
+.personSalaryBreakdown_box {
+    background-color: #f2f4f8;
+    min-height: 100vh;
+    font-size: 16px;
+
+    .boxShadowBox {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349);
+        border: 1px solid #797979;
+    }
+
+    .borderLeftItem {
+        border-left: 1px solid #797979;
+    }
+    .borderTopItem {
+        border-top: 1px solid #797979;
+    }
+    .borderItem {
+        border: 1px solid #797979;
+    }
+    .borderBottomItem {
+        border-bottom: 1px solid #797979;
+    }
+
+    :global {
+        .ant-btn {
+            border-radius: 4px;
+        }
+        .ant-divider-with-text {
+            margin: 10px 0;
+        }
+
+        //处理样式被冲掉的按钮
+        .ant-btn-dangerous {
+            color: #ff4d4f !important;
+            border-color: #ff4d4f !important;
+            padding: 4px 15px !important;
+        }
+
+        .ant-btn-dangerous:hover {
+            color: #fff !important;
+            border-color: #ff4d4f !important;
+            background: #ff4d4f !important;
+        }
+        .ant-btn-link {
+            border: none;
+            color: #0000ff !important;
+        }
+        .ant-btn-link:hover {
+            color: #0000ff !important;
+            border: none;
+            background: initial !important;
+        }
+    }
+}
+.descriptions_box {
+    :global {
+        .ant-descriptions-header {
+            margin-bottom: 10px;
+        }
+        .ant-descriptions-item {
+            padding-bottom: 0 !important;
+        }
+    }
+}
+.divider_box {
+    margin: 20px 0;
+}
+
+.card_box {
+    border: 1px solid #d9d9d9;
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 4px;
+    .card_box_top {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .card_box_bottom {
+        padding: 10px 10px 0;
+    }
+}
+//:global {
+//    .ant-modal-wrap .ant-modal-body {
+//        padding: 10px;
+//        height: calc(100vh - 80px) !important;
+//    }
+//}

@@ -1,0 +1,18 @@
+.drag_tabs {
+  width: 100%;
+}
+.tab_container {
+  width: 100%;
+  :global {
+    .ant-tabs-nav {
+      margin: 0px !important;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+    .ant-tabs-tab:hover {
+      color: var(--ant-primary-color);
+    }
+    .ant-tabs-ink-bar {
+      background-color: var(--ant-primary-color);
+    }
+  }
+}

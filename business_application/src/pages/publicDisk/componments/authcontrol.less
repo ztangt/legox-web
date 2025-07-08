@@ -1,0 +1,44 @@
+.buttons {
+  .buttonTitle {
+    font-size: 14px;
+  }
+
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  width: 95px;
+  margin-right: 16px;
+
+  button {
+    // width: 84px;
+    // height: 28px;
+    display: block;
+    margin-top: 8px;
+  }
+}
+
+.modalWarp {
+  :global {
+    .ant-tree-show-line .ant-tree-indent-unit {
+      opacity: 0;
+    }
+  }
+}
+
+.authList {
+  width: calc(100% - 111px);
+  // height: 170px;
+  :global{
+    .ant-table-body{
+      overflow-y: auto !important;
+    }
+  }
+  .list {
+    overflow: auto;
+  }
+
+  .authListTitle {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}

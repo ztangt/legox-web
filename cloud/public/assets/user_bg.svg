@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="315px" height="467px" viewBox="0 0 315 467" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>用户管理</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="315" height="467" rx="8"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="云管理平台首页" transform="translate(-1001.000000, -218.000000)">
+            <g id="用户管理" transform="translate(1001.000000, 218.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="蒙版" fill="#AC80F6" xlink:href="#path-1"></use>
+                <g id="224用户" mask="url(#mask-2)" fill="#A476F3" fill-rule="nonzero">
+                    <g transform="translate(-5.000000, -18.000000)" id="形状">
+                        <path d="M79.9164927,0.0706467768 C59.4206681,1.27576731 42.5417537,17.9752947 41.1638831,38.4623438 C39.6137787,62.5647545 58.559499,82.7074835 82.3277662,82.7074835 C105.234864,82.7074835 123.663883,64.1141952 123.663883,41.3890651 C123.836117,17.6309746 103.856994,-1.30663383 79.9164927,0.0706467768 Z M82.5,96.1359694 C54.9425887,96.1359694 0,109.908776 0,137.454388 L0,158.113597 C0,161.901119 3.10020877,165 6.88935282,165 L158.110647,165 C161.899791,165 165,161.901119 165,158.113597 L165,137.282228 C165,109.908776 110.057411,96.1359694 82.5,96.1359694 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

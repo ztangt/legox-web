@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  // &>div{
+  //     height: 100%;
+  // &>div{
+  //     height: 100%;
+  // }
+  // }
+}
+.tree {
+  margin-top: 7px;
+  height: 100%;
+  overflow: auto;
+  .tree_list {
+    margin-top: 20px;
+  }
+  .tree_search {
+    margin-right: 40px;
+    height: 32px;
+    background: #ffffff;
+    // width: 205px;
+    // position: fixed;
+    // z-index: 99;
+  }
+  .tree_list_user {
+    overflow: auto;
+    margin-top: 14px;
+    height: calc(100% - 60px);
+    position: absolute;
+  }
+}
+.table {
+  padding-top: 7px;
+  padding-right: 16px;
+  // height: 100%;
+}
+.edit {
+  display: none;
+}
+.tree_node:hover .edit {
+  display: inherit;
+  margin-left: 8px;
+}
+
+.siteTreeSearchValue {
+  background: rgba(255, 235, 117);
+}

@@ -1,0 +1,44 @@
+{
+  "name": "login",
+  "private": true,
+  "scripts": {
+    "start": "max dev --port=8000",
+    "build": "max build",
+    "postinstall": "max setup",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "analyze": "cross-env ANALYZE=1 max build"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@umijs/max": "^4.0.0",
+    "axios": "^1.4.0",
+    "compression-webpack-plugin": "10",
+    "cross-env": "^7.0.3",
+    "dingtalk-design-cli": "0.20.4",
+    "dingtalk-jsapi": "^3.0.25",
+    "godb": "^0.6.2",
+    "jquery": "3.6.0",
+    "js-base64": "3.7.2",
+    "lodash-es": "^4.17.21",
+    "rc-util": "^5.37.0",
+    "sm-crypto": "0.3.7",
+    "snowflake-id": "^1.1.0"
+  },
+  "devDependencies": {
+    "lint-staged": "10.0.7",
+    "prettier": "2.2.0",
+    "yorkie": "2.0.0"
+  }
+}

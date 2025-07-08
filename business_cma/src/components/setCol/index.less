@@ -1,0 +1,104 @@
+.search_col_pop {
+    :global {
+        .ant-checkbox-wrapper {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+    .col_check {
+        display: block;
+        height: 200px;
+        overflow: auto;
+        & > .setCol_rows:hover {
+            background-color: #f3f5f9;
+            .move_col {
+                display: block;
+                color: #505766;
+            }
+            .col_row {
+                color: #000;
+            }
+        }
+        .ellips,
+        .col_row {
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: #ccc;
+        }
+        & > .rows:hover {
+            background-color: #f3f5f9;
+            .ellips {
+                color: #000;
+            }
+        }
+    }
+    .ant-checkbox-wrapper .ant-checkbox-wrapper-checked {
+        color: #000;
+    }
+    .setCol_rows {
+        position: relative;
+        .move_col_box {
+            display: flex;
+            justify-content: end;
+            min-width: 30px;
+            flex: 1;
+        }
+        .move_col {
+            display: none;
+        }
+    }
+    .p_opration {
+        width: calc(100% + 32px);
+        border-top: 1px solid #f0f0f0;
+        border-radius: 0px 0px 4px 4px;
+        margin-left: -16px;
+        padding-top: 8px;
+        padding-right: 8px;
+        text-align: right;
+        :global {
+            .ant-btn {
+                span {
+                    font-size: 14px;
+                    // letter-spacing: -2px;
+                }
+                // height: 24px;
+                width: 50px;
+                padding: 0px !important;
+                &:nth-child(1) {
+                    border: 1px solid #e5e9ec !important;
+                    background-color: #e5e9ec !important;
+                    margin-right: 8px;
+                    font-weight: 400;
+                    color: #505766 !important;
+
+                    &:hover,
+                    &:focus {
+                        // background-color: var(--ant-primary-color) !important;
+                        // color: #fff !important;
+                        background-color: #dbe0e5 !important;
+                    }
+                }
+                &:nth-child(2) {
+                    border: 1px solid var(--ant-primary-color) !important;
+                    // background-color: #5B95F4;
+                    background-color: var(--ant-primary-color) !important;
+                    color: #fff !important;
+                    &:hover,
+                    &:focus {
+                        background-color: var(--ant-primary-color-hover) !important;
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+        & > button:nth-child(1) {
+            background: #e5e9ec;
+            margin-left: 0px;
+        }
+        & > button {
+            margin-left: 8px;
+        }
+    }
+}

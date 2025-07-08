@@ -1,0 +1,47 @@
+{
+  "name": "cloud",
+  "private": true,
+  "scripts": {
+    "start": "max dev --port=8006",
+    "build": "max build",
+    "postinstall": "max setup",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^6.5.15",
+    "@umijs/max": "^4.0.0",
+    "axios": "^1.4.0",
+    "compression-webpack-plugin": "10",
+    "cross-env": "7.0.3",
+    "echarts": "5.0.1",
+    "lint-staged": "10.0.7",
+    "prettier": "1.19.1",
+    "react-reflex": "4.0.0",
+    "react-resizable": "^3.0.4",
+    "sm-crypto": "0.2.5",
+    "spark-md5": "3.0.2",
+    "xml2js": "0.4.22",
+    "yorkie": "2.0.0"
+  },
+  "devDependencies": {
+    "koa": "2.6.2",
+    "koa-better-http-proxy": "0.2.4",
+    "koa-bodyparser": "4.2.1",
+    "koa-compress": "3.0.0",
+    "koa-router": "7.4.0",
+    "koa-static": "5.0.0"
+  }
+}

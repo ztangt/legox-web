@@ -1,0 +1,47 @@
+//  :global(.ant-transfer-list) {
+//    width: 50% !important;
+//  }
+ .set_modal{
+  :global(.ant-transfer-list) {
+    width: 50% !important;
+  }
+  :global{
+    .ant-transfer,.ant-transfer-list{
+      height:100%;
+    }
+    .ant-transfer-list-header-dropdown,.ant-transfer-list-header-selected{
+      display: none;
+    }
+    .ant-transfer-list-header-title{
+      text-align: left;
+    }
+    .ant-btn-primary[disabled],
+    .ant-btn-primary[disabled]:hover,
+    .ant-btn-primary[disabled]:focus,
+    .ant-btn-primary[disabled]:active {
+      color: #999 !important;
+      background-color:#fff !important;
+      border-color: #999 !important;
+      opacity: 0.5;
+      cursor: default;
+      span{
+        svg{
+          transform: translateX(0px);
+          filter: drop-shadow(#999 0px 0px 0px);
+        }
+      }
+    }
+    .ant-btn-primary:hover, .ant-btn-primary:focus {
+      border-color: var(--ant-primary-color-hover) !important;
+      background: #fff !important;
+      color: var(--ant-primary-color-hover) !important;
+      span{
+        svg{
+          transform: translateX(0px);
+          filter: drop-shadow(var(--ant-primary-color-hover) 0px 0px 0px);
+        }
+      }
+  }
+  }
+  
+ }

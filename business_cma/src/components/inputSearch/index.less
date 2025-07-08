@@ -1,0 +1,28 @@
+.InputSearch {
+    :global {
+        .ant-input {
+            border: none;
+            height: 30px;
+            box-shadow: none;
+        }
+        .ant-input-group-addon {
+            height: 30px;
+            .ant-input-search-button {
+                border: none;
+                height: 30px !important;
+                padding-left: 8px !important;
+                padding-right: 8px !important;
+            }
+        }
+        .ant-input-wrapper {
+            padding-right: 1px;
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+        .ant-input-group > .ant-input-group-addon:last-child {
+            left: 0 !important;
+        }
+    }
+}

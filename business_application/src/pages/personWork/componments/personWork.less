@@ -1,0 +1,29 @@
+.tree_title{
+  .hover_opration{
+    display: none;
+    &>span{
+      margin-left: 5px;
+    }
+  }
+  &:hover{
+    .hover_opration{
+      display:inline-block;
+    }
+  }
+}
+:global{
+  .ant-tree .ant-tree-node-content-wrapper:hover {
+    background: #FFF5E2;
+    border-radius: 4px;
+   
+  }
+  .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background: #F0F3F9;
+    border-radius: 4px;
+  }
+  .ant-tree .ant-tree-node-content-wrapper{
+    height: 22px;
+    margin-bottom:4px;
+    padding: 0 16px 0 6px;
+  }
+}

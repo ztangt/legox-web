@@ -1,0 +1,322 @@
+.container {
+  width: 100%;
+  // height: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  :global {
+    .tree_dom___YmiXk {
+      overflow: visible;
+    }
+  }
+  & > div {
+    height: 100% !important;
+    padding-left: 0px !important;
+  }
+  .rightChildren {
+    height: 100%;
+    :global {
+      .tree_dom___jzZCY {
+        overflow: unset;
+      }
+      .container___w1uq3 {
+        height: calc(100% - 48px) !important;
+      }
+      [class^='tree_dom___'] {
+        overflow: unset;
+      }
+      [class^='container___'] {
+        height: calc(100% - 48px) !important;
+      }
+      .ant-tabs-content-holder {
+        height: calc(100vh - 274px);
+      }
+    }
+  }
+  .rightChildrenView {
+    :global {
+      .container___w1uq3 {
+        padding: 0px;
+      }
+      .basic_information___1qQ0R {
+        padding-left: 8px;
+      }
+    }
+  }
+
+  // padding: 0 8px;
+  .title {
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: bolder;
+    color: #333333;
+  }
+  .departmentTree,
+  .left {
+    height: 100%;
+    margin: 8px 0px 0px 8px;
+    :global {
+      .ant-tree {
+        overflow: auto;
+        height: calc(100% - 48px);
+      }
+
+      input::-webkit-input-placeholder {
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #cccccc;
+      }
+      .ant-input {
+        height: 26px;
+      }
+      .treeNode___tVIyQ {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .search {
+    width: 200px;
+    margin: 0px 8px 8px 0px;
+  }
+  :global {
+    .container___w1uq3 {
+      padding: 0px 0px 0px 8px;
+      min-height: unset;
+    }
+    .ant-tree .ant-tree-treenode-draggable .ant-tree-draggable-icon {
+      display: none;
+    }
+    .ant-btn {
+      height: 28px;
+      span {
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.table_warp {
+  background-color: #ffffff;
+  // overflow: hidden;
+  // padding: 0px 20px 20px 10px;
+  // width: 660px;
+  width: 100%;
+  padding-left: 8px;
+  height: 100%;
+  .operation {
+    & > span {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% - 42px);
+    overflow: auto;
+    width: 100%;
+    .image {
+      // background-color: #ccc;
+      // width: 590px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      & > div {
+        width: 100%;
+      }
+      :global {
+        .ant-image-mask {
+          display: none !important;
+        }
+      }
+      img {
+        width: 262px;
+        height: 146px;
+        border-radius: 6px;
+        border: solid 1px #d9d9d9;
+      }
+      .picture_desc {
+        // display: flex;
+        .picture_t {
+          display: flex;
+          justify-content: space-between;
+          margin: 16px 0 6px 0;
+          a {
+            color: #333333;
+            font-size: 14px;
+          }
+          & > label {
+            width: calc(100% - 55px);
+            & > span:nth-child(2) {
+              display: inline-block;
+              width: calc(100% - 22px);
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+    :global {
+      .infinite-scroll-component {
+        height: unset !important;
+        overflow: unset !important;
+      }
+    }
+    .spin_div {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.basic_information {
+  width: 100%;
+  height: 100%;
+  // float: right;
+  .basic_content {
+    overflow: auto;
+    height: 100%;
+    margin-bottom: 8px;
+    margin-left: 10px;
+  }
+  :global {
+    .ant-tabs {
+      // margin-left: 10px;
+      height: 100%;
+    }
+    .ant-tabs-nav-list .ant-tabs-tab {
+      margin-left: 24px;
+    }
+    .ant-form-item {
+      margin-bottom: 8px;
+    }
+    // .ant-tabs-content-holder {
+    //   overflow: auto;
+    //   height: calc(100% - 48px);
+    //   margin-bottom: 8px;
+    //   margin-left: 10px;
+    // }
+    .ant-tabs-top > .ant-tabs-nav:before {
+      border-bottom: none;
+    }
+    .ant-tabs-tab:first-child {
+      border: none !important;
+    }
+  }
+}
+
+.treeNode {
+  .button_menu {
+    display: none;
+    span {
+      margin-left: 2px;
+    }
+  }
+  &:hover {
+    .button_menu {
+      display: inline-block;
+    }
+  }
+}
+
+.header {
+  height: 48px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  .left {
+    // float: left;
+    margin-left: 16px;
+  }
+  .right {
+    // float: right;
+    padding-top: 8px;
+    .upload_button {
+      margin-right: 8px;
+    }
+    & > button {
+      margin-right: 8px;
+    }
+  }
+}
+.picture_b {
+  // margin-bottom: 34px;
+  p {
+    // height: 30px;
+    // line-height: 30px;
+    margin-left: 25px;
+    font-size: 14px;
+    color: #666666;
+  }
+}
+.picture_b_view {
+  // margin-bottom: 34px;
+  p {
+    // height: 30px;
+    // line-height: 30px;
+    margin-left: 0px;
+    font-size: 14px;
+    color: #666666;
+  }
+}
+.unUsed {
+  // width: 48px;
+  padding: 0 7px;
+  height: 22px;
+  line-height: 20px;
+  color: #ff451d;
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  text-align: center;
+  background: #fff4f2;
+  border-radius: 2px;
+  border: 1px solid #ff451d;
+}
+.used {
+  // width: 48px;
+  height: 22px;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  text-align: center;
+  background: #e5f8f2;
+  border-radius: 2px;
+  border: 1px solid #13bf87;
+  color: #05bc80;
+  text-align: center;
+}
+.view_check {
+  :global {
+    .ant-checkbox {
+      display: none;
+    }
+    .ant-checkbox + span {
+      padding-left: 0px !important;
+    }
+  }
+}
+.item {
+  margin-bottom: 34px;
+}
+.item_selected {
+  border-radius: 3px;
+  border: 1px solid #3f79ff;
+  padding: 5px 5px 0px;
+  height: max-content;
+}
+.table {
+  margin-left: 8px;
+}
+[id^='invoiceManagement_container'] {
+  position: relative;
+}
+[id^='h_resize_container_invoiceManagement_container_'] {
+  overflow: hidden !important;
+}

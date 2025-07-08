@@ -1,0 +1,98 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  :global {
+    .ant-input-suffix {
+      margin-right: 4px;
+    }
+  }
+  .leftTree {
+    padding: 8px 0px 0px 8px;
+    height: 100%;
+    overflow: hidden;
+    // :global {
+    //   /* 任意图标的改法树组件  使用这个样式的前提是要把showLine={false}showLine设置为false*/
+    //   .anticon.anticon-caret-down.ant-tree-switcher-icon {
+    //     //把三角形隐藏直接透明度设置为1
+    //     opacity: 0;
+    //   }
+    //   .ant-tree-switcher_close {
+    //     //这个是收起的背景图设置
+    //     background: url('../../../public/assets/close.svg') no-repeat;
+    //     background-size: 100% 100%;
+    //     width: 14px;
+    //     margin-right: 4px;
+    //   }
+    //   .ant-tree-switcher_open {
+    //     //这个是展开的背景图设置
+    //     background: url('../../../public/assets/open.svg') no-repeat;
+    //     background-size: 100% 100%;
+    //     width: 14px;
+    //     margin-right: 4px;
+    //   }
+    // }
+  }
+  :global {
+    .ant-pagination-prev,
+    .ant-pagination-next,
+    .ant-pagination-jump-prev,
+    .ant-pagination-jump-next {
+      min-width: 20px;
+      height: 20px;
+      line-height: 20px;
+    }
+    // .ant-pagination {
+    //   position: fixed;
+    //   right: 38px;
+    //   bottom: 50px;
+    // }
+  }
+}
+.table_warp {
+  background-color: #ffffff;
+  overflow: hidden;
+  // padding: 0px 0px 20px 0px;
+  height: 100%;
+  .header {
+    height: 32px;
+    margin: 8px 0px 8px 8px;
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+      & > button {
+        margin-right: 8px;
+      }
+    }
+  }
+  .operation {
+    & > a {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+  }
+}
+.time {
+  width: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+.pagination {
+  position: fixed;
+  bottom: 56px;
+  right: 26px;
+  display: flex;
+  .refresh {
+    margin: 0 8px;
+  }
+  button {
+    span {
+      font-size: 14px;
+    }
+  }
+}

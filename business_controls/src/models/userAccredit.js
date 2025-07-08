@@ -1,0 +1,170 @@
+import { history } from 'umi';
+import apis from 'api';
+import { message } from 'antd';
+//根据类型请求接口
+const getActionByType = [
+  {
+    type: 'USER',
+    ids: 'identityIds',
+    action: 'getUsersByIds',
+    list: 'list',
+    idKey: 'orgRefUserId',
+    nameKey: 'userName',
+  },
+  {
+    type: 'USERGROUP',
+    ids: 'ugIds',
+    action: 'getUsergroupByIds',
+    list: 'ugs',
+    idKey: 'id',
+    nameKey: 'ugName',
+  },
+  {
+    type: 'ORG',
+    ids: 'orgIds',
+    action: 'getOrgByIds',
+    list: 'orgs',
+    idKey: 'id',
+    nameKey: 'orgName',
+  },
+  {
+    type: 'POST',
+    ids: 'postIds',
+    action: 'getPostByIds',
+    list: 'posts',
+    idKey: 'id',
+    nameKey: 'postName',
+  },
+  {
+    type: 'DEPT',
+    ids: 'deptIds',
+    action: 'getDeptByIds',
+    list: 'depts',
+    idKey: 'id',
+    nameKey: 'deptName',
+  },
+  {
+    type: 'RULE',
+    ids: 'roleIds',
+    action: 'getRuleByIds',
+    list: 'roles',
+    idKey: 'id',
+    nameKey: 'roleName',
+  },
+];
+const Model = {
+  namespace: 'userAccredit',
+  state: {},
+  subscriptions: {
+    setup({ dispatch, history }) {
+      history.listen((location) => {});
+    },
+  },
+  effects: {
+    //查询用户
+    *queryUser({ payload }, { call, put, select }) {
+      let namespace = payload.namespace;
+      delete payload.namespace;
+      const { data } = yield call(apis.queryUser, payload, '', 'userAccredit');
+      if (data.code == 200) {
+        yield put({
+          type: `${namespace}/updateStates`,
+          payload: {
+            originalData: data.data.list,
+          },
+        });
+      } else if (data.code != 401 && data.code != 419 && data.code != 403) {
+        message.error(data.msg);
+      }
+    },
+    //获取用户组列表
+    *getUgs({ payload }, { call, put, select }) {
+      let namespace = payload.namespace;
+      delete payload.namespace;
+      try {
+        const { data } = yield call(apis.getUgs, payload, '', 'userAccredit');
+        if (data.code == 200) {
+          let list = data.data.list;
+          for (let i = 0; i < list.length; i++) {
+            list[i]['nodeName'] = list[i]['ugName'];
+            list[i]['nodeId'] = list[i]['id'];
+          }
+          yield put({
+            type: `${namespace}/updateStates`,
+            payload: {
+              originalData: list,
+            },
+          });
+        } else if (data.code != 401 && data.code != 419 && data.code != 403) {
+          message.error(data.msg);
+        }
+      } catch (e) {
+      } finally {
+      }
+    },
+    //获取单位角色
+    *getSysRoles({ payload }, { call, put, select }) {
+      let namespace = payload.namespace;
+      delete payload.namespace;
+      const { data } = yield call(
+        apis.getSysRoles,
+        payload,
+        '',
+        'userAccredit',
+      );
+      if (data.code == 200) {
+        yield put({
+          type: `${namespace}/updateStates`,
+          payload: {
+            originalData: data.data.list,
+          },
+        });
+      } else if (data.code != 401 && data.code != 419 && data.code != 403) {
+        message.error(data.msg);
+      }
+    },
+    //
+    *getSelectedDatas({ payload }, { call, put, select }) {
+      let orgUserType = payload.orgUserType;
+      let namespace = payload.namespace;
+      let curAction = getActionByType.filter(
+        (item) => item.type == orgUserType,
+      );
+      let newPayload = {};
+      newPayload[curAction[0].ids] = payload.selectedDataIds.join(',');
+      newPayload['start'] = 1;
+      newPayload['limit'] = 100;
+      const { data } = yield call(
+        apis[curAction[0].action],
+        newPayload,
+        '',
+        'userAccredit',
+      );
+      if (data.code == 200) {
+        let selectedDatas = data.data[curAction[0].list];
+        selectedDatas.map((item) => {
+          item.nodeId = item[curAction[0].idKey];
+          item.nodeName = item[curAction[0].nameKey];
+        });
+        yield put({
+          type: `${namespace}/updateStates`,
+          payload: {
+            selectedDatas: selectedDatas,
+          },
+        });
+        console.log('selectedDatas=', selectedDatas);
+      } else if (data.code != 401 && data.code != 419 && data.code != 403) {
+        message.error(data.msg);
+      }
+    },
+  },
+  reducers: {
+    updateStates(state, action) {
+      return {
+        ...state,
+        ...action.payload,
+      };
+    },
+  },
+};
+export default Model;
